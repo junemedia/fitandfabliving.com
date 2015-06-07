@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>obRSS</name>
+	<creationDate>Sep 2013</creationDate>
+	<author>foobla.com</author>
+	<authorEmail>info@foobla.com</authorEmail>
+	<authorUrl>http://www.foobla.com</authorUrl>
+	<copyright>Copyright (C) 2007-2013 foobla.com. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<version>3.1.3</version>
+	<description><![CDATA[OBRSS_MANIFEST_DESCRIPTION]]></description>
+	<scriptfile>script.obrss.php</scriptfile>
+	
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+	<files folder="site">
+		<folder>assets</folder>
+		<folder>helpers</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>controller.php</filename>
+		<filename>obrss.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+	</files>
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB/en-GB.com_obrss.ini</language>
+		<language tag="tr-TR">tr-TR/tr-TR.com_obrss.ini</language>
+	</languages>
+	<administration>
+		<menu link="option=com_obrss" img="../administrator/components/com_obrss/assets/images/icons/feeds_16.png">COM_OBRSS</menu>
+		<files folder="admin">
+			<folder>aio</folder>
+			<folder>assets</folder>
+			<folder>cache</folder>
+			<folder>controllers</folder>
+			<folder>elements</folder>
+			<folder>helpers</folder>
+			<folder>js</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>defines.php</filename>
+			<filename>obrss.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+		</files>
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_obrss.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_obrss.sys.ini</language>
+			<language tag="tr-TR">tr-TR/tr-TR.com_obrss.ini</language>
+			<language tag="tr-TR">tr-TR/tr-TR.com_obrss.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

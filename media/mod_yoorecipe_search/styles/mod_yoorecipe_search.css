@@ -1,0 +1,41 @@
+﻿/*----------------------------------------------------------------------
+# YooRock! YooRecipe Search Module 1.0.0
+# ----------------------------------------------------------------------
+# Copyright (C) 2011 YooRock. All Rights Reserved.
+# Coded by: YooRock!
+# License: GNU GPL v2
+# Website: http://www.yoorock.fr
+------------------------------------------------------------------------*/
+.withIngr {
+	background: none repeat scroll 0 0 #C7DA76;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    margin: 1px;
+    padding: 2px;
+}
+
+.withoutIngr {
+	background: none repeat scroll 0 0 #FFDA76;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    float: left;
+    margin: 1px;
+    padding: 2px;
+}
+
+.ingrRemove {
+	color: #555;
+    cursor: pointer;
+    font-family: "Lucida Grande";
+    font-size: 11px;
+    padding-left: 4px;
+}
+
+.mod_yoorecipe_search_fieldset {
+	margin-bottom:10px;
+}
+
+.mod_yoorecipe_search_fieldset legend{
+	font-weight:bold;
+}

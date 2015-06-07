@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+    <name>Content - SP Share</name>
+    <author>JoomShaper.com</author>
+    <creationDate>Oct 2011</creationDate>
+	<copyright>Copyright (C) 2010-2013 JoomShaper.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>support@joomshaper.com</authorEmail>
+    <version>1.4.0</version>
+    <description>SP Share - Free Social Share plugin for Joomla by JoomShaper.com</description>
+    <files>
+        <filename plugin="spshare">spshare.php</filename>
+		<folder>elements</folder>
+    </files>
+    <config>
+        <fields name="params" addfieldpath="/plugins/content/spshare/elements">
+            <fieldset name="basic">			
+				<field name="catids" type="category" extension="com_content" multiple="true" size="10" default="all" label="Categories" description="Select categories" />
+				<field name="k2catids" type="k2category" default="all" label="K2 Categories" description="Select categories" />
+				<field name="position" type="list" default="4" label="Buttons Position" description="Determines the size and amount of social context next to the button">
+					<option value="1">Before Display Content</option>
+					<option value="2">After Display Content</option>
+					<option value="3">After Display Title</option>
+					<option value="4">Right of the Content</option>
+				</field>
+				<field name="show_intro" type="radio" class="btn-group" default="1" label="Override Show Intro" description="Determines the size and amount of social context next to the button">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>	
+				<field name="layout_style" type="list" default="button_count" label="Layout Style" description="Determines the size and amount of social context next to the button">
+					<option value="button_count">button_count</option>
+					<option value="box_count">box_count</option>
+				</field>	
+				<field name="linkedin" type="radio" class="btn-group" default="1" label="Linkedin Share Button" description="">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="twitter" type="radio" class="btn-group" default="1" label="Twitter Button" description="">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="gplus" type="radio" class="btn-group" default="1" label="Google+ Button" description="">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="pinterest" type="radio" class="btn-group" default="1" label="Pinterest" description="">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="digg" type="radio" class="btn-group" default="1" label="Digg Button" description="">
+					<option value="1">Enable</option>
+					<option value="0">Disable</option>
+				</field>
+				<field name="like_btn" type="list" default="1" label="Facebook Like Button" description="">
+					<option value="1">Like Button + Send button</option>
+					<option value="2">Like Button</option>
+					<option value="3">Disable</option>
+				</field>
+				<field name="fb_width" type="text" default="120" label="Like button width" description="" />				
+            </fieldset>
+        </fields>
+    </config>
+</extension>

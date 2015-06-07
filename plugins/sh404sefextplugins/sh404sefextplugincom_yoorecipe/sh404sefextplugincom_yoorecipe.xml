@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="sh404sefextplugins" method="upgrade">
+	<name>sh404sef - YooRecipe component support plugin</name>
+	<author>YooRock!</author>
+	<authorEmail>support@yoorock.fr</authorEmail>
+	<authorUrl>http://extensions.yoorock.fr</authorUrl>
+	<license>Commercial License, All Rights Reserved</license>
+	<creationDate>December 16th 2012</creationDate>
+	<copyright>2012 YooRock!</copyright>
+	<version>3.1.3</version>
+	<description>Provide support for sef urls and meta data for com_yoorecipe</description>
+	<files>
+		<filename plugin="sh404sefextplugincom_yoorecipe">sh404sefextplugincom_yoorecipe.php</filename>
+		<folder plugin="sh404sefextplugincom_yoorecipe">yoorecipe</folder>
+		<filename>index.html</filename>
+	</files>
+
+	<languages folder="language">
+        <language tag="da-DK">da-DK.plg_sh404sefextplugincom_yoorecipe.ini</language>
+        <language tag="de-DE">de-DE.plg_sh404sefextplugincom_yoorecipe.ini</language>
+        <language tag="en-GB">en-GB.plg_sh404sefextplugincom_yoorecipe.ini</language>
+        <language tag="en-US">en-US.plg_sh404sefextplugincom_yoorecipe.ini</language>
+        <language tag="fr-CA">fr-CA.plg_sh404sefextplugincom_yoorecipe.ini</language>
+        <language tag="fr-FR">fr-FR.plg_sh404sefextplugincom_yoorecipe.ini</language>
+        <language tag="it-IT">it-IT.plg_sh404sefextplugincom_yoorecipe.ini</language>
+        <language tag="nl-NL">nl-NL.plg_sh404sefextplugincom_yoorecipe.ini</language>
+        <language tag="pt-BR">pt-BR.plg_sh404sefextplugincom_yoorecipe.ini</language>
+        <language tag="pt-PT">pt-PT.plg_sh404sefextplugincom_yoorecipe.ini</language>
+        <language tag="sl-SI">sl-SI.plg_sh404sefextplugincom_yoorecipe.ini</language>
+        <language tag="sv-SE">sv-SE.plg_sh404sefextplugincom_yoorecipe.ini</language>
+    </languages>
+</extension>

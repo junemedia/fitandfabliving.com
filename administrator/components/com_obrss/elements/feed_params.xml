@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<config>
+		<fields name="default">
+			<fieldset name="basic">
+				<field name="cache" type="radio" class="btn-group" default="1" label="OBRSS_CACHE" description="OBRSS_CACHE_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="cache_time" type="text" size="8" default="3600" label="OBRSS_CACHE_TIME" description="OBRSS_CACHE_TIME_DESC" />
+				
+				<field name="use_global" type="radio" class="btn-group" default="0" label="OBRSS_USEGLOBAL_AUTHOR" description="OBRSS_USEGLOBAL_AUTHOR_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="mail_author" type="text" size="35" default="" label="OBRSS_MAIL_AUTHOR" description="OBRSS_MAIL_AUTHOR_DESC" />
+				<field name="image_file" type="imagelist" directory="/images" default="" label="OBRSS_IMAGE" description="OBRSS_IMAGE_DESC" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="menu_itemid" type="text" size="4" default="0" label="OBRSS_MENU_ITEMID" description="OBRSS_MENU_ITEMID_DESC" />
+				<field name="count" type="text" size="4" default="30" label="OBRSS_COUNT" description="OBRSS_COUNT_DES" />
+				<field name="hidden_time" type="radio" class="btn-group" default="0" label="OBRSS_HIDDEN_TIME" description="OBRSS_HIDDEN_TIME_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="limit_text" type="radio" class="btn-group" default="0" label="OBRSS_LIMIT" description="OBRSS_LIMIT_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="text_length" type="text" size="4" default="20" label="OBRSS_LENGTH_TEXT" description="OBRSS_LENGTH_TEXT_DESC" />
+				<field name="hideimages" type="radio" class="btn-group" default="0" label="OBRSS_SHOWIMAGES" description="OBRSS_SHOWIMAGES_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="resize_img" type="text" size="10" default="0x0" label="OBRSS_RESIZE_IMG" description="OBRSS_RESIZE_IMG_DESC" />
+				<field name="strip_tags" type="textarea" rows="2" cols="30" default="" label="OBRSS_STRIP_TAGS" description="OBRSS_STRIP_TAGS_DESC" />
+				<field name="ads_from" type="list" default="" label="OBRSS_ADS_FROM" description="OBRSS_ADS_FROM_DES" >
+					<option value="">OBRSS_ATTRIBS_NONE</option>
+					<option value="banner">Banners</option>
+					<option value="obbaner">obBanners</option>
+					<option value="flexbanner">FlexBanner</option>
+					<option value="rsbanners">RSBanners</option>
+				</field>
+				<field name="feed_lang" type="languages" client="site" label="Language" description="Assign a langguage to this feed" />
+			</fieldset>
+		</fields>
+	</config>
+</form>

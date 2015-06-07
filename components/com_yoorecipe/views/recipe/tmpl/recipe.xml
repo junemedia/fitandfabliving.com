@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_YOORECIPE_YOORECIPE_VIEW_SINGLE_RECIPE">
+		<message>COM_YOORECIPE_YOORECIPE_VIEW_SINGLE_RECIPE_DESC</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_yoorecipe/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="id"
+				type="yoorecipe"
+				label="COM_YOORECIPE_YOORECIPE_SELECT_RECIPE"
+				description="COM_YOORECIPE_YOORECIPE_SELECT_RECIPE_DESC"
+			/>
+		</fieldset>
+	</fields>
+	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<fieldset name="basic" label="JGLOBAL_CATEGORIES_OPTIONS">
+			
+			<field name="thumbnail_width" type="integer" default="450" first="200" last="800" step="10"
+				label="COM_YOORECIPE_RECIPE_FIELD_THUMBNAIL_WIDTH" 
+				description="COM_YOORECIPE_RECIPE_FIELD_THUMBNAIL_WIDTH_DESC"
+			/>
+			
+			<field 
+				name="enable_comments"
+				type="list"
+				default="use_global"
+				label="COM_YOORECIPE_RECIPE_FIELD_ENABLE_COMMENTS" 
+				description="COM_YOORECIPE_RECIPE_FIELD_ENABLE_COMMENTS_DESC"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			
+			<field
+				name="recipe_sort"
+				type="list"
+				default="title"
+				label="COM_YOORECIPE_RECIPE_FIELD_SORT"
+				descritpion="COM_YOORECIPE_RECIPE_FIELD_SORT_DESC"
+			>
+				<option value="title">COM_YOORECIPE_RECIPE_SORT_BY_TITLE</option>
+				<option value="creation_date">COM_YOORECIPE_RECIPE_SORT_BY_CREATION_DATE</option>
+				<option value="note">COM_YOORECIPE_RECIPE_SORT_BY_NOTE</option>
+				<option value="nb_views">COM_YOORECIPE_RECIPE_SORT_BY_NB_VIEWS</option>
+			</field>	
+			
+			<field  name="spacer1" type="spacer" hr="true" />
+			
+			<field 
+				name="use_social_sharing"
+				type="list"
+				default="use_global"
+				label="COM_YOORECIPE_RECIPE_FIELD_USE_SOCIAL_SHARING" 
+				description="COM_YOORECIPE_RECIPE_FIELD_USE_SOCIAL_SHARING_DESC"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			
+			<field 
+				name="show_on_top"
+				type="list"
+				default="use_global"
+				label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_ON_TOP" 
+				description="COM_YOORECIPE_FIELD_SOCIAL_SHOW_ON_TOP_DESC"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			
+			<field 
+				name="show_on_bottom"
+				type="list"
+				default="use_global"
+				label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_ON_BOTTOM" 
+				description="COM_YOORECIPE_FIELD_SOCIAL_SHOW_ON_BOTTOM_DESC"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			
+			<field  name="spacer2" type="spacer" hr="true" />
+			
+			<field
+				name="show_description"
+				type="list"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_DESCRIPTION"
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_DESCRIPTION_DESC"
+				default="use_global"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field 
+				name="show_category"
+				type="list"
+				default="use_global"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_CATEGORY" 
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_CATEGORY_DESC"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			
+			<field
+				name="show_difficulty"
+				type="list"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_DIFFICULTY"
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_DIFFICULTY_DESC"
+				default="use_global"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field
+				name="show_cost"
+				type="list"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_COST"
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_COST_DESC"
+				default="use_global"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field
+				name="show_rating"
+				type="list"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_RATING"
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_RATING_DESC"
+				default="use_global"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field
+				name="rating_style"
+				type="list"
+				label="COM_YOORECIPE_RECIPE_FIELD_RATING_STYLE"
+				description="COM_YOORECIPE_RECIPE_FIELD_RATING_STYLE_DESC"
+				default="use_global"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="stars">COM_YOORECIPE_RECIPE_OPTION_RATING_STYLE_STARS</option>
+				<option value="grade">COM_YOORECIPE_RECIPE_OPTION_RATING_STYLE_GRADE</option>
+			</field>
+			
+			<field
+				name="show_preparation_time"
+				type="list"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_PREP_TIME"
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_PREP_TIME_DESC"
+				default="use_global"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field
+				name="show_cook_time"
+				type="list"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_COOK_TIME"
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_COOK_TIME_DESC"
+				default="use_global"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field
+				name="show_wait_time"
+				type="list"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_WAIT_TIME"
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_WAIT_TIME_DESC"
+				default="use_global"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field  name="spacer3" type="spacer" hr="true" />
+			
+			<field 
+				name="show_print_icon"
+				type="list"
+				default="use_global"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_PRINT_ICON" 
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_PRINT_ICON_DESC"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			
+			<field 
+				name="show_email_icon"
+				type="list"
+				default="use_global"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_EMAIL_ICON" 
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_EMAIL_ICON_DESC"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			
+			<!-- removed since 2.2.0 -->
+			<!--field 
+				name="show_pdf_icon"
+				type="list"
+				default="use_global"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_PDF_ICON" 
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_PDF_ICON_DESC"
+			>
+				<option value="use_global">JGLOBAL_USE_GLOBAL</option>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field-->
+
+		</fieldset>
+	</fields>
+</metadata>

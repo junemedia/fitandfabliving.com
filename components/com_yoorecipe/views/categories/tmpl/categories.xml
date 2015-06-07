@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_YOORECIPE_YOORECIPE_VIEW_RECIPES_BY_CATEGORY">
+		<message>COM_YOORECIPE_YOORECIPE_VIEW_RECIPES_BY_CATEGORY_DESC</message>
+	</layout>
+	
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_yoorecipe/models/fields"
+	>
+		<fieldset name="request">
+			<field name="id" type="category" extension="com_yoorecipe"
+			label="JCATEGORY" description="COM_YOORECIPE_YOORECIPE_CATEGORY_LABEL"
+			required="true"
+			/>
+			
+			<field 
+				name="show_add_recipe_button"
+				type="radio"
+				default="1"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_ADD_RECIPE_BUTTON" 
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_ADD_RECIPE_BUTTON_DESC"
+			>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

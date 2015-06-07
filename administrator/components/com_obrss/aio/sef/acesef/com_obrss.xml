@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="acesef_ext" version="1.5.0" method="upgrade">
+	<name>obRSS</name>
+	<author>foobla.com</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>Copyright (C) 2007-2012 foobla.com. All rights reserved.</copyright>
+	<license>GNU/GPL, see LICENSE</license>
+	<authorEmail>info@foobla.com</authorEmail>
+	<authorUrl>foobla.com</authorUrl>
+	<version>1.8.13</version>
+	<description>AceSEF extension for obRSS.</description>
+	<files>
+		<filename acesef_ext="com_obrss">com_obrss.php</filename>
+	</files>
+</install>

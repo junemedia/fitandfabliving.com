@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="community" method="upgrade">
+	<name>Your Favourite Recipes</name>
+	<author>YooRock Team</author>
+	<creationDate>December 2012</creationDate>
+	<copyright>Copyright 2009 - 2012 by YooRock SARL. All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@yoorock.fr</authorEmail>
+	<authorUrl>http://extensions.yoorock.fr</authorUrl>
+	<version>3.1.3</version>
+	<isapplication>true</isapplication>
+	<description>Manage your favourites recipes from your JomSocial profile</description>
+	<languages>
+	    <language tag="en-GB">en-GB.plg_community_yoorecipe_favourites.ini</language>
+	    <language tag="fr-FR">fr-FR.plg_community_yoorecipe_favourites.ini</language>
+	    <language tag="pt-BR">pt-BR.plg_community_yoorecipe_favourites.ini</language>
+	    <language tag="pt-PT">pt-PT.plg_community_yoorecipe_favourites.ini</language>
+	    <language tag="sl-SI">sl-SI.plg_community_yoorecipe_favourites.ini</language>
+	</languages>
+	<files>
+		<file plugin="yoorecipe_favourites">yoorecipe_favourites.php</file>
+		<folder>yoorecipe_favourites</folder>
+		<file>index.html</file>
+	</files>
+	
+	<menuitem>
+		<menu label="yoorecipe_favourites" position="toolbar">
+			<link label="yoorecipe_favourites">task=yoorecipe_favourites</link>
+		</menu>
+	</menuitem>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="coreapp" type="list" default="1" label="PLG_COMMUNITY_YOORECIPE_CORE_APPLICATION" description="PLG_COMMUNITY_YOORECIPE_CORE_APPLICATION_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="position" type="list" default="content" label="PLG_COMMUNITY_YOORECIPE_POSITION" description="PLG_COMMUNITY_YOORECIPE_POSITION_DESC">
+					<option value="content">PLG_COMMUNITY_YOORECIPE_MAIN_CONTENT</option>
+					<option value="sidebar-top">PLG_COMMUNITY_YOORECIPE_SIDEBAR_TOP</option>
+					<option value="sidebar-bottom">PLG_COMMUNITY_YOORECIPE_SIDEBAR_BOTTOM</option>
+				</field>
+				
+				<field name="spacer" type="spacer" hr="true"/>
+				
+				<field name="is_picture_clickable" type="list" default="1" label="PLG_COMMUNITY_YOORECIPE_IS_PICTURE_CLICKABLE" description="PLG_COMMUNITY_YOORECIPE_IS_PICTURE_CLICKABLE_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

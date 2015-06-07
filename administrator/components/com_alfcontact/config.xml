@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+	<fieldset 
+		name="component"
+		label="COM_ALFCONTACT_OPTIONS_LABEL"
+		description="COM_ALFCONTACT_OPTIONS_DESC">
+		
+		<field
+			name="maxchars"
+			type="text"
+			label="COM_ALFCONTACT_OPTIONS_MAXCHARS"
+			description="COM_ALFCONTACT_OPTIONS_MAXCHARS_DESC"
+			size="5"
+			Default=" ">
+		</field>
+		<field
+			name="autouser"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_ALFCONTACT_OPTIONS_AUTOFILL_USERNAME"
+			description="COM_ALFCONTACT_OPTIONS_AUTOFILL_USERNAME_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+			
+		<field
+			name="fromsite"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="COM_ALFCONTACT_OPTIONS_USE_SITEADDRESS"
+			description="COM_ALFCONTACT_OPTIONS_USE_SITEADDRESS_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="captcha"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="COM_ALFCONTACT_OPTIONS_USE_CAPTCHA"
+			description="COM_ALFCONTACT_OPTIONS_USE_CAPTCHA_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+			<option
+				value="2">COM_ALFCONTACT_OPTIONS_GUESTS_ONLY</option>	
+		</field>
+		<field
+			name="captchatype"
+			type="radio"
+			class="btn-group"
+			data-toggle="buttons-radio"
+			default="0"
+			label="COM_ALFCONTACT_OPTIONS_CAPTCHA_TYPE"
+			description="COM_ALFCONTACT_OPTIONS_CAPTCHA_TYPE_DESC">
+			<option
+				value="0">reCAPTCHA</option>
+			<option
+				value="1">captchas.net</option>
+		</field>
+		<field
+			name="copytome"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_ALFCONTACT_OPTIONS_COPY_TO_ME"
+			description="COM_ALFCONTACT_OPTIONS_COPY_TO_ME_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="resetbtn"
+			type="radio"
+			class="btn-group"
+			default="1"
+			label="COM_ALFCONTACT_OPTIONS_RESET_BTN"
+			description="COM_ALFCONTACT_OPTIONS_RESET_BTN_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="verbose"
+			type="radio"
+			class="btn-group"
+			data-toggle="buttons-radio"
+			default="1"
+			label="COM_ALFCONTACT_OPTIONS_SENDER_DETAILS"
+			description="COM_ALFCONTACT_OPTIONS_SENDER_DETAILS_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="mailformat"
+			type="radio"
+			class="btn-group"
+			data-toggle="buttons-radio"
+			default="1"
+			label="COM_ALFCONTACT_OPTIONS_MAIL_FORMAT"
+			description="COM_ALFCONTACT_OPTIONS_MAIL_FORMAT_DESC">
+			<option
+				value="0">COM_ALFCONTACT_OPTIONS_MAIL_FORMAT_TEXT</option>
+			<option
+				value="1">COM_ALFCONTACT_OPTIONS_MAIL_FORMAT_HTML</option>
+		</field>
+	</fieldset>	
+	<fieldset
+		name="recaptcha"
+		label="COM_ALFCONTACT_RECAPTCHA_OPTIONS_LABEL"
+		description="COM_ALFCONTACT_RECAPTCHA_OPTIONS_DESC">
+		<field
+			name="publickey"
+			type="text"
+			label="COM_ALFCONTACT_OPTIONS_RECAPTCHA_PUBLICKEY"
+			description="COM_ALFCONTACT_OPTIONS_RECAPTCHA_PUBLICKEY"
+			size="40"
+			Default=" ">
+		</field>
+		<field
+			name="privatekey"
+			type="text"
+			label="COM_ALFCONTACT_OPTIONS_RECAPTCHA_PRIVATEKEY"
+			description="COM_ALFCONTACT_OPTIONS_RECAPTCHA_PRIVATEKEY"
+			size="40"
+			Default=" ">
+		</field>
+		<field
+			id="captchatheme"
+			name="captchatheme"
+			type="list"
+			label="COM_ALFCONTACT_OPTIONS_RECAPTCHA_THEME"
+			description="COM_ALFCONTACT_OPTIONS_RECAPTCHA_THEME_DESC"
+			default="red">
+			<option
+				value="white">White</option>
+			<option
+				value="red">Red</option>
+			<option
+				value="blackglass">Blackglass</option>
+			<option
+				value="clean">Clean</option>
+		</field>
+		<field
+			id="captchalng"
+			name="captchalng"
+			type="list"
+			label="COM_ALFCONTACT_OPTIONS_RECAPTCHA_LNG"
+			description="COM_ALFCONTACT_OPTIONS_RECAPTCHA_LNG_DESC"
+			default="en">
+			<option value="en">English</option>
+			<option value="nl">Dutch</option>
+			<option value="fr">French</option>
+			<option value="de">German</option>
+			<option value="pt">Portuguese</option>
+			<option value="ru">Russian</option>
+			<option value="es">Spanish</option>
+			<option value="tr">Turkish</option>
+		</field>
+
+	</fieldset>
+	
+	<fieldset
+		name="captchas"
+		label="COM_ALFCONTACT_CAPTCHAS_OPTIONS_LABEL"
+		description="COM_ALFCONTACT_CAPTCHAS_OPTIONS_DESC">
+		<field
+			name="captchas_user"
+			type="text"
+			label="COM_ALFCONTACT_OPTIONS_CAPTCHAS_USER"
+			description="COM_ALFCONTACT_OPTIONS_CAPTCHAS_USER_DESC"
+			size="40"
+			Default=" ">
+		</field>
+		<field
+			name="captchas_key"
+			type="text"
+			label="COM_ALFCONTACT_OPTIONS_CAPTCHAS_KEY"
+			description="COM_ALFCONTACT_OPTIONS_CAPTCHAS_KEY_DESC"
+			size="40"
+			Default=" ">
+		</field>
+		<field
+			name="captchas_alphabet"
+			type="text"
+			label="COM_ALFCONTACT_OPTIONS_CAPTCHAS_ALPHABET"
+			description="COM_ALFCONTACT_OPTIONS_CAPTCHAS_ALPHABET_DESC"
+			size="40"
+			Default="abcdefghijklmnopqrstuvwxyz">
+		</field>
+		<field
+			name="captchas_chars"
+			type="text"
+			label="COM_ALFCONTACT_OPTIONS_CAPTCHAS_CHARS"
+			description="COM_ALFCONTACT_OPTIONS_CAPTCHAS_CHARS_DESC"
+			size="40"
+			Default="6">
+		</field>
+		<field
+			name="captchas_width"
+			type="text"
+			label="COM_ALFCONTACT_OPTIONS_CAPTCHAS_WIDTH"
+			description="COM_ALFCONTACT_OPTIONS_CAPTCHAS_WIDTH_DESC"
+			size="3"
+			Default="240">
+		</field>
+		<field
+			name="captchas_height"
+			type="text"
+			label="COM_ALFCONTACT_OPTIONS_CAPTCHAS_HEIGHT"
+			description="COM_ALFCONTACT_OPTIONS_CAPTCHAS_HEIGHT_DESC"
+			size="3"
+			Default="80">
+		</field>
+		<field
+			name="captchas_color"
+			type="text"
+			label="COM_ALFCONTACT_OPTIONS_CAPTCHAS_COLOR"
+			description="COM_ALFCONTACT_OPTIONS_CAPTCHAS_COLOR_DESC"
+			size="6"
+			Default="000000">
+		</field>
+		<field
+			name="captchas_audiolink"
+			type="radio"
+			class="btn-group"
+			default="0"
+			label="COM_ALFCONTACT_OPTIONS_CAPTCHAS_AUDIO"
+			description="COM_ALFCONTACT_OPTIONS_CAPTCHAS_AUDIO_DESC">
+			<option
+				value="0">JNO</option>
+			<option
+				value="1">JYES</option>
+		</field>
+		<field
+			name="captchas_audiolng"
+			type="list"
+			label="COM_ALFCONTACT_OPTIONS_CAPTCHAS_AUDIO_LNG"
+			description="COM_ALFCONTACT_OPTIONS_CAPTCHAS_AUDIO_LNG_DESC"
+			default="en">
+			<option value="en">English</option>
+			<option value="nl">Dutch</option>
+			<option value="fr">French</option>
+			<option value="de">German</option>
+			<option value="it">Italian</option>
+		</field>
+	</fieldset>
+	
+	<fieldset
+		name="Redirect"
+		label="COM_ALFCONTACT_REDIRECT_OPTIONS_LABEL"
+		description="COM_ALFCONTACT_REDIRECT_OPTIONS_DESC"
+		>
+			
+		<field
+			name="redirect_option"
+			type="list"
+			label="COM_ALFCONTACT_OPTIONS_REDIRECT_OPTION"
+			description="COM_ALFCONTACT_OPTIONS_REDIRECT_OPTION_DESC"
+			default="1">
+			<option value="1">COM_ALFCONTACT_OPTIONS_REDIRECT_HOME</option>
+			<option value="2">COM_ALFCONTACT_OPTIONS_REDIRECT_FORM</option>
+			<option value="3">COM_ALFCONTACT_OPTIONS_REDIRECT_CUSTOM</option>
+			<option value="4">COM_ALFCONTACT_OPTIONS_REDIRECT_URL</option>
+		</field>
+		
+		<field
+			name="custom_header"
+			type="text"
+			label="COM_ALFCONTACT_OPTIONS_CUSTOM_HEADER"
+			description="COM_ALFCONTACT_OPTIONS_CUSTOM_HEADER_DESC"
+			size="40"
+			Default=" ">
+		</field>
+		
+		<field
+			type="textarea"
+			name="custom_text"
+			label="COM_ALFCONTACT_OPTIONS_CUSTOM_TEXT"
+			cols="30"
+			rows="9"
+			filter="safehtml">
+		</field>
+		
+	</fieldset>
+	
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			component="com_alfcontact"
+			section="component" >
+		</field>	
+	</fieldset>
+</config>

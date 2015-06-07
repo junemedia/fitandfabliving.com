@@ -1,0 +1,250 @@
+/* $Id: obstyle.css 717 2013-06-01 02:22:14Z thongta $ */
+
+.icon-48-jlord-core {
+	background-image:url(./images/icons/feeds_48.png);
+}
+.icon-48-jlord-addfeed {
+	background-image:url(./images/icons/addfeed_48.png);
+}
+.icon-48-jlord-items {
+	background-image:url(./images/icons/items_48.png);
+}
+.icon-48-jlord-tools {
+	background-image:url(./images/icons/tools_48.png);
+}
+.icon-48-jlord-addons {
+	background-image:url(./images/icons/addons_48.png);
+}
+.icon-48-support {
+	background-image:url(./images/icons/upgrade_48.png);
+}
+.icon-48-jlord-langs {
+	background-image:url(./images/icons/langs_48.png);
+}
+.icon-32-cancel_f2 {
+  background-image: url(./images/icons/cancel_f2.png);
+}
+.icon-32-install {
+  background-image: url(./images/icons/install.png);
+}
+.icon-32-uninstall {
+  background-image: url('./images/icons/uninstall.png');
+}
+.icon-32-upgrade {
+  background-image: url('./images/icons/upgrade.png');
+}
+.icon-32-delete_f2 {
+  background-image: url('./images/icons/delete_f2.png');
+}
+.icon-32-import {
+  background-image: url('./images/icons/reload_f2.png');
+}
+.icon-32-export {
+  background-image: url('./images/icons/download_f2.png');
+}
+.icon-32-publish_f2 { 
+	background-image: url('./images/icons/publish_f2.png'); 
+}
+.icon-32-unpublish_f2 { 
+	background-image: url('./images/icons/unpublish_f2.png'); 
+}
+.icon-32-archive_f2 { 
+	background-image: url('./images/icons/archive_f2.png'); 
+}
+.icon-32-unarchive_f2 { 
+	background-image: url('./images/icons/unarchive_f2.png'); 
+}
+.icon-32-save2new {
+	background-image: url('./images/icons/save-new_32.png');
+}
+.icon-32-save2copy {
+	background-image: url('./images/icons/save-copy_32.png');
+}
+.icon-32-burn {
+	background-image: url('./images/icons/feedburner_32.png');
+}
+.icon-48-jlord-langs {
+	background-image:url(./images/icons/langs_48.png);
+}
+#cpanel div.icon img {
+	max-height: 48px;
+	max-width: 48px;
+}
+.obrss-jed {
+	padding: 10px 10px 10px 50px;
+	border: 1px solid #CCCCCC;
+	overflow: hidden;
+	background: url(./images/foobla-channel_48.png) no-repeat bottom left;
+	font-size: medium;
+	text-align: right;
+}
+.progress_status{
+	background-image:url(images/pbar-ani.gif);
+	background-repeat:repeat-x;
+}
+.progress_status.stop{
+	background-image:url(images/pbar.jpg);
+	background-repeat:repeat-x;
+}
+div.current {padding: 0;background: #F9F9F9 url(images/foobla-channel.gif) no-repeat bottom left;}
+div.jform{
+	/*background:#F9F9F9;*/
+	/*border:2px solid #CCCCCC;*/
+	overflow:hidden;
+}
+div.jform.obsupport {
+	/*background: url(images/foobla-channel.gif) no-repeat bottom left;*/
+}
+div.jform.obsuggest {
+	/*background: url(images/foobla-channel.gif) no-repeat bottom left;*/
+}
+div.jform input.summary{
+	width:388px;
+}
+div.jform input.e-mail{
+	width:200px;
+	background-color:#EFEFEF;
+}
+div.jform textarea.description{
+	width:388px;
+	height:165px;
+	border:1px solid #CCCCCC;
+}
+div.jform span.message{
+	color: #0099d9;
+}
+div.jform span.title{
+	font-size:14px;
+	color:#0099d9;
+	font-weight:bold;
+}
+p.obDesc {
+	font-style: italic;
+	background: #F0F0F0;
+	padding: 5px;
+}
+span.obTitle {
+	font-weight: bold;
+}
+div.jform a {
+	color: #0099d9;
+}
+/* Joomla 1.6+ Backend Layout Fixs */
+div.col fieldset.adminform label, fieldset.adminform label {
+	clear: left;
+	min-width: 0;
+}
+div.col fieldset.adminform label.radiobtn, fieldset.adminform label.radiobtn {
+	clear: none;
+	min-width: 0px;
+}
+select.obrss_data_source {
+	padding: 20px;
+	font-size: 2em;
+	background-color: #FF7F00;
+}
+div#components_chzn a,
+div select#components {
+	padding: 10px;
+	background: #F89406;
+	font-size: larger;
+}
+div#components_chzn .chzn-drop,
+div select#components option {
+	background: #F89406;
+	font-size: larger;
+}
+div#components_chzn .chzn-drop ul li {
+	padding: 10px;
+}
+div#components_chzn a div {
+	padding: 10px;
+}
+.switcher-on,
+.switcher-off { width:67px; height:24px; background:transparent url(images/icons/switcher.png) no-repeat 0 0; cursor:pointer; float: left; margin-top: 3px; }
+.switcher-off { background-position:-68px 0; }
+
+#foobla ul.chzn-choices {
+	margin: 0;
+	padding: 0;
+}
+
+#foobla .form-horizontal div.control-label {
+	text-align: left;
+}
+#foobla fieldset.radio label {
+	clear: none;
+}
+#foobla .chzn-container-single a.chzn-single {
+	color: inherit;
+}
+#foobla .chzn-container-single a.chzn-single:hover {
+	text-decoration: none;
+}
+#foobla fieldset label {
+	float: none;
+}
+#foobla ul.chzn-results {
+	margin: 0 4px 4px 0;
+	padding: 0 0 0 4px;
+}
+
+/* Fix pagination */
+#foobla .pagination div.limit {
+	float: none;
+	margin-bottom: 20px;
+}
+#foobla .pagination ul li a {
+	cursor: pointer;
+}
+
+/* Joomla 3 style (for Joomla 2.5) */
+#foobla select[multiple][size]{
+	height: auto;
+}
+#foobla select[size] {
+	height: 30px;
+}
+#foobla .icon-featured:before,
+#foobla .icon-star:before {
+	color: #f89406;
+}
+
+#foobla .icon-edit:before,
+#foobla .icon-pencil:before {
+	color: #2f96b4;
+}
+
+#foobla .icon-pending:before,
+#foobla .icon-warning:before {
+	color: #f89406;
+}
+
+#foobla .icon-publish:before,
+#foobla .icon-save:before,
+#foobla .icon-ok:before,
+#foobla .icon-checkmark:before {
+	color: #51a351;
+}
+#foobla .icon-unpublish:before,
+#foobla .icon-cancel:before {
+	color: #bd362f;
+}
+#foobla .icon-save-new:before,
+#foobla .icon-plus-2:before {
+	color: #51a351;
+}
+#foobla .icon-ban-circle:before,
+#foobla .icon-minus-sign:before,
+#foobla .icon-minus-2:before {
+	color: #bd362f;
+}
+#foobla .icon-save-copy:before,
+#foobla .icon-copy:before {
+	color: #51a351;
+}
+
+#foobla i.icon-star-empty,
+#foobla i.icon-eye-close {
+	background-image: none;
+}

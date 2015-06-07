@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6" method="upgrade" client="site">
+	<name>YooRecipe Search Module</name>
+	<author>YooRock!</author>
+	<creationDate>07/13/2011</creationDate>
+	<copyright>Yoorock, All Rights Reserved</copyright>
+	<license>GPL 2.0</license> 
+	<authorEmail>support@yoorock.fr</authorEmail>
+	<authorUrl>extensions.yoorock.fr</authorUrl>
+	<version>3.1.3</version>
+	<description>YooRecipe Search module</description>
+	
+	<files>
+		<filename module="mod_yoorecipe_search">mod_yoorecipe_search.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages>
+		<language tag="da-DK">da-DK.mod_yoorecipe_search.ini</language>
+		<language tag="da-DK">da-DK.mod_yoorecipe_search.sys.ini</language>
+		<language tag="de-DE">de-DE.mod_yoorecipe_search.ini</language>
+		<language tag="de-DE">de-DE.mod_yoorecipe_search.sys.ini</language>
+        <language tag="el-GR">el-GR.mod_yoorecipe_search.ini</language>
+        <language tag="el-GR">el-GR.mod_yoorecipe_search.sys.ini</language>
+        <language tag="en-GB">en-GB.mod_yoorecipe_search.ini</language>
+		<language tag="en-GB">en-GB.mod_yoorecipe_search.sys.ini</language>
+		<language tag="en-US">en-US.mod_yoorecipe_search.ini</language>
+		<language tag="en-US">en-US.mod_yoorecipe_search.sys.ini</language>
+		<language tag="es-ES">es-ES.mod_yoorecipe_search.ini</language>
+		<language tag="es-ES">es-ES.mod_yoorecipe_search.sys.ini</language>
+		<language tag="fr-CA">fr-CA.mod_yoorecipe_search.ini</language>
+		<language tag="fr-CA">fr-CA.mod_yoorecipe_search.sys.ini</language>
+		<language tag="fr-FR">fr-FR.mod_yoorecipe_search.ini</language>
+		<language tag="fr-FR">fr-FR.mod_yoorecipe_search.sys.ini</language>
+		<language tag="it-IT">it-IT.mod_yoorecipe_search.ini</language>
+		<language tag="it-IT">it-IT.mod_yoorecipe_search.sys.ini</language>
+		<language tag="nl-NL">nl-NL.mod_yoorecipe_search.ini</language>
+		<language tag="nl-NL">nl-NL.mod_yoorecipe_search.sys.ini</language>
+		<language tag="pl-PL">pl-PL.mod_yoorecipe_search.ini</language>
+		<language tag="pl-PL">pl-PL.mod_yoorecipe_search.sys.ini</language>
+		<language tag="pt-BR">pt-BR.mod_yoorecipe_search.ini</language>
+		<language tag="pt-BR">pt-BR.mod_yoorecipe_search.sys.ini</language>
+		<language tag="pt-PT">pt-PT.mod_yoorecipe_search.ini</language>
+		<language tag="pt-PT">pt-PT.mod_yoorecipe_search.sys.ini</language>
+		<language tag="ro-RO">ro-RO.mod_yoorecipe_search.ini</language>
+		<language tag="ro-RO">ro-RO.mod_yoorecipe_search.sys.ini</language>
+		<language tag="ru-RU">ru-RU.mod_yoorecipe_search.ini</language>
+		<language tag="ru-RU">ru-RU.mod_yoorecipe_search.sys.ini</language>
+		<language tag="sk-SK">sk-SK.mod_yoorecipe_search.ini</language>
+		<language tag="sk-SK">sk-SK.mod_yoorecipe_search.sys.ini</language>
+		<language tag="sl-SI">sl-SI.mod_yoorecipe_search.ini</language>
+		<language tag="sl-SI">sl-SI.mod_yoorecipe_search.sys.ini</language>
+		<language tag="sv-SE">sv-SE.mod_yoorecipe_search.ini</language>
+		<language tag="sv-SE">sv-SE.mod_yoorecipe_search.sys.ini</language>
+		<language tag="tk-TK">tk-TK.mod_yoorecipe_search.ini</language>
+		<language tag="tk-TK">tk-TK.mod_yoorecipe_search.sys.ini</language>
+    </languages>
+	
+	<media destination="mod_yoorecipe_search" folder="media">
+		<filename>index.html</filename>
+		<folder>styles</folder>
+	</media>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					filter="safehtml"
+					label="MOD_YOORECIPE_SEARCH_FIELD_MODULE_CLASS_SFX"
+					description="MOD_YOORECIPE_SEARCH_FIELD_MODULE_CLASS_SFX_DESC"
+					default=""	
+				/>
+				<field name="spacer1" type="spacer" hr="true"/>
+				<field name="show_search_title" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_TITLE"
+					description="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_TITLE_DESC"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field name="show_search_categories" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_CATEGORIES"
+					description="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_CATEGORIES_DESC"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field name="show_search_ingredients" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_INGREDIENTS"
+					description="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_INGREDIENTS_DESC"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field name="show_search_prep_time" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_PREP_TIME"
+					description="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_PREP_TIME_DESC"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field name="show_search_cook_time" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_COOK_TIME"
+					description="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_COOK_TIME_DESC"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field name="show_search_author" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_AUTHOR"
+					description="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_AUTHOR_DESC"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field name="show_search_rated" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_RATED_MORE_THAN"
+					description="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_RATED_MORE_THAN_DESC"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field name="show_nutrition_facts" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_NUTRITION_FACTS"
+					description="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_NUTRITION_FACTS_DESC"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field name="show_search_cost" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_MAX_COST"
+					description="MOD_YOORECIPE_SEARCH_SHOW_SEARCH_MAX_COST_DESC"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_price"
+					type="radio"
+					label="MOD_YOORECIPE_SEARCH_PRICE_LABEL"
+					description="MOD_YOORECIPE_SEARCH_PRICE_LABEL_DESC"
+					default="0"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field name="spacer2" type="spacer" hr="true"/>
+				
+				<field name="intro_text" type="text" default="" filter="safehtml" 
+					label="MOD_YOORECIPE_SEARCH_FIELD_INTRO_TEXT"
+					description="MOD_YOORECIPE_SEARCH_FIELD_INTRO_TEXT_DESC"
+				/>
+				
+				<field name="categories_direction" type="list" default="dropdown"
+					label="MOD_YOORECIPE_SEARCH_FIELD_CATEGORY_DIRECTION"
+					description="MOD_YOORECIPE_SEARCH_FIELD_CATEGORY_DIRECTION_DESC"
+				>
+					<option value="dropdown">MOD_YOORECIPE_SEARCH_OPTION_DROPDOWN</option>
+					<option value="vertical">MOD_YOORECIPE_SEARCH_OPTION_VERTICAL</option>
+					<option value="horizontal">MOD_YOORECIPE_SEARCH_OPTION_HORIZONTAL</option>
+				</field>
+				
+				<field name="spacer3" type="spacer" hr="true"/>
+				
+				<field name="searchword_mandatory" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_SEARCHWORD_MANDATORY"
+					description="MOD_YOORECIPE_SEARCH_SEARCHWORD_MANDATORY_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="category_mandatory" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_CATEGORY_MANDATORY"
+					description="MOD_YOORECIPE_SEARCH_CATEGORY_MANDATORY_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="ingredients_mandatory" type="radio" default="1" 
+					label="MOD_YOORECIPE_SEARCH_INGREDIENTS_MANDATORY"
+					description="MOD_YOORECIPE_SEARCH_INGREDIENTS_MANDATORY_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="labels" label="MOD_YOORECIPE_SEARCH_FIELDSET_LABELS">
+				
+				<field name="title_lbl" type="text" default="" filter="safehtml" 
+					label="MOD_YOORECIPE_SEARCH_FIELD_TITLE_LBL"
+					description="MOD_YOORECIPE_SEARCH_FIELD_TITLE_LBL_DESC"
+				/>
+				
+				<field name="category_lbl" type="text" default="" filter="safehtml" 
+					label="MOD_YOORECIPE_SEARCH_FIELD_CATEGORY_LBL"
+					description="MOD_YOORECIPE_SEARCH_FIELD_CATEGORY_LBL_DESC"
+				/>
+				
+				<field name="author_lbl" type="text" default="" filter="safehtml" 
+					label="MOD_YOORECIPE_SEARCH_FIELD_AUTHOR_LBL"
+					description="MOD_YOORECIPE_SEARCH_FIELD_AUTHOR_LBL_DESC"
+				/>
+				
+				<field name="max_prep_time_lbl" type="text" default="" filter="safehtml" 
+					label="MOD_YOORECIPE_SEARCH_FIELD_MAX_PREP_TIME_LBL"
+					description="MOD_YOORECIPE_SEARCH_FIELD_MAX_PREP_TIME_LBL_DESC"
+				/>
+				
+				<field name="max_cook_time_lbl" type="text" default="" filter="safehtml" 
+					label="MOD_YOORECIPE_SEARCH_FIELD_MAX_COOK_TIME_LBL"
+					description="MOD_YOORECIPE_SEARCH_FIELD_MAX_COOK_TIME_LBL_DESC"
+				/>
+				
+				<field name="rated_lbl" type="text" default="" filter="safehtml" 
+					label="MOD_YOORECIPE_SEARCH_FIELD_RATED_LBL"
+					description="MOD_YOORECIPE_SEARCH_FIELD_RATED_LBL_DESC"
+				/>
+				
+				<field name="ingredients_lbl" type="text" default="" filter="safehtml" 
+					label="MOD_YOORECIPE_SEARCH_FIELD_INGREDIENTS_LBL"
+					description="MOD_YOORECIPE_SEARCH_FIELD_INGREDIENTS_LBL_DESC"
+				/>
+				
+				<field name="currency_lbl" type="text" default="" filter="safehtml" 
+					label="MOD_YOORECIPE_SEARCH_PRICE_LABEL"
+					description="MOD_YOORECIPE_SEARCH_PRICE_LABEL_DESC"
+				/>
+				
+				<field name="submit_lbl" type="text" default="" 
+					label="MOD_YOORECIPE_SEARCH_FIELD_SUBMIT_LBL"
+					description="MOD_YOORECIPE_SEARCH_FIELD_SUBMIT_LBL_DESC"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

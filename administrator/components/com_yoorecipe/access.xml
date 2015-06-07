@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_yoorecipe">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_CATEGORIES_ACCESS_EDITSTATE_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+		<action name="recipe.comments.report" title="COM_YOORECIPE_JACTION_REPORT_COMMENTS" description="COM_YOORECIPE_JACTION_REPORT_COMMENTS_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_YOORECIPE_ACCESS_DELETE_DESC" />
+		<action name="core.delete.own" title="COM_YOORECIPE_ACCESS_DELETEOWN" description="COM_YOORECIPE_ACCESS_DELETEOWN_DESC" />
+	</section>
+	<section name="category">
+		<action name="core.create" title="JACTION_CREATE" description="COM_CATEGORIES_ACCESS_CREATE_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="COM_CATEGORIES_ACCESS_DELETE_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="COM_CATEGORIES_ACCESS_EDIT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="COM_CATEGORIES_ACCESS_EDITSTATE_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="COM_CATEGORIES_ACCESS_EDITOWN_DESC" />
+	</section>
+</access>

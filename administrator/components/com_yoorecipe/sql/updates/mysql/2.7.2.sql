@@ -1,0 +1,2 @@
+ALTER TABLE `#__yoorecipe_rating` CHANGE `creation_date` `creation_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ;
+UPDATE `#__menu` set `link` = 'index.php?option=com_yoorecipe&view=comments' where `title`='COM_YOORECIPE_COMMENTS';

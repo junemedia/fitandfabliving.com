@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_OBRSS_MENU_FEED">
+		<message><![CDATA[COM_OBRSS_MENU_FEED_DESC]]></message>
+	</layout>
+	<state>
+		<name>COM_OBRSS_MENU_FEED</name>
+		<description>COM_OBRSS_MENU_FEED_DESC</description>
+		<params addpath="/administrator/components/com_obrss/elements/">
+			<param name="obrss_page_subheading" type="text" default="RSS Feeds" label="COM_OBRSS_ATTRIBS_SUBHEADING_LBL" description="COM_OBRSS_ATTRIBS_SUBHEADING_DESC" size="50" />
+			<param name="obrss_image" type="filelist" label="OBRSS_SETTINGS_IMAGE" description="OBRSS_SETTINGS_SELECT_IMAGE" directory="images/stories" />
+			<param name="obrss_image_align" type="list" label="OBRSS_SETTINGS_IMAGE_ALIGN">
+				<option>USE GLOBAL</option>
+				<option value="left">OBRSS_ALIGN_LEFT</option>
+				<option value="right">OBRSS_ALIGN_RIGHT</option>
+			</param>
+			<param name="obrss_description_source" type="list" label="OBRSS_SETTINGS_DESCRIPTION_OPTION" description="OBRSS_SETTINGS_DESCRIPTION_OPTION_DESC">
+				<option>USE GLOBAL</option>
+				<option value="1">OBRSS_SETTINGS_TEXT</option>
+			</param>
+			<param name="obrss_description" type="textarea" default="{RSS}" width="400" label="COM_OBRSS_ATTRIBS_DESCRIPTION_LBL" description="COM_OBRSS_ATTRIBS_DESCRIPTION_DESC" cols="50" rows="10" />
+			<param name="obrss_meta_description" type="textarea" default="" label="COM_OBRSS_ATTRIBS_META_DESC_DESC" description="COM_OBRSS_ATTRIBS_META_DESC_LBL" cols="40" rows="3" />
+			<param name="obrss_meta_keywords" type="textarea" default="" label="COM_OBRSS_ATTRIBS_META_KEYWORDS_DESC" description="COM_OBRSS_ATTRIBS_META_KEYWORDS_LBL" cols="40" rows="3" />
+		</params>
+		<fields name="params">
+			<fieldset name="basic" label="COM_OBRSS_ATTRIBS_FIELDSET">
+				<field name="obrss_page_subheading" type="text" default="RSS Feeds" description="COM_OBRSS_ATTRIBS_SUBHEADING_DESC" label="COM_OBRSS_ATTRIBS_SUBHEADING_LBL" size="50" />
+				<field name="obrss_image" type="imagelist" label="OBRSS_SETTINGS_IMAGE" description="OBRSS_SETTINGS_SELECT_IMAGE" directory="images" />
+				<field name="obrss_image_align" type="list" label="OBRSS_SETTINGS_IMAGE_ALIGN">
+					<option>JGLOBAL_USE_GLOBAL</option>
+					<option value="left">OBRSS_ALIGN_LEFT</option>
+					<option value="right">OBRSS_ALIGN_RIGHT</option>
+				</field>
+				<field name="obrss_description_source" type="list" label="OBRSS_SETTINGS_DESCRIPTION_OPTION" description="OBRSS_SETTINGS_DESCRIPTION_OPTION_DESC">
+					<option>JGLOBAL_USE_GLOBAL</option>
+					<option value="1">OBRSS_SETTINGS_TEXT</option>
+				</field>
+				<field name="obrss_description" type="editor" editor="tinymce" default="{RSS}" buttons="false" filter="safehtml" label="COM_OBRSS_ATTRIBS_DESCRIPTION_LBL" description="COM_OBRSS_ATTRIBS_DESCRIPTION_DESC" cols="50" rows="10" />
+			</fieldset>
+	</fields>
+	</state>
+</metadata>

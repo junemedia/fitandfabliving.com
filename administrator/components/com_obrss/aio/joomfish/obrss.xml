@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+	<name>obRSS</name>
+	<author>foobla.com</author>
+	<version>1.6.1</version>
+	<description>Definition for the obRSS component. http://foobla.com</description>
+	<copyright>(C) 2007-2012 foobla.com. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<reference>
+		<table name="obrss">
+			<field type="referenceid" name="id" translate="0">ID</field>
+			<field type="titletext" name="name" translate="1">Name</field>  
+			<field type="text" name="alias" translate="1" posthandler="filterName">Alias</field>
+			<field type="htmltext" name="description" translate="1">Description</field>
+			<field type="checked_out_by" name="checked_out" translate="0">Check out by</field>
+			<field type="checked_out_date" name="checked_out_time" translate="0">Check out date</field>  
+		</table>
+	</reference>
+</joomfish>

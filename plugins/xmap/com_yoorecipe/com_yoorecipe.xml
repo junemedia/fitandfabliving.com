@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id$ -->
+<extension type="plugin" group="xmap" version="1.6" method="upgrade">
+    <name>Xmap - YooRecipe Plugin</name>
+    <author>YooRock!</author>
+    <creationDate>08/13/2012</creationDate>
+    <copyright>Yoorock, All Rights Reserved</copyright>
+    <license>GPL 2.0</license>
+    <authorEmail>support@yoorock.fr</authorEmail>
+    <authorUrl>support@yoorock.fr</authorUrl>
+    <version>3.1.3</version>
+    <description>Add support for recipes and categories on Joomla 1.6 or newer</description>
+    <files>
+        <filename plugin="com_yoorecipe">com_yoorecipe.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <languages folder="language">
+        <!--
+        these files will be installed in the administrator/language folder.
+        -->
+        <language tag="da-DK">da-DK.plg_xmap_com_yoorecipe</language>
+        <language tag="en-GB">en-GB.plg_xmap_com_yoorecipe.ini</language>
+        <language tag="fr-FR">fr-FR.plg_xmap_com_yoorecipe.ini</language>
+        <language tag="pt-BR">pt-BR.plg_xmap_com_yoorecipe.ini</language>
+        <language tag="pt-PT">pt-PT.plg_xmap_com_yoorecipe.ini</language>
+        <language tag="sv-SE">sv-SE.plg_xmap_com_yoorecipe.ini</language>
+        <language tag="sl-SI">sl-SI.plg_xmap_com_yoorecipe.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+				<field name="cat_priority" type="list" default="-1" label="XMAP_SETTING_CAT_PRIORITY" description="XMAP_SETTING_CAT_PRIORITY_DESC">
+                    <option value="-1">XMAP_OPTION_USE_PARENT_MENU</option>
+                    <option value="0.0">0.0</option>
+                    <option value="0.1">0.1</option>
+                    <option value="0.2">0.2</option>
+                    <option value="0.3">0.3</option>
+                    <option value="0.4">0.4</option>
+                    <option value="0.5">0.5</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.7">0.7</option>
+                    <option value="0.8">0.8</option>
+                    <option value="0.9">0.9</option>
+                    <option value="1">1</option>
+                </field>
+                <field name="cat_changefreq" type="list" default="-1" label="XMAP_SETTING_CAT_CHANCE_FREQ" description="XMAP_SETTING_CAT_CHANCE_FREQ_DESC">
+                    <option value="-1">XMAP_OPTION_USE_PARENT_MENU</option>
+                    <option value="always">XMAP_OPTION_ALWAYS</option>
+                    <option value="hourly">XMAP_OPTION_HOURLY</option>
+                    <option value="daily">XMAP_OPTION_DAILY</option>
+                    <option value="weekly">XMAP_OPTION_WEEKLY</option>
+                    <option value="monthly">XMAP_OPTION_MONTHLY</option>
+                    <option value="yearly">XMAP_OPTION_YEARLY</option>
+                    <option value="never">XMAP_OPTION_NEVER</option>
+                </field>
+                <field name="recipe_priority" type="list" default="-1" label="XMAP_SETTING_RECIPE_PRIORITY" description="XMAP_SETTING_RECIPE_PRIORITY_DESC">
+                    <option value="-1">XMAP_OPTION_USE_PARENT_MENU</option>
+                    <option value="0.0">0.0</option>
+                    <option value="0.1">0.1</option>
+                    <option value="0.2">0.2</option>
+                    <option value="0.3">0.3</option>
+                    <option value="0.4">0.4</option>
+                    <option value="0.5">0.5</option>
+                    <option value="0.6">0.6</option>
+                    <option value="0.7">0.7</option>
+                    <option value="0.8">0.8</option>
+                    <option value="0.9">0.9</option>
+                    <option value="1">1</option>
+                </field>
+                <field name="recipe_changefreq" type="list" default="-1" label="XMAP_SETTING_RECIPE_CHANCE_FREQ" description="XMAP_SETTING_RECIPE_CHANCE_FREQ_DESC">
+                    <option value="-1">XMAP_OPTION_USE_PARENT_MENU</option>
+                    <option value="always">XMAP_OPTION_ALWAYS</option>
+                    <option value="hourly">XMAP_OPTION_HOURLY</option>
+                    <option value="daily">XMAP_OPTION_DAILY</option>
+                    <option value="weekly">XMAP_OPTION_WEEKLY</option>
+                    <option value="monthly">XMAP_OPTION_MONTHLY</option>
+                    <option value="yearly">XMAP_OPTION_YEARLY</option>
+                    <option value="never">XMAP_OPTION_NEVER</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

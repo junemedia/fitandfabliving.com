@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="obrss" method="upgrade">
+	<name>Content</name>
+	<author>foobla.com</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>foobla.com</copyright>
+	<authorEmail>info@foobla.com</authorEmail>
+	<authorUrl>http://www.foobla.com</authorUrl>
+	<version>3.1.0</version>
+	<description>Content add-on for obRSS, this add-on is builtin one</description>
+	<files>
+		<filename plugin="content">content.php</filename>
+		<filename plugin="content">content.png</filename>
+		<filename plugin="content">content.xml</filename>
+		<folder>elements</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="default">
+			<fieldset name="basic" addfieldpath="plugins/obrss/content/elements/">
+				<field name="frontpage" type="radio" class="btn-group" default="0" label="OBRSS_FRONTPAGE" description="OBRSS_FRONTPAGE_DES" >
+					<option value="0">OBRSS_FIELD_NO</option>
+					<option value="1">OBRSS_FIELD_YES</option>
+				</field>
+				<field name="access" type="list" class="" default="0" label="OBRSS_ACCESS_LEVEL" description="OBRSS_ACCESS_LEVEL_DESC" >
+					<option value="-1">OBRSS_ATTRIBS_IGNORE</option>
+					<option value="1">OBRSS_ATTRIBS_PUBLIC</option>
+					<option value="2">OBRSS_ATTRIBS_REGISTERED</option>
+					<option value="3">OBRSS_ATTRIBS_SPECIAL</option>
+				</field>
+				<field name="author" type="obAuthor" default="" label="OBRSS_FIELD_AUTHOR" description="OBRSS_FIELD_AUTHOR_DESC" />
+				<field name="categories" type="category" extension="com_content"
+					show_root="true"
+					required="true"
+					multiple="multiple" default="" label="OBRSS_ADDON_CONTENT_CATEGORIES" description="OBRSS_ADDON_CONTENT_CATEGORIES_DESC" />
+				<field name="excludearticle" type="textarea" rows="2" cols="30" default="" label="OBRSS_ADDON_CONTENT_EXCLUDED_ARTICLES" description="OBRSS_ADDON_CONTENT_EXCLUDED_ARTICLES_DESC" />
+				<field name="filter_keywords" type="textarea" rows="2" cols="30" default="" label="OBRSS_ADDON_CONTENT_KEYWORDS_FILTER" description="OBRSS_ADDON_CONTENT_KEYWORDS_FILTER_DESC" />
+				<field name="text" type="list" class="" default="introtext" label="OBRSS_TEXT" description="OBRSS_TEXT_DES" >
+					<option value="0">OBRSS_ADDON_CONTENT_INTROTEXT_ONLY</option>
+					<option value="1">OBRSS_ADDON_CONTENT_INTROTEXT_READMORE</option>
+					<option value="2">OBRSS_ADDON_CONTENT_INTROTEXT_FULLTEXT</option>
+					<option value="3">OBRSS_ADDON_CONTENT_FULLTEXT_ONLY</option>
+				</field>
+				<field name="orderby" type="list" class="" default="rdate" label="OBRSS_ORDER" description="OBRSS_ORDER_DES" >
+					<option value="date">OBRSS_OLDEST</option>
+					<option value="rdate">OBRSS_MOST_R</option>
+					<option value="alpha">OBRSS_TITLE_A</option>
+					<option value="ralpha">OBRSS_TITLE_R</option>
+					<option value="author">OBRSS_AUTHOR_A</option>
+					<option value="rauthor">OBRSS_AUTHOR_R</option>
+					<option value="hits">OBRSS_HITS</option>
+					<option value="random">OBRSS_RANDOM</option>
+				</field>
+				<field name="orderby_date" type="list" class="" default="created" label="OBRSS_ORDER_DATE" description="OBRSS_ORDER_DATE_DES" >
+					<option value="created">OBRSS_FIELD_CREATED_DATE</option>
+					<option value="modified">OBRSS_FIELD_MODIFIED_DATE</option>
+				</field>
+				<field name="image_enclosure" type="list" default="none" label="Enclosure Source" description="Enclosure Source" >
+					<option value="none">No enclosure</option>
+					<option value="text">Article Image</option>
+					<option value="intro">Intro Image (Joomla 2.5 only)</option>
+					<option value="full">Full Article Image (Joomla 2.5 only)</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

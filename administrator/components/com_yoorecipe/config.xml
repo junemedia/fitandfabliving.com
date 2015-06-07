@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="main-features"
+		label="COM_YOORECIPE_CONFIG_MAIN_FEATURES_SETTINGS_LABEL"
+		description="COM_YOORECIPE_CONFIG_MAIN_FEATURES_SETTINGS_LABEL_DESC"
+	>		
+		<field
+			name="prepare_content"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_PREPARE_CONTENT"
+			description="COM_YOORECIPE_RECIPE_FIELD_PREPARE_CONTENT_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="use_automatic_numbering"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_AUTOMATIC_NUMBERING" 
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_AUTOMATIC_NUMBERING_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="use_google_recipe"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_GOOGLE_RECIPE" 
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_GOOGLE_RECIPE_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="use_quantity_converter"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_QUANTITY_CONVERTER" 
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_QUANTITY_CONVERTER_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="use_fractions"
+			type="radio"
+			default="0"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_FRACTIONS" 
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_FRACTIONS_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="use_favourites"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_FAVOURITES" 
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_FAVOURITES_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="use_nutrition_facts"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_NUTRITION_FACTS" 
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_NUTRITION_FACTS_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="use_watermark"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_WATERMARK" 
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_WATERMARK_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="use_tags"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_TAGS" 
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_TAGS_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="show_author_name"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_AUTHOR_NAME"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_AUTHOR_NAME_DESC"
+			default="username"
+		>
+			<option value="username">COM_YOORECIPE_RECIPE_OPTION_USERNAME</option>
+			<option value="name">COM_YOORECIPE_RECIPE_OPTION_NAME</option>
+		</field>
+		
+		<field 
+			name="pagination_position"
+			type="list"
+			default="bottom"
+			label="COM_YOORECIPE_RECIPE_FIELD_PAGINATION_POSITION" 
+			description="COM_YOORECIPE_RECIPE_FIELD_PAGINATION_POSITION_DESC"
+		>
+			<option value="top">COM_YOORECIPE_OPTION_PAGINATION_POS_TOP</option>
+			<option value="bottom">COM_YOORECIPE_OPTION_PAGINATION_POS_BOTTOM</option>
+			<option value="both">COM_YOORECIPE_OPTION_PAGINATION_POS_BOTH</option>
+		</field>
+		
+		
+		<field name="spacer0"
+			type="spacer"
+			hr="true"
+		/>
+		
+		<field 
+			name="use_prices"
+			type="radio"
+			default="0"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_PRICES" 
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_PRICES_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="show_price"
+			type="radio"
+			label="COM_YOORECIPE_PRICE_LABEL"
+			description="COM_YOORECIPE_PRICE_LABEL_DESC"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="currency"
+			type="text"
+			default="€" 
+			label="COM_YOORECIPE_RECIPE_CURRENCY" 
+			description="COM_YOORECIPE_RECIPE_CURRENCY_DESC"
+		/>
+	</fieldset>
+	
+	<fieldset
+		name="recipes"
+		label="COM_YOORECIPE_CONFIG_RECIPES_SETTINGS_LABEL"
+		description="COM_YOORECIPE_CONFIG_RECIPES_SETTINGS_LABEL_DESC"
+	>	
+		<field name="thumbnail_width" type="integer" default="250" first="200" last="1000" step="50"
+			label="COM_YOORECIPE_RECIPE_FIELD_THUMBNAIL_WIDTH" 
+			description="COM_YOORECIPE_RECIPE_FIELD_THUMBNAIL_WIDTH_DESC"
+		/>
+		
+		<field
+			name="use_default_picture"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_DEFAULT_PICTURE"
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_DEFAULT_PICTURE_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="show_description"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_DESCRIPTION"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_DESCRIPTION_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_seasons"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_SEASONS"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_SEASONS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_author"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_AUTHOR"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_AUTHOR_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_category"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_CATEGORY"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_CATEGORY_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_difficulty"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_DIFFICULTY"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_DIFFICULTY_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_cost"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_COST"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_COST_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_rating"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_RATING"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_RATING_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="rating_style"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_RATING_STYLE"
+			description="COM_YOORECIPE_RECIPE_FIELD_RATING_STYLE_DESC"
+			default="stars"
+		>
+			<option value="stars">COM_YOORECIPE_RECIPE_OPTION_RATING_STYLE_STARS</option>
+			<option value="grade">COM_YOORECIPE_RECIPE_OPTION_RATING_STYLE_GRADE</option>
+		</field>
+		
+		<field
+			name="show_people_icons"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_PEOPLE_ICONS"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_PEOPLE_ICONS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="spacer1"
+			type="spacer"
+			hr="true"
+		/>
+		
+		<field
+			name="show_icons"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_ICONS"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_ICONS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_print_icon"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_PRINT_ICON"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_PRINT_ICON_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_email_icon"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_EMAIL_ICON"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_EMAIL_ICON_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<!-- removed since 2.2.0 -->
+		<!--field
+			name="show_pdf_icon"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_PDF_ICON"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_PDF_ICON_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field-->
+		
+		<field name="spacer2"
+			type="spacer"
+			hr="true"
+		/>
+			
+		<field
+			name="show_preparation_time"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_PREP_TIME"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_PREP_TIME_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_cook_time"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_COOK_TIME"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_COOK_TIME_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_wait_time"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_WAIT_TIME"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_WAIT_TIME_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="spacer21" type="spacer" hr="true"/>
+		
+		<field
+			name="show_kcal"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_KCAL_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_KCAL_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_diet"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_DIET_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_DIET_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+				
+		<field
+			name="show_veggie"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_VEGGIE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_VEGGIE_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_gluten_free"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_GLUTEN_FREE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_GLUTEN_FREE_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+				
+		<field
+			name="show_lactose_free"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_LACTOSE_FREE_LABEL"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_carbs"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_CARBS_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_CARBS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_fat"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_FAT_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_FAT_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_sfat"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_SATURATED_FAT_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_SATURATED_FAT_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_proteins"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_PROTEINS_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PROTEINS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_fibers"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_FIBERS_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_FIBERS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_salt"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_SALT_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_SALT_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="spacer9" type="spacer" hr="true"/>
+		
+		<field
+			name="use_video"
+			type="radio"
+			label="COM_YOORECIPE_COMMENTS_FIELD_USE_VIDEO"
+			description="COM_YOORECIPE_COMMENTS_FIELD_USE_VIDEO_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="video_height"
+			type="text"
+			label="COM_YOORECIPE_COMMENTS_FIELD_VIDEO_HEIGHT"
+			description="COM_YOORECIPE_COMMENTS_FIELD_VIDEO_HEIGHT_DESC"
+			default="390" 
+			filter="integer"
+		/>
+		
+		<field
+			name="video_width"
+			type="text"
+			label="COM_YOORECIPE_COMMENTS_FIELD_VIDEO_WIDTH"
+			description="COM_YOORECIPE_COMMENTS_FIELD_VIDEO_WIDTH_DESC"
+			default="640" 
+			filter="integer"
+		/>
+		
+		<field name="spacer10"
+			type="spacer"
+			hr="true"
+		/>
+		
+		<field
+			name="show_slider_tooltip"
+			type="radio"
+			label="COM_YOORECIPE_SHOW_SLIDER_TOOLTIP"
+			description="COM_YOORECIPE_SHOW_SLIDER_TOOLTIP_DESC"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="max_servings"
+			type="text"
+			filter="integer"
+			label="COM_YOORECIPE_MAX_SERVINGS"
+			description="COM_YOORECIPE_MAX_SERVINGS_DESC"
+			default="10"
+		/>
+		
+	</fieldset>
+	
+	<fieldset
+		name="categories"
+		label="COM_YOORECIPE_CONFIG_CATEGORIES_SETTINGS_LABEL"
+		description="COM_YOORECIPE_CONFIG_CATEGORIES_SETTINGS_LABEL_DESC"
+	>
+		<field name="show_category_title" type="radio"
+				label="JGLOBAL_SHOW_CATEGORY_TITLE"
+				description="JGLOBAL_SHOW_CATEGORY_TITLE_DESC"
+				default="1"
+			>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+		</field>
+
+		<field name="show_category_description"
+			type="radio"
+			default="1"
+			label="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_LABEL"
+			description="JGLOBAL_SHOW_CATEGORY_DESCRIPTION_DESC">
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="show_subcategories"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_CONFIG_SHOW_SUBCATEGORIES"
+			description="COM_YOORECIPE_CONFIG_SHOW_SUBCATEGORIES_DESC">
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+		</field>
+		
+		<field 
+			name="show_sub_categories_picture"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_YOORECIPE_FIELD_SHOW_SUB_CATEGORIES_PICTURES" 
+			description="COM_YOORECIPE_YOORECIPE_FIELD_SHOW_SUB_CATEGORIES_PICTURES_DESC"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="sub_categories_width"
+			type="text"
+			label="COM_YOORECIPE_COMMENTS_FIELD_SUBCATEGORIES_WIDTH"
+			description="COM_YOORECIPE_COMMENTS_FIELD_SUBCATEGORIES_WIDTH_DESC"
+			default="130" 
+			filter="integer"
+		/>
+		
+		<field
+			name="sub_categories_height"
+			type="text"
+			label="COM_YOORECIPE_COMMENTS_FIELD_SUBCATEGORIES_HEIGHT"
+			description="COM_YOORECIPE_COMMENTS_FIELD_SUBCATEGORIES_HEIGHT_DESC"
+			default="100" 
+			filter="integer"
+		/>
+		
+	</fieldset>
+	
+	<fieldset
+		name="display"
+		label="COM_YOORECIPE_CONFIG_DISPLAY_SETTINGS_LABEL"
+		description="COM_YOORECIPE_CONFIG_DISPLAY_SETTINGS_LABEL_DESC"
+	>
+		<field 
+			name="yoorecipe_layout"
+			type="list"
+			default="twocols"
+			label="COM_YOORECIPE_RECIPE_FIELD_LAYOUT" 
+			description="COM_YOORECIPE_RECIPE_FIELD_LAYOUT_DESC"
+		>
+			<option value="single">COM_YOORECIPE_FIELD_LAYOUT_1_COL</option>
+			<option value="twocols">COM_YOORECIPE_FIELD_LAYOUT_2_COLS</option>
+		</field>
+		
+		<field 
+			name="list_length"
+			type="list"
+			default="10" 
+			label="COM_YOORECIPE_RECIPE_FIELD_LIST_LENGTH" 
+			description="COM_YOORECIPE_RECIPE_FIELD_LIST_LENGTH_DESC"
+		>
+			<option value="10">10</option>
+			<option value="20">20</option>
+			<option value="30">30</option>
+			<option value="50">50</option>
+			<option value="100">100</option>
+		</field>
+		
+		<field 
+			name="blog_is_picture_clickable"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_YOORECIPE_FIELD_CLICKABLE_PICTURE" 
+			description="COM_YOORECIPE_YOORECIPE_FIELD_CLICKABLE_PICTURE_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field
+			name="blog_thumbnail_width"
+			type="integer" default="100" first="50" last="500" step="10"
+			label="COM_YOORECIPE_RECIPE_FIELD_THUMBNAIL_WIDTH" 
+			description="COM_YOORECIPE_RECIPE_FIELD_THUMBNAIL_WIDTH_DESC"
+		/>
+		
+		<field name="spacer1" type="spacer" hr="true" />
+		
+		<field 
+			name="blog_show_title"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_TITLE" 
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_TITLE_DESC"
+		>
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+		
+		<field 
+			name="blog_show_creation_date"
+			type="radio"
+			default="0"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_CREATION_DATE" 
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_CREATION_DATE_DESC"
+		>
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+		
+		<field 
+			name="blog_show_ingredients"
+			type="radio"
+			default="0"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_INGREDIENTS" 
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_INGREDIENTS_DESC"
+		>
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+		
+		<field 
+			name="blog_show_readmore"
+			type="radio"
+			default="0"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_READMORE" 
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_READMORE_DESC"
+		>
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+		
+		<field  name="spacer2" type="spacer" hr="true" />
+		
+		<field
+			name="blog_show_description"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_DESCRIPTION"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_DESCRIPTION_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="blog_show_author"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_AUTHOR"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_AUTHOR_DESC"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field 
+			name="blog_show_nb_views"
+			type="list"
+			default="0"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_NB_VIEWS" 
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_NB_VIEWS_DESC"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field 
+			name="blog_show_category_title"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_CATEGORY" 
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_CATEGORY_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="blog_show_difficulty"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_DIFFICULTY"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_DIFFICULTY_DESC"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="blog_show_cost"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_COST"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_COST_DESC"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="blog_show_rating"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_RATING"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_RATING_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="blog_rating_style"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_RATING_STYLE"
+			description="COM_YOORECIPE_RECIPE_FIELD_RATING_STYLE_DESC"
+			default="stars"
+		>
+			<option value="stars">COM_YOORECIPE_RECIPE_OPTION_RATING_STYLE_STARS</option>
+			<option value="grade">COM_YOORECIPE_RECIPE_OPTION_RATING_STYLE_GRADE</option>
+		</field>
+		
+		<field
+			name="blog_show_preparation_time"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_PREP_TIME"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_PREP_TIME_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="blog_show_cook_time"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_COOK_TIME"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_COOK_TIME_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="blog_show_wait_time"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_WAIT_TIME"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_WAIT_TIME_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="blog_show_seasons"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_SEASONS"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_SEASONS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+	</fieldset>
+	
+	<fieldset
+		name="search"
+		label="COM_YOORECIPE_CONFIG_SEARCH_SETTINGS_LABEL"
+		description="COM_YOORECIPE_CONFIG_SEARCH_SETTINGS_LABEL_DESC"
+	>
+		<field name="search_categories" type="radio"
+				label="COM_YOORECIPE_RECIPE_FIELD_SEARCH_CATEGORIES"
+				description="COM_YOORECIPE_RECIPE_FIELD_SEARCH_CATEGORIES_DESC"
+				default="1"
+			>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="search_ingredients" type="radio"
+				label="COM_YOORECIPE_RECIPE_FIELD_SEARCH_INGREDIENTS"
+				description="COM_YOORECIPE_RECIPE_FIELD_SEARCH_INGREDIENTS_DESC"
+				default="1"
+			>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="exclude_ingredients" type="radio"
+				label="COM_YOORECIPE_RECIPE_FIELD_EXCLUDE_INGREDIENTS"
+				description="COM_YOORECIPE_RECIPE_FIELD_EXCLUDE_INGREDIENTS_DESC"
+				default="1"
+			>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="show_search_prep_time" type="radio" default="1" 
+			label="COM_YOORECIPE_SEARCH_SHOW_SEARCH_PREP_TIME"
+			description="COM_YOORECIPE_SEARCH_SHOW_SEARCH_PREP_TIME_DESC"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="show_search_cook_time" type="radio" default="1" 
+			label="COM_YOORECIPE_SEARCH_SHOW_SEARCH_COOK_TIME"
+			description="COM_YOORECIPE_SEARCH_SHOW_SEARCH_COOK_TIME_DESC"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="show_search_author" type="radio" default="1" 
+			label="COM_YOORECIPE_SEARCH_SHOW_SEARCH_AUTHOR"
+			description="COM_YOORECIPE_SEARCH_SHOW_SEARCH_AUTHOR_DESC"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="show_search_rated" type="radio" default="1" 
+			label="COM_YOORECIPE_SEARCH_SHOW_SEARCH_RATED_MORE_THAN"
+			description="COM_YOORECIPE_SEARCH_SHOW_SEARCH_RATED_MORE_THAN_DESC"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="show_search_cost" type="radio" default="1" 
+			label="COM_YOORECIPE_SEARCH_SHOW_SEARCH_COST"
+			description="COM_YOORECIPE_SEARCH_SHOW_SEARCH_COST_DESC"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_search_price"
+			type="radio"
+			label="COM_YOORECIPE_SEARCH_PRICE_LABEL"
+			description="COM_YOORECIPE_SEARCH_PRICE_LABEL_DESC"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="spacer3" type="spacer" hr="true"/>
+		
+		<field name="searchword_mandatory" type="radio" default="1" 
+					label="COM_YOORECIPE_SEARCH_SEARCHWORD_MANDATORY"
+					description="COM_YOORECIPE_SEARCH_SEARCHWORD_MANDATORY_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="category_mandatory" type="radio" default="1" 
+			label="COM_YOORECIPE_SEARCH_CATEGORY_MANDATORY"
+			description="COM_YOORECIPE_SEARCH_CATEGORY_MANDATORY_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="ingredients_mandatory" type="radio" default="0" 
+			label="COM_YOORECIPE_SEARCH_INGREDIENTS_MANDATORY"
+			description="COM_YOORECIPE_SEARCH_INGREDIENTS_MANDATORY_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="spacer31" type="spacer" hr="true"/>
+		
+		<field name="include_search_on_description" type="radio" default="1" 
+					label="COM_YOORECIPE_SEARCH_INCLUDE_SEARCH_ON_DESCRIPTION"
+					description="COM_YOORECIPE_SEARCH_INCLUDE_SEARCH_ON_DESCRIPTION_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="include_search_on_preparation" type="radio" default="1" 
+					label="COM_YOORECIPE_SEARCH_INCLUDE_SEARCH_ON_PREPARATION"
+					description="COM_YOORECIPE_SEARCH_INCLUDE_SEARCH_ON_PREPARATION_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="include_search_on_tags" type="radio" default="1" 
+					label="COM_YOORECIPE_SEARCH_INCLUDE_SEARCH_ON_TAGS"
+					description="COM_YOORECIPE_SEARCH_INCLUDE_SEARCH_ON_TAGS_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="spacer32" type="spacer" hr="true"/>
+		
+		<field name="search_categories_display" type="list" default="dropdown" 
+					label="COM_YOORECIPE_SEARCH_CATEGORIES_DISPLAY"
+					description="COM_YOORECIPE_SEARCH_CATEGORIES_DISPLAY_DESC"
+		>
+			<option value="flat">COM_YOORECIPE_SEARCH_FLAT_CATEGORIES</option>
+			<option value="dropdown">COM_YOORECIPE_SEARCH_DROPDOWN_CATEGORIES</option>
+		</field>
+
+	</fieldset>
+	
+	<fieldset
+		name="comments"
+		label="COM_YOORECIPE_CONFIG_COMMENTS_SETTINGS_LABEL"
+		description="COM_YOORECIPE_CONFIG_COMMENTS_SETTINGS_LABEL_DESC"
+	>
+		<field
+			name="enable_comments"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_ENABLE_COMMENTS"
+			description="COM_YOORECIPE_RECIPE_FIELD_ENABLE_COMMENTS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="nb_comments_to_fetch"
+			type="text"
+			label="COM_YOORECIPE_COMMENTS_FIELD_NB_COMMENTS_TO_FETCH"
+			description="COM_YOORECIPE_COMMENTS_FIELD_NB_COMMENTS_TO_FETCH_DESC"
+			default="" 
+			filter="integer"
+		/>
+		
+		<field
+			name="register_to_comment"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_REGISTER_TO_COMMENT"
+			description="COM_YOORECIPE_RECIPE_FIELD_REGISTER_TO_COMMENT_DESC"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="auto_publish_comment"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_AUTO_PUBLISH_COMMENT"
+			description="COM_YOORECIPE_RECIPE_FIELD_AUTO_PUBLISH_COMMENT_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="show_recaptch"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_RECAPTCH"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_RECAPTCH_DESC"
+			default="std"
+		>
+			<option value="no">JNO</option>
+			<option value="std">COM_YOORECIPE_RECAPTCH_STD</option>
+			<option value="recaptcha">COM_YOORECIPE_RECAPTCH_RECAPTCHA</option>
+		</field>
+		
+		<field
+			name="show_email"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_EMAIL"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_EMAIL_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="send_email_on_comment"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SEND_EMAIL_ON_COMMENT"
+			description="COM_YOORECIPE_RECIPE_FIELD_SEND_EMAIL_ON_COMMENT_DESC"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="send_email_on_comment_to_author"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SEND_EMAIL_ON_COMMENT_TO_AUTHOR"
+			description="COM_YOORECIPE_RECIPE_FIELD_SEND_EMAIL_ON_COMMENT_TO_AUTHOR_DESC"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="comments_manager"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_COMMENTS_MANAGER"
+			description="COM_YOORECIPE_RECIPE_FIELD_COMMENTS_MANAGER_DESC"
+			default="admin"
+		>
+			<option value="admin">COM_YOORECIPE_OPTION_ADMIN</option>
+			<option value="admin_and_owner">COM_YOORECIPE_OPTION_ADMIN_AND_RECIPE_AUTHOR</option>
+		</field>
+		
+		<field
+			name="recaptcha_public_key"
+			type="text"
+			label="COM_YOORECIPE_COMMENTS_FIELD_RECAPTCHA_PUBLIC_KEY"
+			description="COM_YOORECIPE_COMMENTS_FIELD_RECAPTCHA_PUBLIC_KEY_DESC"
+			default="" 
+		/>
+		
+		<field
+			name="recaptcha_private_key"
+			type="text"
+			label="COM_YOORECIPE_COMMENTS_FIELD_RECAPTCHA_PRIVATE_KEY"
+			description="COM_YOORECIPE_COMMENTS_FIELD_RECAPTCHA_PRIVATE_KEY_DESC"
+			default="" 
+		/>
+	</fieldset>
+	
+	<fieldset
+		name="social_sharing"
+		label="COM_YOORECIPE_CONFIG_SOCIAL_SETTINGS_LABEL"
+		description="COM_YOORECIPE_CONFIG_SOCIAL_SETTINGS_LABEL_DESC"
+	>
+		<field
+			name="use_social_sharing"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_SOCIAL_SHARING"
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_SOCIAL_SHARING_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="bookmark_size" type="list" default="small" label="COM_YOORECIPE_FIELD_SOCIAL_GOOGLE_SIZE" description="COM_YOORECIPE_FIELD_SOCIAL_GOOGLE_SIZE_DESC">
+			<option value="small">COM_YOORECIPE_FIELD_SOCIAL_GOOGLE_SIZE_SMALL</option>
+			<option value="tall">COM_YOORECIPE_FIELD_SOCIAL_GOOGLE_SIZE_TALL</option>
+		</field>
+		
+		<field name="spacer5" type="spacer" hr="true" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_HIDE"/>
+		
+		<field name="show_on_top" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_ON_TOP" description="COM_YOORECIPE_FIELD_SOCIAL_SHOW_ON_TOP_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_on_bottom" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_ON_BOTTOM" description="COM_YOORECIPE_FIELD_SOCIAL_SHOW_ON_BOTTOM_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="show_title" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_TITLE" description="COM_YOORECIPE_FIELD_SOCIAL_SHOW_TITLE_DESC">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="title" type="text" filter="safehtml" default="" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_TITLE" description="COM_YOORECIPE_FIELD_SOCIAL_TITLE_DESC"/>
+		
+		<field name="spacer4" type="spacer" hr="true" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_HIDE"/>
+		
+		<field name="show_googleplus1" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_GOOGLEPLUS1">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_pinterest" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_PINTEREST">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_twitter" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_TWITTER">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_facebook" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_FACEBOOK">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_delicious" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_DELICIOUS">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_diggthis" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_DIGGTHIS">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_reddit" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_REDDIT">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_stumbleupon" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_STUMBLEUPON">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_myspace" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_MYSPACE">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field name="show_technorati" type="radio" default="1" label="COM_YOORECIPE_FIELD_SOCIAL_SHOW_TECHNORATI">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+	</fieldset>
+	
+	<fieldset
+		name="frontend_editing"
+		label="COM_YOORECIPE_CONFIG_FRONTEND_EDITING_SETTINGS_LABEL"
+		description="COM_YOORECIPE_CONFIG_FRONTEND_EDITING_SETTINGS_LABEL_DESC"
+	>
+		<field
+			name="upload_system"
+			type="list"
+			label="COM_YOORECIPE_RECIPE_FIELD_UPLOAD_SYSTEM"
+			description="COM_YOORECIPE_RECIPE_FIELD_UPLOAD_SYSTEM_DESC"
+			default="dragndrop"
+		>
+			<option value="std">COM_YOORECIPE_UPLOAD_STD</option>
+			<option value="dragndrop">COM_YOORECIPE_UPLOAD_DRAG_AND_DROP</option>
+			<option value="flash">COM_YOORECIPE_UPLOAD_FLASH</option>
+		</field>
+		
+		<field 
+			name="show_add_recipe_button"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_ADD_RECIPE_BUTTON" 
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_ADD_RECIPE_BUTTON_DESC"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field name="auto_publish" type="radio" default="1" label="COM_YOORECIPE_FIELD_FRONTEND_AUTO_PUBLISH" description="COM_YOORECIPE_FIELD_FRONTEND_AUTO_PUBLISH_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="auto_validate" type="radio" default="0" label="COM_YOORECIPE_FIELD_FRONTEND_AUTO_VALIDATE" description="COM_YOORECIPE_FIELD_FRONTEND_AUTO_VALIDATE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="spacer7" type="spacer" hr="true"/>		
+		
+		<field 
+			name="notify_on_create"
+			type="radio"
+			default="0"
+			label="COM_YOORECIPE_RECIPE_FIELD_NOTIFY_ON_CREATE" 
+			description="COM_YOORECIPE_RECIPE_FIELD_NOTIFY_ON_CREATE_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="notify_on_validate"
+			type="radio"
+			default="0"
+			label="COM_YOORECIPE_RECIPE_FIELD_NOTIFY_ON_VALIDATE" 
+			description="COM_YOORECIPE_RECIPE_FIELD_NOTIFY_ON_VALIDATE_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="notify_admin_on_create"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_NOTIFY_ADMIN_ON_CREATE" 
+			description="COM_YOORECIPE_RECIPE_FIELD_NOTIFY_ADMIN_ON_CREATE_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field 
+			name="notify_admin_on_update"
+			type="radio"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_NOTIFY_ADMIN_ON_UPDATE" 
+			description="COM_YOORECIPE_RECIPE_FIELD_NOTIFY_ADMIN_ON_UPDATE_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="thumbnail_edit_width" type="integer" default="250" first="80" last="500" step="10"
+				label="COM_YOORECIPE_RECIPE_FIELD_THUMBNAIL_WIDTH" 
+				description="COM_YOORECIPE_RECIPE_FIELD_THUMBNAIL_WIDTH_DESC"
+		/>
+		
+		<field name="max_upload_size" type="integer" default="2000" first="100" last="5000" step="100"
+				label="COM_YOORECIPE_RECIPE_FIELD_MAX_UPLOAD_SIZE" 
+				description="COM_YOORECIPE_RECIPE_FIELD_MAX_UPLOAD_SIZE_DESC"
+		/>
+		
+		<field name="authorized_extensions" type="text" default="jpg,png,gif" first="1" last="10" step="1"
+				label="COM_YOORECIPE_RECIPE_FIELD_AUTHORIZED_EXTENSIONS" 
+				description="COM_YOORECIPE_RECIPE_FIELD_AUTHORIZED_EXTENSIONS_DESC"
+		/>
+		
+		<field name="spacer62" type="spacer" hr="true"/>		
+		
+		<field name="use_recipe_settings" type="list"
+			default="1"
+			label="COM_YOORECIPE_RECIPE_FIELD_USE_RECIPE_SETTINGS" 
+			description="COM_YOORECIPE_RECIPE_FIELD_USE_RECIPE_SETTINGS_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field
+			name="show_seasons_fe"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_SEASONS"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_SEASONS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_description_fe"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_DESCRIPTION"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_DESCRIPTION_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_difficulty_fe"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_DIFFICULTY"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_DIFFICULTY_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_cost_fe"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_COST"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_COST_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_price_fe"
+			type="radio"
+			label="COM_YOORECIPE_PRICE_LABEL"
+			description="COM_YOORECIPE_PRICE_LABEL_DESC"
+			default="0"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		<field
+			name="show_preparation_time_fe"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_PREP_TIME"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_PREP_TIME_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_cook_time_fe"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_COOK_TIME"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_COOK_TIME_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_wait_time_fe"
+			type="radio"
+			label="COM_YOORECIPE_RECIPE_FIELD_SHOW_WAIT_TIME"
+			description="COM_YOORECIPE_RECIPE_FIELD_SHOW_WAIT_TIME_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_video_fe"
+			type="radio"
+			label="COM_YOORECIPE_COMMENTS_FIELD_USE_VIDEO"
+			description="COM_YOORECIPE_COMMENTS_FIELD_USE_VIDEO_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+	
+		<field name="spacer61" type="spacer" hr="true"/>
+	
+		<field
+			name="show_kcal_fe"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_KCAL_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_KCAL_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_diet_fe"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_DIET_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_DIET_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+				
+		<field
+			name="show_veggie_fe"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_VEGGIE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_VEGGIE_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_gluten_free_fe"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_GLUTEN_FREE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_GLUTEN_FREE_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+				
+		<field
+			name="show_lactose_free_fe"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_LACTOSE_FREE_LABEL"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_carbs_fe"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_CARBS_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_CARBS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_fat_fe"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_FAT_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_FAT_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_sfat_fe"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_SATURATED_FAT_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_SATURATED_FAT_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_proteins_fe"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_PROTEINS_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PROTEINS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_fibers_fe"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_FIBERS_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_FIBERS_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+		
+		<field
+			name="show_salt_fe"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_SALT_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_SALT_DESC"
+			default="1"
+		>
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+		</field>
+	</fieldset>
+	
+	<fieldset
+		name="SEO"
+		label="COM_YOORECIPE_SETTINGS_SEO"
+		description="COM_YOORECIPE_SETTINGS_SEO_DESC"
+		>
+
+		<field
+			name="seo_recipe"
+			type="text"
+			label="COM_YOORECIPE_SEO_RECIPE"
+			description="COM_YOORECIPE_SEO_RECIPE_DESC"
+			class="inputbox"
+			default="recipe"
+		/>
+
+		<field
+			name="seo_categories"
+			type="text"
+			label="COM_YOORECIPE_SEO_CATEGORIES"
+			description="COM_YOORECIPE_SEO_CATEGORIES_DESC"
+			class="inputbox"
+			default="category"
+		/>
+		
+		<field
+			name="seo_edit"
+			type="text"
+			label="COM_YOORECIPE_SEO_EDIT"
+			description="COM_YOORECIPE_SEO_EDIT_DESC"
+			class="inputbox"
+			default="edit"
+		/>
+		
+		<field
+			name="seo_user"
+			type="text"
+			label="COM_YOORECIPE_SEO_USER"
+			description="COM_YOORECIPE_SEO_USER_DESC"
+			class="inputbox"
+			default="user"
+		/>
+		
+		<field
+			name="seo_my_cookbook"
+			type="text"
+			label="COM_YOORECIPE_SEO_MY_RECIPES"
+			description="COM_YOORECIPE_SEO_MY_RECIPES_DESC"
+			class="inputbox"
+			default="my-cookbook"
+		/>
+		
+		<field
+			name="seo_letter"
+			type="text"
+			label="COM_YOORECIPE_SEO_LETTER"
+			description="COM_YOORECIPE_SEO_LETTER_DESC"
+			class="inputbox"
+			default="letter"
+		/>
+	</fieldset>
+	
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_yoorecipe"
+			section="component" />
+	</fieldset>
+</config>

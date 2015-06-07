@@ -1,0 +1,38 @@
+#rounded-corner {
+    border-collapse: collapse;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 12px;
+    text-align: left;
+    width: 480px;
+}
+#rounded-corner thead th.rounded-company {
+    background: url("../images/nicetable/left.png") no-repeat scroll left -1px #B9C9FE;
+}
+#rounded-corner thead th.rounded-q4 {
+    background: url("../images/nicetable/right.png") no-repeat scroll right -1px #B9C9FE;
+}
+#rounded-corner th {
+    background: none repeat scroll 0 0 #B9C9FE;
+    color: #003399;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+}
+#rounded-corner tr, #rounded-corner td {
+	border:0;
+}
+#rounded-corner td {
+    background: none repeat scroll 0 0 #E8EDFF;
+    border-top: 1px solid #FFFFFF;
+    color: #666699;
+    padding: 8px;
+}
+#rounded-corner tfoot td.rounded-foot-left {
+    background: url("../images/nicetable/botleft.png") no-repeat scroll left bottom #E8EDFF;
+}
+#rounded-corner tfoot td.rounded-foot-right {
+    background: url("../images/nicetable/botright.png") no-repeat scroll right bottom #E8EDFF;
+}
+#rounded-corner tbody tr:hover td {
+    background: none repeat scroll 0 0 #D0DAFD;
+}

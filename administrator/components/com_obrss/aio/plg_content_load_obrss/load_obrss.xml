@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>Content - Load obRSS</name>
+	<author>foobla.com</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>(C) 2007-2013 foobla.com. All right reserved.</copyright>
+	<authorEmail>admin@foobla.com</authorEmail>
+	<authorUrl>foobla.com</authorUrl>
+	<version>3.1.0</version>
+	<license>GNU/GPL</license>
+	<description>Loads obRSS within Content, Syntax: {rss FEED-ID}, for example: {rss 2} </description>
+	<files>
+		<filename plugin="load_obrss">load_obrss.php</filename>
+		<filename plugin="load_obrss">load_obrss.xml</filename>
+	</files>
+	
+	<!-- Joomla 1.6+ -->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="enabled" type="radio" default="1" label="Enable Plugin" description="PARAMENABLED">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_YOORECIPE_YOORECIPE_VIEW_LANDINGPAGE">
+		<message>COM_YOORECIPE_YOORECIPE_VIEW_LANDINGPAGE_DESC</message>
+	</layout>
+
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<fieldset name="basic" label="JGLOBAL_CATEGORIES_OPTIONS">
+
+			<field 
+				name="show_title"
+				type="radio"
+				default="1"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_TITLE" 
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_TITLE_DESC"
+			>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			
+			<field 
+				name="frontpage_lbl"
+				type="text"
+				default=""
+				label="COM_YOORECIPE_YOORECIPE_FIELD_PAGE_TITLE_LBL" 
+				description="COM_YOORECIPE_YOORECIPE_FIELD_PAGE_TITLE_LBL_DESC"
+			/>
+			
+			<field 
+				name="browse_by_letter"
+				type="radio"
+				default="1"
+				label="COM_YOORECIPE_YOORECIPE_FIELD_BROWSE_BY_LETTER" 
+				description="COM_YOORECIPE_YOORECIPE_FIELD_BROWSE_BY_LETTER_DESC"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field 
+				name="recipe_types"
+				type="list"
+				default="mostpopular"
+				label="COM_YOORECIPE_RECIPE_FIELD_RECIPE_TYPES" 
+				description="COM_YOORECIPE_RECIPE_FIELD_RECIPE_TYPES_DESC"
+			>
+				<option value="featured">featured</option>
+				<option value="mostpopular">mostpopular</option>
+				<option value="mostread">mostread</option>
+				<option value="mostrecents">mostrecents</option>
+			</field>
+			
+			<field  name="spacer1" type="spacer" hr="true" />
+			
+			<field 
+				name="browse_by_categories"
+				type="radio"
+				default="1"
+				label="COM_YOORECIPE_YOORECIPE_FIELD_BROWSE_BY_CATEGORIES" 
+				description="COM_YOORECIPE_YOORECIPE_FIELD_BROWSE_BY_CATEGORIES_DESC"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field 
+				name="show_sub_categories_picture"
+				type="radio"
+				default="1"
+				label="COM_YOORECIPE_YOORECIPE_FIELD_SHOW_SUB_CATEGORIES_PICTURES" 
+				description="COM_YOORECIPE_YOORECIPE_FIELD_SHOW_SUB_CATEGORIES_PICTURES_DESC"
+			>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			
+			<field  name="spacer2" type="spacer" hr="true" />
+			
+			<field 
+				name="show_add_recipe_button"
+				type="radio"
+				default="1"
+				label="COM_YOORECIPE_RECIPE_FIELD_SHOW_ADD_RECIPE_BUTTON" 
+				description="COM_YOORECIPE_RECIPE_FIELD_SHOW_ADD_RECIPE_BUTTON_DESC"
+			>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+			
+		</fieldset>
+	</fields>
+</metadata>

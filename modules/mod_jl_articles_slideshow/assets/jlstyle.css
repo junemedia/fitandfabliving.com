@@ -1,0 +1,331 @@
+/**
+ * @version		$Id: $
+ * @author		Codextension
+ * @package		Joomla!
+ * @subpackage	Module
+ * @copyright	Copyright (C) 2008 - 2012 by Codextension. All rights reserved.
+ * @license		GNU/GPL, see LICENSE
+ */
+/* CSS Document */
+.jl-ass{color:#FFF }
+.jl-ass .jlass-container{width:auto; height:auto	; overflow:hidden;	position:relative;}
+.jl-ass li { list-style-type:none!important; padding:0; margin:0}
+.jl-ass h4 { text-transform:inherit;margin:0!important;padding:0;background:none!important;color:#E5E5E5;}
+.jl-ass .preload{height:100%;width:100%;background:#E9E9E9;position:absolute;top:0;left:0;z-index:100000;color:#FFF;text-align:center}
+.jl-ass .preload div{height:100%;width:100%;background:transparent url(images/load-indicator.gif) no-repeat scroll 50% 50%;}
+/* main flash */
+.jl-ass .jl-main-wapper{
+	overflow:hidden;
+	padding:0px;
+	height:100%;
+	width:600px;
+	position:relative;
+	overflow:hidden;
+}
+
+.jl-ass .jl-main-wapper .jl-main-item{
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+.jl-ass .jl-main-wapper .jl-main-item img{
+	padding:0px;
+}
+
+.jl-ass .jl-description{
+	z-index:3;
+	position:absolute;
+	bottom:20px;
+	left:50px;		
+	width: 400px;
+	background:url(images/transparent_bg2.png);
+	padding:10px;
+
+	/* filter:0.7(opacity:60) */
+}
+.jl-ass .jl-description h4{
+	line-height:1.2;
+}
+.jl-ass .jl-description p{
+	  margin:0 8px;
+	  padding:8px 0
+}
+.jl-ass .jl-description h4 a{;
+	 margin:0;
+	 color:#E5E5E5;
+	 text-decoration:none;
+	 text-transform:none;
+	 font-size:20px;
+	 padding:20px 8px 2px;
+	 font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif;
+}
+.jl-ass .jl-description h4 a:hover{
+	color:#FF6;
+	text-decoration:underline;
+}
+/* item navigator */
+.jl-ass ul.jl-navigator{top:0;padding:0;margin:0;position:absolute;width:100%;}
+.jl-ass ul.jl-navigator li{
+	cursor:hand;
+	cursor:pointer;
+	list-style:none;
+	width:100%;
+	padding:0!important;
+	margin:0!important;
+	background:none!important;
+	position: relative;
+}
+.jl-ass .jl-navigator-outer{
+	position:absolute;
+	right:0;
+	top:00px;
+	z-index:3;
+	height:300px;
+	width:310px;
+	/*background: #000;*/
+}
+
+.jl-ass .jl-navigator li.active{
+	/*background:url(images/arrow-bg.png) no-repeat scroll left center!important;*/
+}
+.jl-ass .jl-navigator li.active h4 a{
+color:#fff !important;
+}
+.jl-navigator li:hover{}
+.jl-ass .jl-navigator li h4{
+	font-size:100%;
+	/*padding:30px 0 0 !important;
+	margin: 0 0 5px;*/
+	color:#000000;
+	text-transform: capitalize;
+	font-size: 16px;
+	font-weight: bold;
+    letter-spacing: 1px;
+	display:table-cell;
+	height:89px;
+	vertical-align: middle;
+}
+.jl-ass .jl-navigator li div.jlcontent{
+	background:#FFF;
+	width:100%;
+	height:100%;
+	float:left;
+	position:relative;
+	/*margin-left:15px;*/
+	padding:0;
+	border-bottom:1px dashed #808080;
+}
+.jl-ass .jl-navigator li div.jlcontent div.inner-jlcontent{
+	padding-left:15px;
+}
+.jl-ass .jl-navigator li div.jlcontent p{
+	margin:0;
+	padding:0;
+}
+.jl-ass .jl-navigator li.active div.nav-arrow {
+    background: url("images/active-thumb.png") repeat-x scroll 0 0 transparent;
+    height: 45px;
+    left: -21px;
+    position: absolute;
+    top: 26%;
+    width: 21px;
+}
+
+.jl-ass .jl-navigator li.active div.jlcontent{background:#FF90CB;color:#FFF;}
+.jl-ass .jl-navigator li div.jlcontent{color:#666;}
+.jl-ass .jl-navigator li img{	margin:15px 15px 0 0;float:left;border:#F5F5F5 solid 2px;}
+.jl-ass .jl-navigator li:hover img{ -moz-transition:border-color 1s; border-color:#C3C3C3  }
+.jl-ass .jl-navigator li.active h4, .jl-ass .jl-navigator a{color:#FFF;padding:0;right:0}
+.jl-ass .jl-buttons-control  .jl-previous, .jl-ass .jl-buttons-control .jl-next {
+	z-index:4;
+	position:absolute;
+	top:45%;
+	height:42px;
+	display:block;
+	width:42px;
+	overflow:hidden;
+	text-indent:-999em;}
+.jl-ass .jl-next{	right:0;background:url(images/next.png) no-repeat;}
+.jl-ass .jl-previous{	left:0;	background:url(images/previous.png) no-repeat;}
+.jl-ass  .jl-proccessbar{  width:100%; height:4px; position:absolute; top:0px;background:url(bg.png); z-index:9 }
+
+.jl-ass    .jl-startstop{ width:42px;height:42px;cursor:hand; cursor:pointer; position:absolute; left:40%; z-index:8}
+.jl-ass   .jl-startstop div{ width:100%; height:100%;}
+.jl-ass   .jl-startstop .jl-start{ background:url(images/pause.png) no-repeat center center}
+.jl-ass    .jl-startstop .jl-stop{ background:url(images/play.png) no-repeat center center}
+
+/**
+ * Theme setting
+*/
+/* grey theme */
+.jl-ass .grey{	border:1px solid #C5C5C5;	}
+.jl-ass .grey .jl-navigator li{background:none!important;    }
+.jl-ass .grey .jl-navigator li div.jlcontent{
+	border-bottom:	1px solid #C5C5C5;
+	background:url(images/transparent_bg.png) repeat transparent;
+}
+.jl-ass .grey .jl-navigator li.active div.jlcontent{
+	background:url(images/grey/grad-bg.png) repeat-x !important; 
+	color:#fff ;
+}
+.jl-ass .grey .jl-navigator li div.jlcontent h4,.jl-ass .grey .jl-navigator li div.jlcontent p{
+	color:#fff ;
+}
+.jl-ass .grey .jl-navigator li.active div.nav-arrow{
+	background: url("images/grey/active-thumb.png") no-repeat scroll 0 0 transparent;
+}
+.jl-ass .grey .jl-navigator li.active div.nav-arrow-left{
+    background: url("images/grey/active-thumb.png") repeat-x scroll 21px 0 transparent;
+    right:-21px;
+}
+/* blue */
+.jl-ass .blue{border:1px solid #D9E1E7;}
+.jl-ass .blue .jl-navigator li{background:none!important;	}
+.jl-ass .blue .jl-navigator li div.jlcontent{background:#F3F8FB; }
+.jl-ass .blue .jl-navigator li.active div.jlcontent{background:url(images/blue/grad-bg.png) repeat-x  !important; color:#FFF  }
+.jl-ass .blue .jl-navigator h4,  .jl-ass  .blue .jl-navigator a{	color:#3B6197  }
+.jl-ass .blue .jl-navigator li div.jlcontent{	color:#676767;border-bottom:1px solid #D9E1E7; }
+.jl-ass .blue .jl-navigator li.active a{ color:#FFF}
+.jl-ass .blue .jl-navigator li.active div.nav-arrow{
+	background: url("images/blue/active-thumb.png") no-repeat scroll 0 0 transparent;
+}
+.jl-ass .blue .jl-navigator li.active div.nav-arrow-left{
+    background: url("images/blue/active-thumb.png") repeat-x scroll 21px 0 transparent;
+    right:-21px;
+}
+/**
+ * red
+*/
+.jl-ass .red{border:1px solid #E5D7F1;	}
+.jl-ass .red .jl-navigator li{background:none!important;  }
+.jl-ass .red .jl-navigator li div.jlcontent{border-bottom:	1px solid #C5C5C5;}
+.jl-ass .red .jl-navigator li.active div.jlcontent{	background:url(images/red/grad-bg.png) repeat-x !important;  }
+.jl-ass .red .jl-navigator li.active div.nav-arrow{
+	background: url("images/red/active-thumb.png") no-repeat scroll 0 0 transparent;
+}
+.jl-ass .red .jl-navigator li.active div.nav-arrow-left{
+    background: url("images/red/active-thumb.png") repeat-x scroll 21px 0 transparent;
+    right:-21px;
+}
+/**
+ * lime
+*/
+.jl-ass .lime{border:1px solid #E5D7F1;	}
+.jl-ass .lime .jl-navigator li{background:none!important;  }
+.jl-ass .lime .jl-navigator li div.jlcontent{border-bottom:	1px solid #C5C5C5;}
+.jl-ass .lime .jl-navigator li.active div.jlcontent{background:#92C362 !important;}
+.jl-ass .lime .jl-navigator li.active div.nav-arrow{
+	background: url("images/lime/active-thumb.png") no-repeat scroll 0 0 transparent;
+}
+.jl-ass .lime .jl-navigator li.active div.nav-arrow-left{
+    background: url("images/lime/active-thumb.png") repeat-x scroll 21px 0 transparent;
+    right:-21px;
+}
+.jl-ass .lime .jl-navigator li div.jlcontent{
+	border-bottom:	1px solid #C5C5C5;
+	background:url(images/transparent_bg.png) repeat transparent;
+}
+.jl-ass .lime .jl-navigator li div.jlcontent h4,.jl-ass .lime .jl-navigator li div.jlcontent p{
+	color:#fff;
+}
+
+/**
+ * teal
+*/
+.jl-ass .teal{border:1px solid #E5D7F1;	}
+.jl-ass .teal .jl-navigator li{background:none!important;  }
+.jl-ass .teal .jl-navigator li div.jlcontent{border-bottom:	1px solid #C5C5C5;}
+.jl-ass .teal .jl-navigator li.active div.jlcontent{	background:#618484 !important;  }
+.jl-ass .teal .jl-navigator li.active div.nav-arrow{
+	background: url("images/teal/active-thumb.png") no-repeat scroll 0 0 transparent;
+}
+.jl-ass .teal .jl-navigator li.active div.nav-arrow-left{
+    background: url("images/teal/active-thumb.png") repeat-x scroll 21px 0 transparent;
+    right:-21px;
+}
+.jl-ass .teal .jl-navigator a{
+	color:#666;
+}
+.jl-ass .teal .jl-navigator li.active a{
+	color:#fff;
+}
+/**
+   * purple
+*/
+.jl-ass .purple{border:1px solid #E5D7F1;}
+.jl-ass .purple .jl-navigator li{background:none!important; }
+.jl-ass .purple .jl-navigator li div.jlcontent{border-bottom:	1px solid #E5D7F1;background:#F9F6FD;color:#676767;}
+.jl-ass .purple .jl-navigator li.active div.jlcontent{background:url(images/purple/grad-bg.png) repeat-x  !important; color:#fff }
+.jl-ass .purple .jl-navigator li.active a { color:#FFF}
+.jl-ass .purple .jl-navigator h4, .jl-ass .purple .jl-navigator a{color:#662072}
+.jl-ass .purple .jl-navigator li.active div.nav-arrow{
+	background: url("images/purple/active-thumb.png") no-repeat scroll 0 0 transparent;
+}
+.jl-ass .purple .jl-navigator li.active div.nav-arrow-left{
+    background: url("images/purple/active-thumb.png") repeat-x scroll 21px 0 transparent;
+    right:-21px;
+}
+/**
+   * pink
+*/
+.jl-ass .pink{	border:1px solid #E5D7F1;}
+.jl-ass .pink .jl-navigator li{background:none!important; }
+.jl-ass .pink .jl-navigator li div.jlcontent{border-bottom:	1px solid #E5D7F1;background:#F9F6FD;color:#676767;}
+.jl-ass .pink .jl-navigator li.active div.jlcontent{background:url(images/pink/grad-bg.png) repeat-x !important; color:#fff }
+.jl-ass .pink .jl-navigator h4{color:#b40c81 }
+.jl-ass .pink .jl-navigator li.active div.nav-arrow{
+	background: url("images/pink/active-thumb.png") no-repeat scroll 0 0 transparent;
+}
+.jl-ass .pink .jl-navigator li.active div.nav-arrow-left{
+    background: url("images/pink/active-thumb.png") repeat-x scroll 21px 0 transparent;
+    right:-21px;
+}
+/** css for override **/
+/* move the main wapper to the right side */
+.jl-ass .jl-snleft .jl-main-wapper{margin-left:auto;margin-right:inherit;clear:both;height:300px;}
+.jl-ass .jl-snleft .jl-main-item img {float:right;}
+/* move the navigator to the left  side */
+.jl-ass .jl-snleft .jl-navigator-outer{left:0;top:0;	right:inherit;	text-align:left;}
+.jl-ass .jl-snleft .jl-description{left:auto;right:50px;	}
+.jl-ass .jl-snleft .jl-navigator .active{background:url(images/arrow-bg2.gif) center right no-repeat;}
+.jl-ass .jl-snleft .jl-navigator li div.jlcontent{margin-left:inherit;margin-right:18px;}
+.jl-ass .jl-snleft .jl-navigator li.active div.jlcontent{margin-left:inherit;margin-right:18px;background:none repeat scroll 0 0 #BA3500;}/*url(images/grad-bg2.gif)*/
+/** CSS3 **/
+.jl-ass .jl-css3 .jl-description {/*-moz-box-shadow:0 0 2px #666;-webkit-box-shadow:0 0 2px #666;box-shadow: 0px 0px 2px #666;*/}
+.jl-ass .jl-css3 , .jl-ass  .jl-css3 .preload { -moz-box-shadow:0 0 10px #000;-webkit-box-shadow:0 0 10px #000; box-shadow: 0px 0px 10px #000;}
+
+/*arrow left*/
+.jl-ass .jl-snleft li.active div.nav-arrow-left {
+    background: url("images/active-thumb.png") repeat-x scroll 21px 0 transparent;
+    height: 45px;
+    right:-21px;
+    position: absolute;
+    top: 26%;
+    width: 21px;
+}
+/**
+ * Description default background color
+*/
+.jl-ass .desc-blue .jl-description{ background:#0096CE ;  }
+.jl-ass .desc-purple .jl-description{ background:#8D5489  ;  }
+.jl-ass .desc-red .jl-description{ background:#A92817;  }
+.jl-ass .desc-lime .jl-description{ background:#008040;  }
+.jl-ass .desc-pink .jl-description{ background:#800080;  }
+.jl-ass .desc-aqua .jl-description{ background:#058A9D;  }
+
+.jl_price{
+	font-size: 21px;
+	color:#FF0000;
+	font-family: 'Georgia','Trebuchet MS',serif;
+}
+.shadow_bottom {
+    background: url("images/shadow_bottom.png") no-repeat scroll center top transparent;
+    height: 26px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    width: 100%;
+}

@@ -1,0 +1,93 @@
+<?php
+/*------------------------------------------------------------------------
+# com_yoorecipe - YooRecipe! Joomla 1.6 recipe component
+# ------------------------------------------------------------------------
+# author    YooRock!
+# copyright Copyright (C) 2011 yoorock.fr. All Rights Reserved.
+# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Websites: http://extensions.yoorock.fr
+# Technical Support:  Forum - http://extensions.yoorock.fr/
+-------------------------------------------------------------------------*/
+
+// No direct access to this file
+defined('_JEXEC') or die('Restricted access');
+ 
+// import Joomla view library
+jimport('joomla.application.component.view');
+
+/**
+ * HTML View class for the YooRecipe Component
+ */
+class YooRecipeViewArchive extends JViewLegacy
+{
+	// Overwriting JViewLegacy display method
+	function display($tpl = null) 
+	{
+		$app				= JFactory::getApplication();
+		$menu				= $app->getMenu();
+		$active 			= $menu->getActive();
+		$lang 				= JFactory::getLanguage();
+		$yooRecipeparams 	= JComponentHelper::getParams('com_yoorecipe');
+		
+		// Get the yoorecipe model
+		$categoriesModel	= JModelLegacy::getInstance('categories','YooRecipeModel');
+		
+		// Assign all recipes to the view
+		$this->user			= JFactory::getUser();
+		$this->items 		= $this->get('Items');
+		
+		// Set Params defined in menu (if applicable)
+		$this->menuParams = (isset($active)) ? $active->params : null;
+		
+		// Check for errors.
+		if (count($errors = $this->get('Errors'))) 
+		{
+			JError::raiseError(500, implode('<br />', $errors));
+			return false;
+		}
+
+		// In case no recipes found, get categories instead
+		$this->categories 	= $categoriesModel->getAllPublishedCategories();
+		
+		// Prepare document
+		$this->_prepareDocument();
+		
+		// Display the view
+		parent::display($tpl);
+	}
+	
+	/**
+	 * Prepares the document
+	 */
+	protected function _prepareDocument()
+	{
+		$app	= JFactory::getApplication();
+		$menus	= $app->getMenu();
+		$title	= null;
+
+		// Because the application sets a default page title,
+		// we need to get it from the menu item itself
+		$menu 		= $menus->getActive();
+		if ($menu)
+		{
+			$menuParams = $menu->params;
+			$menuParams->def('page_heading', $menuParams->get('page_title', $menu->title));
+			$title = $menuParams->get('page_title', '');
+			if (!empty($title)) {
+				$this->document->setTitle($title);
+			}
+			
+			if ($menuParams->get('menu-meta_description')) {
+				$this->document->setDescription($menuParams->get('menu-meta_description'));
+			}
+
+			if ($menuParams->get('menu-meta_keywords')) {
+				$this->document->setMetadata('keywords', $menuParams->get('menu-meta_keywords'));
+			}
+			
+			if ($menuParams->get('robots')) {
+				$this->document->setMetadata('robots', $menuParams->get('robots'));
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.icon-32-cancel_f2 {
+	background-image: url('../images/icons/cancel_f2.png');
+}
+
+.icon-32-install {
+	background-image: url('../images/icons/install.png');
+}
+
+.icon-32-uninstall {
+	background-image: url('../images/icons/uninstall.png');
+}
+
+.icon-32-upgrade {
+	background-image: url('../images/icons/upgrade.png');
+}
+
+.icon-32-delete_f2 {
+	background-image: url('../images/icons/delete_f2.png');
+}
+
+.icon-32-import {
+	background-image: url('../images/icons/reload_f2.png');
+}
+
+.icon-32-export {
+	background-image: url('../images/icons/download_f2.png');
+}

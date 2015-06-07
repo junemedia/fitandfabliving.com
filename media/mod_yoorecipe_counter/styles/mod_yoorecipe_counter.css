@@ -1,0 +1,84 @@
+.compteur{
+	height:55px;
+	padding-top:11px;
+	text-align:center;
+}
+
+.compteur p{
+	font-size:25px;
+	color:#333;
+	float:left;
+	margin-left:17px;
+	padding-top:10px;
+}
+
+.compteur p span{
+	font-size:25px;
+	color:#279afc;
+}
+
+span.counter_text {
+	font-size:40px;
+	float:left;
+	height:43px;
+	margin-left:2px;
+	margin-top: -15px;
+}
+/************************** Style compteur *************************/
+
+span.num{
+	display:block;
+	float:left;
+	width:29px;
+	height:43px;
+	background-image:url(../images/numero-compteur.jpg);
+	background-repeat:no-repeat;
+	margin-left:2px;
+}
+
+span.point{
+	display:block;
+	float:left;
+	width:5px;
+	height:43px;
+	background:url(../images/numero-compteur.jpg) -23px -431px no-repeat;
+}
+
+span.num0{
+	background-position:left -0px;
+}
+
+span.num1{
+ background-position:left -44px;
+}
+
+span.num2{
+ background-position:left -87px;
+}
+
+span.num3{
+ background-position:left -130px;
+}
+
+span.num4{
+ background-position:left -173px;
+}
+
+span.num5{
+ background-position:left -216px;
+}
+
+span.num6{
+ background-position:left -259px;
+}
+
+span.num7{
+ background-position:left -302px;
+}
+
+span.num8{
+ background-position:left -345px;
+}
+span.num9{
+ background-position:left -388px;
+}

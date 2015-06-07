@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_ALFCONTACT_ALFCONTACT_VIEW_DEFAULT_TITLE">
+        <message>COM_ALFCONTACT_ALFCONTACT_VIEW_DEFAULT_DESC</message>
+    </layout>
+
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL" addfieldpath="/administrator/components/com_alfcontact/models/fields">
+			
+			<field
+				name="title"
+				type="text"
+				label="COM_ALFCONTACT_OPTIONS_TITLE"
+				description="COM_ALFCONTACT_OPTIONS_TITLE_DESC"
+				Default=" ">
+			</field>
+			<field
+				name="defcontact"
+				type="contactlist"
+				label="COM_ALFCONTACT_DEFAULT_CONTACT"
+				description="COM_ALFCONTACT_DEFAULT_CONTACT_DESC">
+			</field>
+			<field
+				name="header"
+				type="textarea"
+				filter="safehtml"
+				label="COM_ALFCONTACT_OPTIONS_HEADER"
+				description="COM_ALFCONTACT_OPTIONS_HEADER_DESC"
+				Default=" ">
+			</field>
+			<field
+				name="footer"
+				type="textarea"
+				filter="safehtml"
+				label="COM_ALFCONTACT_OPTIONS_FOOTER"
+				description="COM_ALFCONTACT_OPTIONS_FOOTER_DESC"
+				Default=" ">
+			</field>
+					
+		</fieldset>
+	</fields>
+</metadata>

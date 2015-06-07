@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="frontend" label="OBRSS_SETTINGS_LEDEND_DESCRIPTION" description="">
+		<field name="image" type="imagelist" directory="images" label="OBRSS_SETTINGS_SELECT_IMAGE" description="OBRSS_SETTINGS_SELECT_IMAGE" />
+		<field name="image_position" type="list" label="OBRSS_SETTINGS_IMAGE_ALIGN" description="OBRSS_SETTINGS_IMAGE_ALIGN">
+			<option value="left">left</option>
+			<option value="right">right</option>
+		</field>
+		<field name="description_text_spacer" type="spacer" label="COM_OBRSS_DESCRIPTION_NOTE"></field>
+		<field name="description_text" type="editor" default="" width="" filter="safehtml" label="OBRSS_SETTINGS_DESCRIPTION_TEXT" description="OBRSS_SETTINGS_DESCRIPTION_TEXT" />
+	</fieldset>
+	<fieldset name="sef" label="OBRSS_SETTINGS_SEF" description="">
+		<field name="sef" type="text" default="rss" label="OBRSS_SETTINGS_SEF_CORE_URL" description="OBRSS_SETTINGS_SEF_CORE_URL_DES" />
+		<field name="sef_spacer" type="spacer" label="OBRSS_SETTINGS_SEF_SPACER" />
+		<field name="sef_atom" type="text" default="feed" label="OBRSS_SETTINGS_SEF_ATOM" description="OBRSS_SETTINGS_SEF_ATOM_DES" />
+		<field name="sef_rss" type="text" default="feed" label="OBRSS_SETTINGS_SEF_RSS" description="OBRSS_SETTINGS_SEF_RSS_DES" />
+		<field name="sef_html" type="text" default="html" label="OBRSS_SETTINGS_SEF_HTML" description="OBRSS_SETTINGS_SEF_HTML_DES" />
+		<field name="sef_json" type="text" default="feed" label="OBRSS_SETTINGS_SEF_JSON" description="OBRSS_SETTINGS_SEF_JSON_DES" />
+		<field name="sef_sitemap" type="text" default="feed" label="OBRSS_SETTINGS_SEF_SITEMAP" description="OBRSS_SETTINGS_SEF_SITEMAP_DES" />
+	</fieldset>
+	<fieldset name="frontend_layout" label="OBRSS_SETTINGS_FRONTEND_LAYOUT" description="">
+		<field name="show_number" type="list" class="ob_switch" label="OBRSS_SETTINGS_SHOW_NUMBER" description="OBRSS_SETTINGS_SHOW_NUMBER">
+			<option value="1">OBRSS_SETTINGS_YES</option>
+			<option value="0">OBRSS_SETTINGS_NO</option>
+		</field>
+		<field name="show_hits" type="list" class="ob_switch" label="OBRSS_SETTINGS_SHOW_HITS" description="">
+			<option value="1">OBRSS_SETTINGS_YES</option>
+			<option value="0">OBRSS_SETTINGS_NO</option>
+		</field>
+		<!-- <field name="button_xml" type="list" class="ob_switch" label="OBRSS_SETTINGS_SHOW_XML" description="">
+			<option value="1">OBRSS_SETTINGS_YES</option>
+			<option value="0">OBRSS_SETTINGS_NO</option>
+		</field> -->
+		<field name="button_google" type="list" class="ob_switch" label="OBRSS_SETTINGS_SHOW_GOOGLE" description="">
+			<option value="1">OBRSS_SETTINGS_YES</option>
+			<option value="0">OBRSS_SETTINGS_NO</option>
+		</field>
+		<field name="button_yahoo" type="list" class="ob_switch" label="OBRSS_SETTINGS_SHOW_YAHOO" description="">
+			<option value="1">OBRSS_SETTINGS_YES</option>
+			<option value="0">OBRSS_SETTINGS_NO</option>
+		</field>
+		<field name="button_msn" type="list" class="ob_switch" label="OBRSS_SETTINGS_SHOW_MSN" description="">
+			<option value="1">OBRSS_SETTINGS_YES</option>
+			<option value="0">OBRSS_SETTINGS_NO</option>
+		</field>
+		<field name="button_newsgator" type="list" class="ob_switch" label="OBRSS_SETTINGS_SHOW_NEWSGATOR" description="">
+			<option value="1">OBRSS_SETTINGS_YES</option>
+			<option value="0">OBRSS_SETTINGS_NO</option>
+		</field>
+		<field name="button_bloglines" type="list" class="ob_switch" label="OBRSS_SETTINGS_SHOW_BLOGLINES" description="">
+			<option value="1">OBRSS_SETTINGS_YES</option>
+			<option value="0">OBRSS_SETTINGS_NO</option>
+		</field>
+		<field name="view_feedburner" type="list" class="ob_switch" label="OBRSS_SETTINGS_USE_FEEDBURNER_URL" description="">
+			<option value="1">OBRSS_SETTINGS_YES</option>
+			<option value="0">OBRSS_SETTINGS_NO</option>
+		</field>
+	</fieldset>
+	<fieldset name="misc" label="OBRSS_SETTINGS_MISC">
+		<field name="feed_author" type="text" label="OBRSS_SETTINGS_FEED_AUTHOR" description="OBRSS_SETTINGS_FEED_AUTHOR_DESC" />
+	</fieldset>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox" validate="rules" filter="rules" component="com_obrss" section="component" />
+	</fieldset>
+</config>

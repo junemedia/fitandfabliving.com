@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	<name>Articles SlideShow</name>
+	<author>Codextension</author>
+	<creationDate>30 May 2012</creationDate>
+    <copyright>Copyright (c) 2004 - 2011 Codextension.Com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>contact@codextension.com</authorEmail>
+	<authorUrl>http://codextension.com</authorUrl>
+	<version>3.0.3</version>
+	<description>
+	<![CDATA[
+	<style>
+		.jl_description h3{
+			text-transform: uppercase;	margin: 20px 0px 10px 0px;
+		}
+		.jl_description img{
+			float:left;	margin:5px 10px 5px 0px;
+		}
+		.jl_description p,.jl_description li{
+			padding:2px;
+			list-style: none outside none;
+			clear:both;
+		}
+		.jl_description ul.list-style li{
+			background:url(../modules/mod_jl_articles_slideshow/admin/images/tick.png) 0px 6px no-repeat;	padding-left:30px;	line-height:15px;
+		}
+	</style>
+	<div class="jl_description">
+		<h3>Articles SlideShow Version 3.0.3</h3>
+		<a href="../modules/mod_jl_articles_slideshow/assets/jl-articleslideshow.png" target="_blank" class="modal" rel="{handler: 'iframe', size: {x: 1000, y: 420}}">
+			<img src="../modules/mod_jl_articles_slideshow/assets/jl-articleslideshow.png" style="width:70%">
+		</a>
+		<p>
+			The ArticleSlideshow Module is as best choice and
+			the most eye-catching way to display featured  articles, products on in a rich
+			slideshow, usually put in the head position of the main site.
+			The module supports flexible showing content
+			of each slider and easy to fit your website with one of themes,skins.
+			Also this module also supports template use LTR & RTL.
+		</p>
+		<br clear="both" />
+		<h3>Features</h3>
+		<ul class="list-style">
+			<li>Support browsers (IE6+, FireFox, Chrome, Opera, Safari, ...)</li> 
+			<li>Inbuilt 7 themes (Blue, Grey, Lime, Pink, Purple, Red, Teal)</li> 
+			<li>Compatible with all the 3rd party templates (All framework most popular : T3, Grantry, Yoo...)</li> 
+			<li>Multi Instance Slideshow Support</li> 
+			<li>Comes with 4 Module Modes : <strong style="color: red;">Content, K2, Virtuemart, Banners</strong></li> 
+			<li>Unlimited Image Slideshow</li> 
+			<li>Auto Start Slideshow ON/OFF</li> 
+			<li>Focus Item Slideshow ON/OFF</li> 
+			<li>Play/Pause Button</li> 
+			<li>Ability to link the images</li> 
+			<li>Switch ON/OFF Description.</li> 
+			<li>Switch ON/OFF Navigation</li> 
+			<li>Ability to show description to main the slideshow images</li>
+			<li>Play with 5 styles : Version up to down, Version down to up, Horizontal left to right, Horizontal right to left, Opacity.</li>
+			<li>Comes with clear documentation</li> 
+			<li>Show featured or random or lastest or hits...etc from different categories.</li> 
+			<li>Adjust slideshow width and height main slider &amp; navigator</li> 
+			<li>Allow to change transitions speed, duration, and animation transition.</li> 
+			<li>Allow to custom background for Navigation.</li> 
+			<li>Show / Hide title</li> 
+			<li>Show / Hide link on image.</li> 
+			<li>Show / Hide description.</li> 
+			<li>Show / Hide category title.</li> 
+			<li>Show / Hide date</li> 
+			<li>Limit Items will display.</li>
+			<li>Support get image from Intro image, Full article image or description.</li> 			
+			<li>Support opening link in: Current Window or New Window.</li> 
+			<li>Support Mutiple Select Category</li> 
+			<li>Support RTL & LTR</li> 
+			<li>Support caching to make website loads faster.</li> 
+			<li>Support Multi-Language.</li>
+		</ul>
+		<h3>Upgrade versions</h3>
+		<p>Your current versions is 3.0.3. <a target="_blank" href="http://codextension.com">Find our latest versions now</a></p>
+		<h3>Userful links</h3>
+		<ul>
+			<li>Video tutorials</li>
+			<li>Report bug</li>
+		</ul>
+		<h3>About Codextension & copyright</h3>
+		<p>Codextension is Professional Joomla template provider. We are focused on creating unique, attractive and clean templates without loosing flexibility and simplicity of customization </p>Copyright 2004 - 2011 <a target="_blank" href="http://codextension.com">http://codextension.com</a>
+	</div>]]>
+	</description>
+  <files>
+    <filename module="mod_jl_articles_slideshow">mod_jl_articles_slideshow.php</filename>
+    <filename module="mod_jl_articles_slideshow">index.html</filename>
+	<filename>LICENSE.txt</filename>
+    <folder module="mod_jl_articles_slideshow">assets</folder>
+    <folder module="mod_jl_articles_slideshow">tmpl</folder>
+	<folder module="mod_jl_articles_slideshow">admin</folder>
+	<folder module="mod_jl_articles_slideshow">helper</folder>
+	<folder module="mod_jl_articles_slideshow">libraries</folder>
+	<folder module="mod_jl_articles_slideshow">languages</folder>
+  </files>
+  <languages>
+    <language tag="en-GB">languages/en-GB.mod_jl_articles_slideshow.ini</language>
+  </languages>
+  <config>
+    <fields name="params" addfieldpath="modules/mod_jl_articles_slideshow/libs/elements">
+      <fieldset name="BASICSETTING">
+		<field type="spacer" name="JOOMLA_SETTING" default="JOOMLA_SETTING"/>
+        <field name="moduleclass_sfx" type="text" default="" label="MODULE_CLASS_SUFFIX" description="MODULE_CLASS_SUFFIX_DESC" />
+		 <field
+          name="enable_cache"
+          type="list"
+          default="0"
+          label="JL_ARTICLES_SLIDESHOW_CACHE"
+          description="JL_ARTICLES_SLIDESHOW_CACHING_DESC">
+          <option value="1">Use global</option>
+          <option value="0">No caching</option>
+        </field>
+        <field name="cache_time" type="text" default="30" label="JL_ARTICLES_SLIDESHOW_CACHE_TIME" description="JL_ARTICLES_SLIDESHOW_CACHE_TIME_DESC" />
+		<field type="spacer" name="SOURCE_SETTING" default="SOURCE_SETTING"/>
+		<!--<field name="source" type="radio" default="category" label="JL_ARTICLES_SLIDESHOW_SOURCE_FROM"  description="JL_ARTICLES_SLIDESHOW_SOURCE_FROM_DESC" >
+          <option value="category">JL_ARTICLES_SLIDESHOW_CATEGORY</option>
+          <option value="article_ids">JL_ARTICLES_SLIDESHOW_ARTICLES_IDS</option>
+        </field>-->
+		<field name="jl_options" type="list" label="JL_ARTICLES_SLIDESHOW_OPTIONS" description="JL_ARTICLES_SLIDESHOW_OPTIONS_DESC" default="content">
+					<option value="content">Content</option>
+					<option value="banners">Banners</option>
+					<option value="virtuemart">Virtuemart</option>
+					<option value="k2">K2</option>
+				</field>
+		<field name="catid" type="category" extension="com_content"
+			size="5"
+			label="JCATEGORY"
+			description="JL_ARTICLES_SLIDESHOW_CATEGORY_DESC"/>
+		<field name="show_price" class="btn-group" type="radio" default="1" label="JL_ARTICLES_SLIDESHOW_SHOWPRICE_VIRTUEMART" description="JL_ARTICLES_SLIDESHOW_SHOWPRICE_VIRTUEMART_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <!--<field name="article_ids" type="text" default="" label="JL_ARTICLES_SLIDESHOW_ARTICLES_IDS"  description="JL_ARTICLES_SLIDESHOW_ARTICLES_IDS_DESC" size="40" />-->
+        <field name="ordering_list" type="list" default="featured" label="JL_ARTICLES_SLIDESHOW_ARTCILES_SORTED_BY" description="JL_ARTICLES_SLIDESHOW_ARTCILES_SORTED_BY_DESC">
+			<option value="featured">JL_ARTICLES_SLIDESHOW_ORDER_FEATURED</option>
+            <option value="homepagefeatured">Homepage Featured</option>
+			<option value="latest">JL_ARTICLES_SLIDESHOW_ORDER_LATEST</option>
+			<option value="random">JL_ARTICLES_SLIDESHOW_ORDER_RANDOM</option>
+			<option value="topten">JL_ARTICLES_SLIDESHOW_ORDER_BEST_SALES</option>
+			<option value="rdate">JL_ARTICLES_SLIDESHOW_ORDER_RECENT</option>
+			<option value="date">JL_ARTICLES_SLIDESHOW_ORDER_OLDEST_FIRST</option>
+			<option value="alpha">JL_ARTICLES_SLIDESHOW_ORDER_TITLE</option>
+			<option value="ralpha">JL_ARTICLES_SLIDESHOW_ORDER_TITLE_REVERSE</option>
+			<option value="author">JL_ARTICLES_SLIDESHOW_ORDER_AUTHOR</option>
+			<option value="rauthor">JL_ARTICLES_SLIDESHOW_ORDER_AUTHOR_REVERSE</option>
+			<option value="hits">JL_ARTICLES_SLIDESHOW_ORDER_MOST_HITS</option>
+			<option value="rhits">JL_ARTICLES_SLIDESHOW_ORDER_LEAST_HITS</option>
+			<option value="order">JL_ARTICLES_SLIDESHOW_ORDER_MANAGER_ORDER</option>
+		</field>
+        <field name="count" type="text" default="5" label="JL_ARTICLES_SLIDESHOW_LIMIT_ITEMS" description="JL_ARTICLES_SLIDESHOW_LIMIT_ITEMS_DESC" />
+
+
+        <field name="theme" type="folderlist" hide_none="true" default="" label="JL_ARTICLES_SLIDESHOW_SELECT_THEME" directory="modules/mod_jl_articles_slideshow/assets/images/" filter="" exclude="" stripext="" />
+        <field name="title_max_chars" type="text" default="25" label="JL_ARTICLES_SLIDESHOW_TITLE_MAX_CHARS" description="JL_ARTICLES_SLIDESHOW_TITLE_MAX_CHARS_DESC" />
+        <field name="jl_limit_desc" type="text" default="100" label="JL_ARTICLES_SLIDESHOW_DESCIPTION_MAX_CHARS" description="JL_ARTICLES_SLIDESHOW_DESCIPTION_MAX_CHARS_DESC" />
+        <field name="replacer" type="text" default="..." label="JL_ARTICLES_SLIDESHOW_REPLACER" description="JL_ARTICLES_SLIDESHOW_REPLACER_DESC" />
+        <field name="jl_get_images" type="list" default="introimage" label="JL_ARTICLES_SLIDESHOW_HIGHER_PRIORITY_LABEL" description="JL_ARTICLES_SLIDESHOW_HIGHER_PRIORITY_DESC">
+          <option value="introimage">Intro image</option>
+          <option value="fullimage">Full article image</option>
+          <option value="description">Description</option>
+        </field>
+        
+        
+		<field type="spacer" name="GIRD_SETTING" default="GIRD_SETTING"/>
+        <field name="module_height" type="text" default="auto" label="JL_ARTICLES_SLIDESHOW_MODULE_HEIGHT" description="JL_ARTICLES_SLIDESHOW_MODULE_HEIGHT_DESC"></field>
+        <field name="module_width" type="text" default="auto" label="JL_ARTICLES_SLIDESHOW_MODULE_WIDTH" description="JL_ARTICLES_SLIDESHOW_MODULE_WIDTH_DESC"></field>
+        <field 
+          name="preload" 
+          class="btn-group" type="radio"
+          default="1"
+          label="JL_ARTICLES_SLIDESHOW_MOD_LOFSS_FIELD_PRELOAD_LABEL"
+          description="JL_ARTICLES_SLIDESHOW_MOD_LOFSS_FIELD_PRELOAD_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>		
+        <field name="open_target" type="list" default="parent" label="JL_ARTICLES_SLIDESHOW_CLICK_LINK_OPEN_IN" description="JL_ARTICLES_SLIDESHOW_CLICK_LINK_OPEN_IN_DESC">
+          <option value="blank">New window</option>
+          <option value="parent">Parent window</option>
+        </field>
+		<field type="spacer" name="EFFECT_SETTING" default="EFFECT_SETTING"/>
+		<field name="layout_style" type="list" default="vrdown" label="JL_ARTICLES_SLIDESHOW_PLAY_STYLE" description="JL_ARTICLES_SLIDESHOW_PLAY_STYLE_DESC">
+          <option value="hrleft">JL_ARTICLES_SLIDESHOW_HORIZONTAL_RIGHT_TO_LEFT</option>
+          <option value="hrright">JL_ARTICLES_SLIDESHOW_HORIZONTAL_LEFT_TO_RIGHT</option>
+          <option value="vrup">JL_ARTICLES_SLIDESHOW_VERTICAL_DOWN_TO_UP</option>
+          <option value="vrdown">JL_ARTICLES_SLIDESHOW_VERTICAL_UP_TO_DOWN</option>
+          <option value="opacity">JL_ARTICLES_SLIDESHOW_OPACITY</option>
+        </field>
+        <field name="interval" type="text" default="5000" label="JL_ARTICLES_SLIDESHOW_INTERVAL" description="JL_ARTICLES_SLIDESHOW_INTERVAL_DESC" />
+        <field name="duration" type="text" default="500" label="JL_ARTICLES_SLIDESHOW_ANIMATION_DURATION" description="JL_ARTICLES_SLIDESHOW_ANIMATION_DURATION_DESC" />
+        <field name="effect" type="list" default="Fx.Transitions.Quad.easeInOut" label="JL_ARTICLES_SLIDESHOW_ANIMATION_TRANSITION" description="JL_ARTICLES_SLIDESHOW_ANIMATION_TRANSITION_DESC">
+          <option value="Fx.Transitions.linear">linear</option>
+          <option value="Fx.Transitions.quartOut">QuartOut</option>
+          <option value="Fx.Transitions.Quad.easeIn">Quad.easeIn</option>
+          <option value="Fx.Transitions.Quad.easeOut">Quad.easeOut</option>
+          <option value="Fx.Transitions.Quad.easeInOut">Quad.easeInOut</option>
+          <option value="Fx.Transitions.Cubic.easeIn">Cubic.easeIn</option>
+          <option value="Fx.Transitions.Cubic.easeOut">Cubic.easeOut</option>
+          <option value="Fx.Transitions.Cubic.easeInOut">Cubic.easeInOut</option>
+          <option value="Fx.Transitions.Quart.easeIn">Quart.easeIn</option>
+          <option value="Fx.Transitions.Quart.easeOut">Quart.easeOut</option>
+          <option value="Fx.Transitions.Quart.easeInOut">Quart.easeInOut</option>
+          <option value="Fx.Transitions.Quint.easeIn">Quint.easeIn</option>
+          <option value="Fx.Transitions.Quint.easeOut">Quint.easeOut</option>
+          <option value="Fx.Transitions.Quint.easeInOut">Quint.easeInOut</option>
+          <option value="Fx.Transitions.Pow.easeIn">Pow.easeIn</option>
+          <option value="Fx.Transitions.Pow.easeOut">Pow.easeOut</option>
+          <option value="Fx.Transitions.Pow.easeInOut">Pow.easeInOut</option>
+          <option value="Fx.Transitions.Expo.easeIn">Expo.easeIn</option>
+          <option value="Fx.Transitions.Expo.easeOut">Expo.easeOut</option>
+          <option value="Fx.Transitions.Expo.easeInOut">Expo.easeInOut</option>
+          <option value="Fx.Transitions.Circ.easeIn">Circ.easeIn</option>
+          <option value="Fx.Transitions.Circ.easeOut">Circ.easeOut</option>
+          <option value="Fx.Transitions.Circ.easeInOut">Circ.easeInOut</option>
+          <option value="Fx.Transitions.Sine.easeIn">Sine.easeIn</option>
+          <option value="Fx.Transitions.Sine.easeOut">Sine.easeOut</option>
+          <option value="Fx.Transitions.Sine.easeInOut">Sine.easeInOut</option>
+          <option value="Fx.Transitions.Back.easeIn">Back.easeIn</option>
+          <option value="Fx.Transitions.Back.easeOut">Back.easeOut</option>
+          <option value="Fx.Transitions.Back.easeInOut">Back.easeInOut</option>
+          <option value="Fx.Transitions.Bounce.easeIn">Bounce.easeIn</option>
+          <option value="Fx.Transitions.Bounce.easeOut">Bounce.easeOut</option>
+          <option value="Fx.Transitions.Bounce.easeInOut">Bounce.easeInOut</option>
+          <option value="Fx.Transitions.Elastic.easeIn">Elastic.easeIn</option>
+          <option value="Fx.Transitions.Elastic.easeOut">Elastic.easeOut</option>
+          <option value="Fx.Transitions.Elastic.easeInOut">Elastic.easeInOut</option>
+        </field>
+        <field name="auto_start" class="btn-group" type="radio" default="1" label="JL_ARTICLES_SLIDESHOW_AUTO_START" description="JL_ARTICLES_SLIDESHOW_AUTO_START_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+
+      </fieldset>
+      <fieldset name="MAINSLIDERSETTING">
+        <field 
+          name="start_item" 
+          type="text" 
+          default="0"
+          label="JL_ARTICLES_SLIDESHOW_DEFAULT_ITEM_SHOWED"
+          description="JL_ARTICLES_SLIDESHOW_DEFAULT_ITEM_SHOWED_DESC" />
+        <field name="main_height" type="text" default="352" label="JL_ARTICLES_SLIDESHOW_DISPLAY_MAIN_HEIGHT" description="JL_ARTICLES_SLIDESHOW_DISPLAY_MAIN_HEIGHT_DESC"></field>
+        <field name="main_width" type="text" default="661" label="JL_ARTICLES_SLIDESHOW_DISPLAY_MAIN_WIDTH" description="JL_ARTICLES_SLIDESHOW_DISPLAY_MAIN_WIDTH_DESC"></field>
+		 <field name="enable_image_link"   class="btn-group" type="radio" default="0" label="JL_ARTICLES_SLIDESHOW_ENABLE_IMAGE_LINK" description="JL_ARTICLES_SLIDESHOW_ENABLE_IMAGE_LINK_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+		 <field name="enable_playstop"   class="btn-group" type="radio" default="1" label="JL_ARTICLES_SLIDESHOW_ENABLE_PLAY_STOP_BUTTON" description="JL_ARTICLES_SLIDESHOW_ENABLE_PLAY_STOP_BUTTON_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="display_button"   class="btn-group" type="radio" default="1" label="JL_ARTICLES_SLIDESHOW_DISPLAY_BUTTON" description="JL_ARTICLES_SLIDESHOW_DISPLAY_BUTTON_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="desc_opacity" type="text" default="1" label="JL_ARTICLES_SLIDESHOW_DESCRIPTION_OPACITY" description="JL_ARTICLES_SLIDESHOW_DESCRIPTION_OPACITY_DESC" />
+        <field name="enable_blockdescription" class="btn-group" type="radio" default="1" label="JL_ARTICLES_SLIDESHOW_ENABLE_BLOCKDESCRIPTION" description="JL_ARTICLES_SLIDESHOW_ENABLE_BLOCKDESCRIPTION_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+		<field name="width_desc_on_main" type="text" default="400" label="JL_ARTICLES_SLIDESHOW_WIDTH_DESC_ON_MAIN" description="JL_ARTICLES_SLIDESHOW_WIDTH_DESC_ON_MAIN_DESC"></field>
+      </fieldset>
+      <fieldset name="NAVIGATORSETTING">
+        <field name="navigator_pos" type="list" default="right" label="JL_ARTICLES_SLIDESHOW_NAVIGATOR_POSITION" description="JL_ARTICLES_SLIDESHOW_NAVIGATOR_POSITION_DESC">
+          <option value="0">JHIDE</option>
+          <option value="left">JL_ARTICLES_SLIDESHOW_LEFT</option>
+          <option value="right">JL_ARTICLES_SLIDESHOW_RIGHT</option>
+        </field>
+        <field name="navitem_height" type="text" default="88" label="JL_ARTICLES_SLIDESHOW_NAVIGATOR_ITEM_HEIGHT" description="JL_ARTICLES_SLIDESHOW_NAVIGATOR_ITEM_HEIGHT_DESC"></field>
+        <field name="navitem_width" type="text" default="300" label="JL_ARTICLES_SLIDESHOW_NAVIGATOR_ITEM_WIDTH" description="JL_ARTICLES_SLIDESHOW_NAVIGATOR_ITEM_WIDTH_DESC"></field>
+        <field name="max_items_display" type="text" default="4" label="JL_ARTICLES_SLIDESHOW_MAX_ITEMS_DISPLAY" description="JL_ARTICLES_SLIDESHOW_MAX_ITEMS_DISPLAY_DESC"></field>
+        <field name="thumbnail_width" type="text" default="60" label="JL_ARTICLES_SLIDESHOW_THUMBNAIL_WIDTH" description="JL_ARTICLES_SLIDESHOW_THUMBNAIL_WIDTH_DESC" />
+        <field name="thumbnail_height" type="text" default="60" label="JL_ARTICLES_SLIDESHOW_THUMBNAIL_HEIGHT" description="JL_ARTICLES_SLIDESHOW_THUMBNAIL_HEIGHT_DESC" />
+        <field name="enable_thumbnail" class="btn-group" type="radio" default="1" label="JL_ARTICLES_SLIDESHOW_ENABLE_THUMBNAIL" description="JL_ARTICLES_SLIDESHOW_ENABLE_THUMBNAIL_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="enable_thumbnail" class="btn-group" type="radio" default="1" label="JL_ARTICLES_SLIDESHOW_ENABLE_THUMBNAIL" description="JL_ARTICLES_SLIDESHOW_ENABLE_THUMBNAIL_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="enable_navtitle" class="btn-group" type="radio" default="1" label="JL_ARTICLES_SLIDESHOW_ENABLE_TITLE" description="JL_ARTICLES_SLIDESHOW_ENABLE_TITLE_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="enable_navdate" class="btn-group" type="radio" default="0" label="JL_ARTICLES_SLIDESHOW_ENABLE_DATE" description="JL_ARTICLES_SLIDESHOW_ENABLE_DATE_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="enable_navcate" class="btn-group" type="radio" default="0" label="JL_ARTICLES_SLIDESHOW_ENABLE_NAVCATE" description="JL_ARTICLES_SLIDESHOW_ENABLE_NAVCATE_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+		<field name="enable_li_bg" class="btn-group" type="radio" default="0" label="JL_ARTICLES_SLIDESHOW_ENABLE_BG_NAVIGATOR" description="JL_ARTICLES_SLIDESHOW_ENABLE_BG_NAVIGATOR_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+		<field name="jl_li_bg" type="text" class="jl_color" default="#F3F8FB" label="JL_ARTICLES_SLIDESHOW_BACKGROUND_NAVIGATOR_NOT_ACTIVE" description="JL_ARTICLES_SLIDESHOW_BACKGROUND_NAVIGATOR_NOT_ACTIVE_DESC"/>
+		<field name="enable_desc_on_navigation" class="btn-group" type="radio" default="1" label="JL_ARTICLES_SLIDESHOW_ENABLE_DESC_ON_NAVIGATION" description="JL_ARTICLES_SLIDESHOW_ENABLE_DESC_ON_NAVIGATION_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+		<field name="limit_desc_on_navigation" type="text" default="65" label="JL_ARTICLES_SLIDESHOW_LIMIT_DESC_ON_NAVIGATION" description="JL_ARTICLES_SLIDESHOW_LIMIT_DESC_ON_NAVIGATION_DESC"/>
+		<field name="enable_arrow" class="btn-group" type="radio" default="0" label="JL_ARTICLES_SLIDESHOW_ENABLE_ARROW" description="JL_ARTICLES_SLIDESHOW_ENABLE_ARROW_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+      </fieldset>
+	  <fieldset addfieldpath="/modules/mod_jl_articles_slideshow/admin/formfield" name="about" label="JL_ABOUT">
+			<field type="asset" name="asset" path="modules/mod_jl_articles_slideshow/admin/"/>
+			<field type="about" name="about" path="modules/mod_jl_articles_slideshow/admin/images"/>
+		</fieldset>
+    </fields>
+  </config>
+</extension>

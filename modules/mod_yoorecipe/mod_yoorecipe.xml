@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6" method="upgrade" client="site">
+	<name>YooRecipe Module</name>
+	<author>YooRock!</author>
+	<creationDate>07/06/2011</creationDate>
+	<copyright>Yoorock, All Rights Reserved</copyright>
+	<license>GPL 2.0</license> 
+	<authorEmail>support@yoorock.fr</authorEmail>
+	<authorUrl>extensions.yoorock.fr</authorUrl>
+	<version>3.1.4</version>
+	<description>YooRecipe items display module</description>
+	
+	<files>
+		<filename module="mod_yoorecipe">mod_yoorecipe.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages>
+        <language tag="da-DK">da-DK.mod_yoorecipe.ini</language>
+        <language tag="da-DK">da-DK.mod_yoorecipe.sys.ini</language>
+		<language tag="de-DE">de-DE.mod_yoorecipe.ini</language>
+        <language tag="de-DE">de-DE.mod_yoorecipe.sys.ini</language>
+        <language tag="el-GR">el-GR.mod_yoorecipe.ini</language>
+        <language tag="el-GR">el-GR.mod_yoorecipe.sys.ini</language>
+        <language tag="en-GB">en-GB.mod_yoorecipe.ini</language>
+		<language tag="en-GB">en-GB.mod_yoorecipe.sys.ini</language>
+		<language tag="en-US">en-US.mod_yoorecipe.ini</language>
+		<language tag="en-US">en-US.mod_yoorecipe.sys.ini</language>
+		<language tag="es-ES">es-ES.mod_yoorecipe.ini</language>
+		<language tag="es-ES">es-ES.mod_yoorecipe.sys.ini</language>
+		<language tag="fr-CA">fr-CA.mod_yoorecipe.ini</language>
+		<language tag="fr-CA">fr-CA.mod_yoorecipe.sys.ini</language>
+		<language tag="fr-FR">fr-FR.mod_yoorecipe.ini</language>
+		<language tag="fr-FR">fr-FR.mod_yoorecipe.sys.ini</language>
+		<language tag="he-IL">he-IL.mod_yoorecipe.ini</language>
+		<language tag="he-IL">he-IL.mod_yoorecipe.sys.ini</language>
+		<language tag="it-IT">it-IT.mod_yoorecipe.ini</language>
+		<language tag="it-IT">it-IT.mod_yoorecipe.sys.ini</language>
+		<language tag="nl-NL">nl-NL.mod_yoorecipe.ini</language>
+		<language tag="nl-NL">nl-NL.mod_yoorecipe.sys.ini</language>
+		<language tag="pl-PL">pl-PL.mod_yoorecipe.ini</language>
+		<language tag="pl-PL">pl-PL.mod_yoorecipe.sys.ini</language>
+		<language tag="pt-BR">pt-BR.mod_yoorecipe.ini</language>
+		<language tag="pt-BR">pt-BR.mod_yoorecipe.sys.ini</language>
+		<language tag="pt-PT">pt-PT.mod_yoorecipe.ini</language>
+		<language tag="pt-PT">pt-PT.mod_yoorecipe.sys.ini</language>
+		<language tag="ro-RO">ro-RO.mod_yoorecipe.ini</language>
+		<language tag="ro-RO">ro-RO.mod_yoorecipe.sys.ini</language>
+		<language tag="ru-RU">ru-RU.mod_yoorecipe.ini</language>
+		<language tag="ru-RU">ru-RU.mod_yoorecipe.sys.ini</language>
+		<language tag="sk-SK">sk-SK.mod_yoorecipe.ini</language>
+		<language tag="sk-SK">sk-SK.mod_yoorecipe.sys.ini</language>
+		<language tag="sl-SI">sl-SI.mod_yoorecipe.ini</language>
+		<language tag="sl-SI">sl-SI.mod_yoorecipe.sys.ini</language>
+		<language tag="sv-SE">sv-SE.mod_yoorecipe.ini</language>
+		<language tag="sv-SE">sv-SE.mod_yoorecipe.sys.ini</language>
+		<language tag="tk-TK">tk-TK.mod_yoorecipe.ini</language>
+		<language tag="tk-TK">tk-TK.mod_yoorecipe.sys.ini</language>
+    </languages>
+	
+	<media destination="mod_yoorecipe" folder="media">
+		<filename>index.html</filename>
+		<folder>styles</folder>
+	</media>
+	
+		<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					filter="safehtml"
+					label="MOD_YOORECIPE_FIELD_MODULE_CLASS_SFX"
+					description="MOD_YOORECIPE_FIELD_MODULE_CLASS_SFX_DESC"
+					default=""	
+				/>
+				<field name="spacer1" type="spacer" hr="true"/>
+				
+				<field name="layout" type="list"
+					label="MOD_YOORECIPE_FIELD_LAYOUT"
+					description="MOD_YOORECIPE_FIELD_LAYOUT_DESC"
+				>
+					<option value="random">MOD_YOORECIPE_OPTION_RANDOM</option>
+					<option value="featured">MOD_YOORECIPE_OPTION_FEATURED</option>
+					<option value="most_viewed">MOD_YOORECIPE_OPTION_MOST_VIEWED</option>
+					<option value="best_rated">MOD_YOORECIPE_OPTION_BEST_RATED</option>
+					<option value="latest">MOD_YOORECIPE_OPTION_LATEST</option>
+				</field>
+				
+				<field name="display" type="list"
+					label="MOD_YOORECIPE_FIELD_DISPLAY"
+					description="MOD_YOORECIPE_FIELD_DISPLAY_DESC" default="accordion"
+				>
+					<option value="block">MOD_YOORECIPE_OPTION_DISPLAY_BLOCK</option>
+					<option value="accordion">MOD_YOORECIPE_OPTION_DISPLAY_ACCORDION</option>
+				</field>
+
+				<field name="category" type="category" extension="com_yoorecipe" show_root="true"
+					label="MOD_YOORECIPE_FIELD_CATEGORY"
+					description="MOD_YOORECIPE_FIELD_CATEGORY_DESC"
+				/>
+				
+				<field name="max_nb_recipes"
+					type="integer" default="5" first="1" last="30" step="1"
+					label="MOD_YOORECIPE_FIELD_MAX_NB_RECIPES"
+					description="MOD_YOORECIPE_FIELD_MAX_NB_RECIPES_DESC"
+				/>
+				
+				<field name="show_recipes_without_pictures" 
+					type="radio" default="0"
+					label="MOD_YOORECIPE_FIELD_RECIPES_WITHOUT_PICTURES"
+					description="MOD_YOORECIPE_FIELD_RECIPES_WITHOUT_PICTURE_DESC"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field name="text_align_class_sfx" type="list"
+					label="MOD_YOORECIPE_FIELD_TEXT_ALIGN"
+					description="MOD_YOORECIPE_FIELD_TEXT_ALIGN_DESC"
+					default="left"
+				>
+					<option value="left">MOD_YOORECIPE_OPTION_LEFT</option>
+					<option value="center">MOD_YOORECIPE_OPTION_CENTER</option>
+					<option value="right">MOD_YOORECIPE_OPTION_RIGHT</option>
+				</field>
+				
+				<field name="intro_text" type="text" default="" filter="safehtml" 
+					label="MOD_YOORECIPE_FIELD_INTRO_TEXT"
+					description="MOD_YOORECIPE_FIELD_INTRO_TEXT_DESC"
+				/>
+				
+				<field name="thumbnail_size" 
+					type="integer" default="150" first="50" last="300" step="10"
+					label="MOD_YOORECIPE_FIELD_THUMBNAIL_SIZE"
+					description="MOD_YOORECIPE_FIELD_THUMBNAIL_SIZE_DESC"
+				/>
+				
+				<field name="use_watermark" 
+					type="radio" default="1"
+					label="MOD_YOORECIPE_FIELD_USE_WATERMARK"
+					description="MOD_YOORECIPE_FIELD_USE_WATERMARK_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="spacer2" type="spacer" hr="true"/>
+				
+				<field name="recipe_title_tag" type="list" default="h3"
+					label="MOD_YOORECIPE_FIELD_RECIPE_TITLE_TAG"
+					description="MOD_YOORECIPE_FIELD_RECIPE_TITLE_TAG_DESC"
+				>
+					<option value="h1">h1</option>
+					<option value="h2">h2</option>
+					<option value="h3">h3</option>
+					<option value="h4">h4</option>
+					<option value="h5">h5</option>
+					<option value="strong">strong</option>
+				</field>
+				
+				<field name="recipe_title_max_length" type="integer" default="20" first="20" last="100" step="10" 
+					label="MOD_YOORECIPE_FIELD_RECIPE_TITLE_MAX_LENGTH"
+					description="MOD_YOORECIPE_FIELD_RECIPE_TITLE_MAX_LENGTH_DESC"
+				/>
+				
+				<field name="spacer3" type="spacer" hr="true"/>
+				<field
+					name="show_description"
+					type="radio"
+					label="MOD_YOORECIPE_FIELD_SHOW_DESCRIPTION"
+					description="MOD_YOORECIPE_FIELD_SHOW_DESCRIPTION_DESC"
+					default="1"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				<field
+					name="show_ingredients"
+					type="radio"
+					label="MOD_YOORECIPE_FIELD_SHOW_INGREDIENTS"
+					description="MOD_YOORECIPE_FIELD_SHOW_INGREDIENTS_DESC"
+					default="1"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_difficulty"
+					type="radio"
+					label="MOD_YOORECIPE_FIELD_SHOW_DIFFICULTY"
+					description="MOD_YOORECIPE_FIELD_SHOW_DIFFICULTY_DESC"
+					default="1"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_cost"
+					type="radio"
+					label="MOD_YOORECIPE_FIELD_SHOW_COST"
+					description="MOD_YOORECIPE_FIELD_SHOW_COST_DESC"
+					default="1"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_price"
+					type="radio"
+					label="MOD_YOORECIPE_PRICE_LABEL"
+					description="MOD_YOORECIPE_PRICE_LABEL_DESC"
+					default="0"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_rating"
+					type="radio"
+					label="MOD_YOORECIPE_FIELD_SHOW_RATING"
+					description="MOD_YOORECIPE_FIELD_SHOW_RATING_DESC"
+					default="1"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="rating_style"
+					type="list"
+					label="MOD_YOORECIPE_RECIPE_FIELD_RATING_STYLE"
+					description="MOD_YOORECIPE_RECIPE_FIELD_RATING_STYLE_DESC"
+					default="stars"
+				>
+					<option value="stars">MOD_YOORECIPE_RECIPE_OPTION_RATING_STYLE_STARS</option>
+					<option value="grade">MOD_YOORECIPE_RECIPE_OPTION_RATING_STYLE_GRADE</option>
+				</field>
+				
+				<field
+					name="show_preparation_time"
+					type="radio"
+					label="MOD_YOORECIPE_FIELD_SHOW_PREP_TIME"
+					description="MOD_YOORECIPE_FIELD_SHOW_PREP_TIME_DESC"
+					default="1"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_cook_time"
+					type="radio"
+					label="MOD_YOORECIPE_FIELD_SHOW_COOK_TIME"
+					description="MOD_YOORECIPE_FIELD_SHOW_COOK_TIME_DESC"
+					default="1"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_wait_time"
+					type="radio"
+					label="MOD_YOORECIPE_FIELD_SHOW_WAIT_TIME"
+					description="MOD_YOORECIPE_FIELD_SHOW_WAIT_TIME_DESC"
+					default="1"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_readmore"
+					type="radio"
+					label="MOD_YOORECIPE_FIELD_SHOW_READMORE"
+					description="MOD_YOORECIPE_FIELD_SHOW_READMORE_DESC"
+					default="1"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

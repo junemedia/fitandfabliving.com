@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+
+		<field
+			name="recipe_id"
+			type="hidden"
+		/>
+		
+		<field
+			name="title"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_TITLE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_TITLE_DESC"
+			size="40"
+			readonly="true"
+		/>
+		
+		<field
+			name="note"
+			type="integer" first="0" last="5" step="1"
+			label="COM_YOORECIPE_YOORECIPE_RATING_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_RATING_DESC"
+			default="4"
+		/>
+		
+		<!--field
+			name="user_id"
+			type="user"
+			label="COM_YOORECIPE_YOORECIPE_USER_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_USER_DESC"
+			size="40"
+			default=""
+		/-->
+		
+		<field
+			name="comment"
+			type="editor"
+			filter="nohtml"
+			class="inputbox"
+			buttons="true"
+			hide="readmore,pagebreak,image,article"
+			label="COM_YOORECIPE_RATING_COMMENT_LABEL"
+			description="COM_YOORECIPE_RATING_COMMENT_DESC"
+			required="true"
+		/>
+		
+		<field
+			name="published"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_PUBLISHED_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PUBLISHEDPUBLISHED_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="abuse"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_OFFENSIVE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_OFFENSIVE_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="creation_date" type="calendar"
+			label="COM_YOORECIPE_FIELD_CREATION_DATE_LABEL"
+		/>
+		
+	</fieldset>
+</form>

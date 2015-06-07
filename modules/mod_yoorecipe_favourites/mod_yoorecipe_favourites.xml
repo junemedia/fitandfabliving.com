@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6" method="upgrade" client="site">
+	<name>YooRecipe Favourites Module</name>
+	<author>YooRock!</author>
+	<creationDate>31/05/2012</creationDate>
+	<copyright>Yoorock, All Rights Reserved</copyright>
+	<license>GPL 2.0</license> 
+	<authorEmail>support@yoorock.fr</authorEmail>
+	<authorUrl>extensions.yoorock.fr</authorUrl>
+	<version>3.1.3</version>
+	<description>YooRecipe favourite items display module</description>
+	
+	<files>
+		<filename module="mod_yoorecipe_favourites">mod_yoorecipe_favourites.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages>
+        <language tag="da-DK">da-DK.mod_yoorecipe_favourites.ini</language>
+        <language tag="da-DK">da-DK.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="de-DE">de-DE.mod_yoorecipe_favourites.ini</language>
+        <language tag="de-DE">de-DE.mod_yoorecipe_favourites.sys.ini</language>
+        <language tag="el-GR">el-GR.mod_yoorecipe_favourites.ini</language>
+        <language tag="el-GR">el-GR.mod_yoorecipe_favourites.sys.ini</language>
+        <language tag="en-GB">en-GB.mod_yoorecipe_favourites.ini</language>
+		<language tag="en-GB">en-GB.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="en-US">en-US.mod_yoorecipe_favourites.ini</language>
+		<language tag="en-US">en-US.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="es-ES">es-ES.mod_yoorecipe_favourites.ini</language>
+		<language tag="es-ES">es-ES.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="fr-CA">fr-CA.mod_yoorecipe_favourites.ini</language>
+		<language tag="fr-CA">fr-CA.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="fr-FR">fr-FR.mod_yoorecipe_favourites.ini</language>
+		<language tag="fr-FR">fr-FR.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="it-IT">it-IT.mod_yoorecipe_favourites.ini</language>
+		<language tag="it-IT">it-IT.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="nl-NL">nl-NL.mod_yoorecipe_favourites.ini</language>
+		<language tag="nl-NL">nl-NL.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="pl-PL">pl-PL.mod_yoorecipe_favourites.ini</language>
+		<language tag="pl-PL">pl-PL.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="pt-BR">pt-BR.mod_yoorecipe_favourites.ini</language>
+		<language tag="pt-BR">pt-BR.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="pt-PT">pt-PT.mod_yoorecipe_favourites.ini</language>
+		<language tag="pt-PT">pt-PT.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="ro-RO">ro-RO.mod_yoorecipe_favourites.ini</language>
+		<language tag="ro-RO">ro-RO.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="ru-RU">ru-RU.mod_yoorecipe_favourites.ini</language>
+		<language tag="ru-RU">ru-RU.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="sk-SK">sk-SK.mod_yoorecipe_favourites.ini</language>
+		<language tag="sk-SK">sk-SK.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="sl-SI">sl-SI.mod_yoorecipe_favourites.ini</language>
+		<language tag="sl-SI">sl-SI.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="sv-SE">sv-SE.mod_yoorecipe_favourites.ini</language>
+		<language tag="sv-SE">sv-SE.mod_yoorecipe_favourites.sys.ini</language>
+		<language tag="tk-TK">tk-TK.mod_yoorecipe_favourites.ini</language>
+		<language tag="tk-TK">tk-TK.mod_yoorecipe_favourites.sys.ini</language>
+    </languages>
+	
+	<media destination="mod_yoorecipe_favourites" folder="media">
+		<filename>index.html</filename>
+		<folder>styles</folder>
+	</media>
+	
+		<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					filter="safehtml"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_MODULE_CLASS_SFX"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_MODULE_CLASS_SFX_DESC"
+					default=""	
+				/>
+				<field name="spacer1" type="spacer" hr="true"/>
+				
+				<field name="max_nb_recipes"
+					type="integer" default="5" first="1" last="30" step="1"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_MAX_NB_RECIPES"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_MAX_NB_RECIPES_DESC"
+				/>
+				
+				<field
+					name="show_title"
+					type="radio"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_TITLE"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_TITLE_DESC"
+					default="0"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_picture"
+					type="radio"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_PICTURE"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_PICTURE_DESC"
+					default="1"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_ingredients"
+					type="radio"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_INGREDIENTS"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_INGREDIENTS_DESC"
+					default="0"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_difficulty"
+					type="radio"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_DIFFICULTY"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_DIFFICULTY_DESC"
+					default="0"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_cost"
+					type="radio"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_COST"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_COST_DESC"
+					default="0"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_rating"
+					type="radio"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_RATING"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_RATING_DESC"
+					default="0"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="rating_style"
+					type="list"
+					label="MOD_YOORECIPE_FAVOURITES_RECIPE_FIELD_RATING_STYLE"
+					description="MOD_YOORECIPE_FAVOURITES_RECIPE_FIELD_RATING_STYLE_DESC"
+					default="stars"
+				>
+					<option value="stars">MOD_YOORECIPE_FAVOURITES_RECIPE_OPTION_RATING_STYLE_STARS</option>
+					<option value="grade">MOD_YOORECIPE_FAVOURITES_RECIPE_OPTION_RATING_STYLE_GRADE</option>
+				</field>
+				
+				<field
+					name="show_preparation_time"
+					type="radio"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_PREP_TIME"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_PREP_TIME_DESC"
+					default="0"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_cook_time"
+					type="radio"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_COOK_TIME"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_COOK_TIME_DESC"
+					default="0"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_wait_time"
+					type="radio"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_WAIT_TIME"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_WAIT_TIME_DESC"
+					default="0"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+				
+				<field
+					name="show_readmore"
+					type="radio"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_READMORE"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_SHOW_READMORE_DESC"
+					default="0"
+				>
+					<option value="0">JHIDE</option>
+					<option value="1">JSHOW</option>
+				</field>
+
+			</fieldset>
+			
+			<fieldset name="advanced">
+				
+				<field name="intro_text" type="text" default="" filter="safehtml" 
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_INTRO_TEXT"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_INTRO_TEXT_DESC"
+				/>
+				
+				<field name="thumbnail_size" 
+					type="integer" default="60" first="50" last="300" step="10"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_THUMBNAIL_SIZE"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_THUMBNAIL_SIZE_DESC"
+				/>
+				
+				<field name="use_watermark" 
+					type="radio" default="1"
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_USE_WATERMARK"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_USE_WATERMARK_DESC"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="spacer2" type="spacer" hr="true"/>
+								
+				<field name="recipe_title_max_length" type="integer" default="20" first="20" last="100" step="10" 
+					label="MOD_YOORECIPE_FAVOURITES_FIELD_RECIPE_TITLE_MAX_LENGTH"
+					description="MOD_YOORECIPE_FAVOURITES_FIELD_RECIPE_TITLE_MAX_LENGTH_DESC"
+				/>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

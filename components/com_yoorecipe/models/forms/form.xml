@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+		
+		<field
+			name="asset_id"
+			type="hidden"
+			filter="unset"
+		/>
+		
+		<field
+			name="title"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_TITLE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_TITLE_DESC"
+			size="80"
+			default=""
+			required="true"
+		/>
+		
+		<field
+			name="alias"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_ALIAS_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_ALIAS_DESC"
+			size="80"
+			default=""
+		/>
+		
+		<field type="spacer" name="spacer1" hr="false" label=""/>
+		
+		<field
+			name="description"
+			type="editor"
+			filter="safehtml"
+			buttons="true"
+			hide="readmore,pagebreak"
+			label="COM_YOORECIPE_YOORECIPE_DESCRIPTION_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_DESCRIPTION_DESC"
+			required="true"
+			width="400"
+		/>
+		
+		<field
+			name="language"
+			type="contentlanguage"
+			label="JFIELD_LANGUAGE_LABEL"
+			description="COM_CATEGORIES_FIELD_LANGUAGE_DESC"
+			class="inputbox">
+			<option value="*">JALL</option>
+		</field>
+		
+		<field
+			name="price"
+			type="text"
+			label="COM_YOORECIPE_PRICE_LABEL"
+			description="COM_YOORECIPE_PRICE_LABEL_DESC"
+			size="4"
+			filter="double"
+			default=""
+		/>
+		
+		<field name="metakey" type="textarea"
+				label="JFIELD_META_KEYWORDS_LABEL" description="JFIELD_META_KEYWORDS_DESC"
+				rows="3" cols="40"
+		/>
+
+		<field name="metadata"
+			type="list"
+			label="JFIELD_METADATA_ROBOTS_LABEL"
+			description="JFIELD_METADATA_ROBOTS_DESC"
+		>
+			<option value="">JGLOBAL_USE_GLOBAL</option>
+			<option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+			<option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+			<option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+			<option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+		</field>
+		
+		<field name="category_id" type="category" multiple="true" extension="com_yoorecipe"
+			label="JCATEGORY" description="COM_YOORECIPE_YOORECIPE_CATEGORY_LABEL"
+			class="inputbox" required="true" size="10"
+		/>
+		
+		<field name="season_id"
+			type="list"
+			multiple="true" 
+			label="COM_YOORECIPE_YOORECIPE_SEASON_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_SEASON_DESC"
+			size="7"
+		>
+			<option value="JAN">COM_YOORECIPE_JAN</option>
+			<option value="FEB">COM_YOORECIPE_FEB</option>
+			<option value="MAR">COM_YOORECIPE_MAR</option>
+			<option value="APR">COM_YOORECIPE_APR</option>
+			<option value="MAY">COM_YOORECIPE_MAY</option>
+			<option value="JUN">COM_YOORECIPE_JUN</option>
+			<option value="JUL">COM_YOORECIPE_JUL</option>
+			<option value="AUG">COM_YOORECIPE_AUG</option>
+			<option value="SEP">COM_YOORECIPE_SEP</option>
+			<option value="OCT">COM_YOORECIPE_OCT</option>
+			<option value="NOV">COM_YOORECIPE_NOV</option>
+			<option value="DEC">COM_YOORECIPE_DEC</option>
+		</field>
+		
+		<field name="access" type="accesslevel" 
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC" class="inputbox" size="1"
+		/>
+		
+		<field name="created_by" type="user"
+			label="COM_YOORECIPE_FIELD_CREATED_BY_LABEL" description="COM_YOORECIPE_FIELD_CREATED_BY_DESC"
+		/>
+		
+		<field name="creation_date" type="calendar"
+			label="COM_YOORECIPE_FIELD_CREATION_DATE_LABEL"
+		/>
+		
+		<field name="publish_up" type="calendar"
+			label="COM_YOORECIPE_FIELD_PUBLISH_UP_LABEL"
+			description="COM_YOORECIPE_FIELD_PUBLISH_UP_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc"
+		/>
+
+		<field name="publish_down" type="calendar"
+			label="COM_YOORECIPE_FIELD_PUBLISH_DOWN_LABEL"
+			description="COM_YOORECIPE_FIELD_PUBLISH_DOWN_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S" size="22"
+			filter="user_utc"
+		/>
+		
+		<field type="spacer" name="spacer2" hr="false" label=""/>
+		<field
+			name="preparation"
+			type="editor"
+			filter="safehtml"
+			buttons="true"
+			hide="readmore,pagebreak"
+			label="COM_YOORECIPE_YOORECIPE_PREPARATION_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PREPARATION_DESC"
+			required="true"
+			width="400"
+		/>
+		<field
+			name="servings_type"
+			type="list"
+			label="COM_YOORECIPE_YOORECIPE_SERVINGS_TYPE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_SERVINGS_TYPE_DESC"
+			default="P"
+		>
+			<option value="P">COM_YOORECIPE_YOORECIPE_PERSONS_LABEL</option>
+			<option value="B">COM_YOORECIPE_YOORECIPE_BATCHES_LABEL</option>
+			<option value="D">COM_YOORECIPE_YOORECIPE_DOZENS_LABEL</option>
+			<option value="S">COM_YOORECIPE_YOORECIPE_SERVINGS_LABEL</option>
+		</field>
+		<field
+			name="nb_persons"
+			type="integer" first="1" last="15" step="1"
+			label="COM_YOORECIPE_YOORECIPE_QUANTITIES_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_QUANTITIES_DESC"
+			default="4"
+		/>
+		<field
+			name="difficulty"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_DIFFICULTY_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_DIFFICULTY_DESC"
+			default="1"
+		>
+			<option value="1">COM_YOORECIPE_YOORECIPE_SUPER_EASY_LABEL</option>
+			<option value="2">COM_YOORECIPE_YOORECIPE_EASY_LABEL</option>
+			<option value="3">COM_YOORECIPE_YOORECIPE_MEDIUM_LABEL</option>
+			<option value="4">COM_YOORECIPE_YOORECIPE_HARD_LABEL</option>
+		</field>
+		<field
+			name="cost"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_COST_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_COST_DESC"
+			default="1"
+		>
+			<option value="1">COM_YOORECIPE_YOORECIPE_CHEAP_LABEL</option>
+			<option value="2">COM_YOORECIPE_YOORECIPE_INTERMEDIATE_LABEL</option>
+			<option value="3">COM_YOORECIPE_YOORECIPE_EXPENSIVE_LABEL</option>
+		</field>
+		
+		<field
+			name="carbs"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_CARBS_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_CARBS_DESC"
+			size="5" maxlength="5"
+			default="" 
+			filter="double"
+		/>
+		
+		<field
+			name="fat"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_FAT_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_FAT_DESC"
+			size="5" maxlength="5"
+			default="" 
+			filter="double" 
+		/>
+		
+		<field
+			name="saturated_fat"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_SATURATED_FAT_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_SATURATED_FAT_DESC"
+			size="5" maxlength="5"
+			default=""
+			filter="double" 
+		/>
+		
+		<field
+			name="proteins"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_PROTEINS_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PROTEINS_DESC"
+			size="5" maxlength="5"
+			default=""
+			filter="double" 
+		/>
+		
+		<field
+			name="fibers"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_FIBERS_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_FIBERS_DESC"
+			size="5" maxlength="5"
+			default=""
+			filter="double" 
+		/>
+		
+		<field
+			name="salt"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_SALT_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_SALT_DESC"
+			size="5" maxlength="5"
+			default=""
+			filter="double" 
+		/>
+		
+		<field
+			name="kcal"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_KCAL_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_KCAL_DESC"
+			size="5" maxlength="5"
+			default="" filter="integer" 
+		/>
+		
+		<!--field
+			name="kjoule"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_KJOULE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_KJOULE_DESC"
+			size="5" maxlength="5"
+			default="" filter="integer" 
+		/-->
+		
+		<field
+			name="diet"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_DIET_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_DIET_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>			
+		</field>
+		
+		<field
+			name="veggie"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_VEGGIE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_VEGGIE_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>			
+		</field>
+		
+		<field
+			name="gluten_free"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_GLUTEN_FREE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_GLUTEN_FREE_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>			
+		</field>
+		
+		<field
+			name="lactose_free"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_LACTOSE_FREE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_LACTOSE_FREE_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>			
+		</field>
+		
+		<field
+			name="preparation_time"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_PREPARATION_TIME_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PREPARATION_TIME_DESC"
+			size="4" maxlength="4"
+			default="20" filter="integer" 
+		/>
+		<field
+			name="cook_time"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_COOK_TIME_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_COOK_TIME_DESC"
+			size="4" maxlength="4"
+			default="20" filter="integer" 
+		/>
+		<field
+			name="wait_time"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_WAIT_TIME_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_WAIT_TIME_DESC"
+			size="4" maxlength="4"
+			default="20" filter="integer" 
+		/>
+		<!--field
+			name="picture"
+			type="media"
+			directory="stories/yoorecipe"
+			label="COM_YOORECIPE_YOORECIPE_PICTURE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PICTURE_DESC"
+		/-->
+		
+		<field
+		   name="picture"               
+		   default=""
+		   type="Usermedia"
+		   label="COM_YOORECIPE_YOORECIPE_PICTURE_LABEL"
+		   description="COM_YOORECIPE_YOORECIPE_PICTURE_DESC"
+		   componentname="com_yoorecipe" 
+		/>
+		
+		<field
+			name="video"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_VIDEO_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_VIDEO_DESC"
+			size="40"
+			default=""
+		/>
+		   
+		<field
+			name="published"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_PUBLISHED_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PUBLISHEDPUBLISHED_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="validated"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_VALIDATED_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_VALIDATED_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="featured"
+			type="radio"
+			label="JFEATURED"
+			description="JGLOBAL_FIELD_FEATURED_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			label="COM_YOORECIPE_RECIPE_FIELD_NB_VIEWS"
+			description="COM_YOORECIPE_RECIPE_FIELD_NB_VIEWS_DESC"
+			name="nb_views"
+			type="text"
+			size="5" maxlength="5"
+			default="" filter="integer" 
+		/>
+	</fieldset>
+</form>

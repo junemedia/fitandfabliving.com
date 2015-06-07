@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+		
+		<field
+			name="title"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_TITLE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_TITLE_DESC"
+			size="40"
+			default=""
+			required="true"
+		/>
+		
+		<field
+			name="alias"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_ALIAS_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_ALIAS_DESC"
+			size="40"
+			default=""
+		/>
+		<field type="spacer" name="" hr="false" />
+		
+		<field
+			name="description"
+			type="editor"
+			filter="safehtml"
+			buttons="true"
+			hide="readmore,pagebreak"
+			width="500"
+			label="COM_YOORECIPE_YOORECIPE_DESCRIPTION_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_DESCRIPTION_DESC"
+			required="true"
+		/>
+		
+		<field name="category_id" type="category" multiple="true" extension="com_yoorecipe"
+			label="JCATEGORY" description="COM_YOORECIPE_YOORECIPE_CATEGORY_LABEL"
+			class="inputbox" required="true" size="10"
+		/>
+		
+		<field name="created_by" type="user"
+			label="COM_YOORECIPE_FIELD_CREATED_BY_LABEL" description="COM_YOORECIPE_FIELD_CREATED_BY_DESC"
+		/>
+		
+		<field type="spacer" name="" hr="false" />
+		<field
+			name="preparation"
+			type="editor"
+			filter="safehtml"
+			buttons="true"
+			hide="readmore,pagebreak"
+			width="500"
+			label="COM_YOORECIPE_YOORECIPE_PREPARATION_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PREPARATION_DESC"
+			required="true"
+		/>
+		<field
+			name="servings_type"
+			type="list"
+			label="COM_YOORECIPE_YOORECIPE_SERVINGS_TYPE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_SERVINGS_TYPE_DESC"
+			default="P"
+		>
+			<option value="P">COM_YOORECIPE_YOORECIPE_PERSONS_LABEL</option>
+			<option value="B">COM_YOORECIPE_YOORECIPE_BATCHES_LABEL</option>
+			<option value="D">COM_YOORECIPE_YOORECIPE_DOZENS_LABEL</option>
+			<option value="S">COM_YOORECIPE_YOORECIPE_SERVINGS_LABEL</option>
+		</field>
+		<field
+			name="nb_persons"
+			type="integer" first="1" last="10" step="1"
+			label="COM_YOORECIPE_YOORECIPE_QUANTITIES_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_QUANTITIES_DESC"
+			default="4"
+		/>
+		<field
+			name="difficulty"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_DIFFICULTY_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_DIFFICULTY_DESC"
+			default="1"
+		>
+			<option value="1">COM_YOORECIPE_YOORECIPE_SUPER_EASY_LABEL</option>
+			<option value="2">COM_YOORECIPE_YOORECIPE_EASY_LABEL</option>
+			<option value="3">COM_YOORECIPE_YOORECIPE_MEDIUM_LABEL</option>
+			<option value="4">COM_YOORECIPE_YOORECIPE_HARD_LABEL</option>
+		</field>
+		<field
+			name="cost"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_COST_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_COST_DESC"
+			default="1"
+		>
+			<option value="1">COM_YOORECIPE_YOORECIPE_CHEAP_LABEL</option>
+			<option value="2">COM_YOORECIPE_YOORECIPE_INTERMEDIATE_LABEL</option>
+			<option value="3">COM_YOORECIPE_YOORECIPE_EXPENSIVE_LABEL</option>
+		</field>
+		<field
+			name="preparation_time"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_PREPARATION_TIME_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PREPARATION_TIME_DESC"
+			size="4" maxlength="4"
+			default="20" filter="integer" 
+		/>
+		<field
+			name="cook_time"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_COOK_TIME_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_COOK_TIME_DESC"
+			size="4" maxlength="4"
+			default="20" filter="integer" 
+		/>
+		<field
+			name="wait_time"
+			type="text"
+			label="COM_YOORECIPE_YOORECIPE_WAIT_TIME_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_WAIT_TIME_DESC"
+			size="4" maxlength="4"
+			default="20" filter="integer" 
+		/>
+		<!--field
+			name="picture"
+			type="media"
+			directory="stories/yoorecipe"
+			label="COM_YOORECIPE_YOORECIPE_PICTURE_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PICTURE_DESC"
+		/-->
+		
+		<field
+		   name="picture"               
+		   default=""
+		   type="media"
+		   label="COM_YOORECIPE_YOORECIPE_PICTURE_LABEL"
+		   description="COM_YOORECIPE_YOORECIPE_PICTURE_DESC"
+		   componentname="com_yoorecipe" 		   		   directory="com_yoorecipe"
+		/>
+		   
+		<field
+			name="published"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_PUBLISHED_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PUBLISHEDPUBLISHED_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="validated"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_VALIDATED_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_VALIDATED_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field
+			name="nb_views"
+			type="hidden"
+			default="0"
+		/>
+	</fieldset>
+</form>

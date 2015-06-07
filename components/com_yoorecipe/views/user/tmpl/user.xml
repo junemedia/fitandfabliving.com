@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_YOORECIPE_YOORECIPE_VIEW_RECIPES_BY_USER">
+		<message>COM_YOORECIPE_YOORECIPE_VIEW_RECIPES_BY_USER_DESC</message>
+	</layout>
+	
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_yoorecipe/models/fields"
+	>
+		<fieldset name="request">
+			<field name="id" type="user"
+			label="COM_YOORECIPE_FIELD_CREATED_BY_LABEL" description="COM_YOORECIPE_FIELD_CREATED_BY_DESC"
+		/>
+		</fieldset>
+	</fields>
+</metadata>

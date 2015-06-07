@@ -1,0 +1,126 @@
+.withTg {background: none repeat scroll 0 0 #C7DA76;border: 1px solid #ccc;border-radius: 4px 4px 4px 4px;margin: 1px;padding: 2px;}
+.TgRemove {color: #555;cursor: pointer;font-family: "Lucida Grande";font-size: 11px;padding-left: 4px;}
+
+#div-yoorecipe {font-family:Georgia;margin-left:20px;margin-right:20px;}
+#div-yoorecipe h3  {border-bottom: 1px dotted grey;width:100%;color:#5F870F;font-size:20px;}
+
+.recipe-title {font-size: 290% !important;font-weight: bold !important;border-bottom: none !important;color: #555 !important;padding-bottom: 15px !important;margin-bottom:0px !important;text-shadow: 1px 1px 0 #fff;}
+.clear {clear:both;}
+.recipe-description {font-style: italic;}
+.recipe-picture  {border:1px solid #d9d9d9;padding:6px;}
+.blog-picture{margin-bottom:40px;}
+.recipe-picture-single  {border:1px solid #d9d9d9;padding:6px;width:200px;}
+.span-recipe-label {font-weight:bold;color:#5F870F;}
+.shareerr {color: #f00;font-size:10px;padding-bottom:5px;}
+.small-text{font-size:15px;padding-bottom:5px;}
+.recipe-comment-header {background: none repeat scroll 0 0 #F2F6F8;border: 1px solid #CEDFEB;padding: 5px 10px 10px;margin: 5px 0px 20px;}
+.recipe-comment-text {margin-top:10px;margin-bottom: 20px;}
+
+.add-comment-container {background-color: #F2F2F2;border: 1px solid #CCC;padding:10px;margin-top:10px;}
+
+.inputtext {width: 200px;color: #777;display: block;margin: 5px 0;}
+.inputtextarea {display: inline;height: 44px;margin-top: 5px;overflow: hidden;padding: 3px;width: 100%;}
+.inputtext:focus { border:1px solid #fb5252;}
+.inputtextarea:focus { border:1px solid #fb5252;}
+
+.yoorecipe-results {list-style: none outside none;list-style-type:none !important;margin: 0;padding: 0;}
+.yoorecipe-fieldset {border: 1px solid #CCC;padding:10px;margin-bottom:10px;}
+
+/* new classes */
+#div-recipe-title { }
+#div-recipe-description {font-style: italic;}
+#div-recipe-category {margin-bottom: 10px;}
+#div-recipe-information {margin-top:35px;clear:both;padding-bottom:20px;}
+#div-recipe-rating {float:right;}
+#div-nb-comments {display: inline;float:right;}
+#div-recipe-added-on, #div-recipe-views{margin-bottom: 10px;font-size: 0.85em;}
+
+.yoorecipe-row {margin-top:15px;padding-bottom:15px;}
+.yoorecipe-row-item {width:100%;overflow:hidden;}
+
+ul.yoorecipe-infos {float:right;clear:none;list-style: none outside none;margin: 5px 0 5px 0px;min-height: 100px;padding: 0px;width: 200px;}
+ul.yoorecipe-infos li{line-height: 20px;background: url("../images/arrow_blue.png") no-repeat scroll 15px 50% transparent;padding-left: 30px !important;list-style-type: none;}
+
+#div-recipe-result-picture {float:left;margin-right:15px;}
+#div-recipe-picture {float:right;margin-left: 10px;}
+#div-recipe-difficulty {margin-right: 10px;font-size:180% !important;font-weight: bold !important;color: #555 !important;float:left;padding-top:10px;padding-bottom:10px;}
+#div-recipe-cost {font-size:180% !important;font-weight: bold !important;color: #555 !important;float:left;margin-right:10px;padding-top:10px;padding-bottom:10px;}
+#div-recipe-note {font-size:180% !important;font-weight: bold !important;color: #555 !important;float:left;margin-right:10px;}
+#div-recipe-times {float:left;}
+#div-recipe-prep-time {margin-top:10px;margin-right:10px;float:left;}
+#div-recipe-cook-time {margin-top:10px;margin-right:10px;float:left;}
+#div-recipe-wait-time {margin-top:10px;margin-right:10px;float:left;}
+#div-recipe-ingredients {float:left;margin-top:20px;}
+
+.div-recipe-container-ingredients, #div-recipe-ingredients-single {overflow:hidden;}
+
+#div-recipe-ingredients-single  li {background: url("../images/arrow_blue.png") no-repeat scroll 15px 50% transparent;list-style-type: none;padding-left: 30px !important;}
+#div-recipe-preparation-single  ol.numbering {color: #399FB1;list-style: decimal none;font-family: Georgia,Times New Roman,Times,serif;font-size: 24px;font-style: italic;margin: 15px 0 15px 10px;padding-left: 20px;}
+#div-recipe-preparation-single  ol.numbering  li.numbering{margin-top:15px;}
+#div-recipe-preparation-single  ol.numbering div, #div-recipe-preparation-single  ol.numbering ul li , #div-recipe-preparation-single  ol.numbering ol li   {color: #646464;font-size: 12px;font-style: normal;}
+#div-recipe-preparation-single  ol.numbering ul li {color: #646464;font-size: 12px;font-style: normal;list-style: disc none;margin-left:20px;}
+#div-recipe-preparation-single  ol.numbering ol li {color: #646464;font-size: 12px;font-style: normal;list-style: decimal none;margin-left:20px;}
+#div-recipe-preparation {float:left;margin-top:20px;}
+#div-recipe-preparation-single{clear:both;margin-top:20px;}
+#div-recipe-read-more {clear:both;text-align:right;padding-bottom:10px;/*border-bottom:1px dotted #555;*/}
+#div-recipe-new-comment {margin-top:20px;}
+#div-recipe-comments {margin-top:20px;}
+#div-recipe-back {margin-bottom:20px;}
+#div-goto-top {margin-top:10px;float:right;}
+
+/* search page */
+#search-validation-message {margin-top:10px;}
+.hide {display:none;}
+
+/* social sharing */
+.yooRecipeSocialLinksBlock {clear:both;}
+.yooRecipeSocialLinksBlock span {display: block;float: left;font-weight: bold;padding: 0 24px 0 0;}
+
+.yooRecipeSocialLinksBlock ul.socialLinks-small  {clear: none;float: left;list-style: none outside none;margin: 0;padding: 0;}
+.yooRecipeSocialLinksBlock ul.socialLinks-small li {float: left;list-style: none outside none;margin: 0;padding: 0 4px;display: inline;}
+.yooRecipeSocialLinksBlock ul.socialLinks-small li a {background-position: 0 0;background-repeat: no-repeat;display: block;float: left;height: 16px;width: 16px;}
+.yooRecipeSocialLinksBlock ul.socialLinks-small li a span {display: none;}
+
+.yooRecipeSocialLinksBlock ul.socialLinks-tall  {clear: none;float: left;list-style: none outside none;margin: 0;padding: 0;}
+.yooRecipeSocialLinksBlock ul.socialLinks-tall li {float: left;list-style: none outside none;margin: 0;padding: 0 4px;display: inline;}
+.yooRecipeSocialLinksBlock ul.socialLinks-tall li a {background-position: 0 0;background-repeat: no-repeat;display: block;float: left;height: 50px;width: 50px;}
+.yooRecipeSocialLinksBlock ul.socialLinks-tall li a span {display: none;}
+
+a.delicious-small {background-image: url("../images/small/delicious_16.png");}
+a.twitter-small {background-image: url("../images/small/twitter_16.png");}
+a.digg-small {background-image: url("../images/small/digg_16.png");}
+a.facebook-small {background-image: url("../images/small/facebook_16.png");}
+a.myspace-small {background-image: url("../images/small/myspace_16.png");}
+a.reddit-small {background-image: url("../images/small/reddit_16.png");}
+a.stumble-small {background-image: url("../images/small/stumbleupon_16.png");}
+a.technorati-small {background-image: url("../images/small/technorati_16.png");}
+
+a.delicious-tall {background-image: url("../images/big/delicious-icon.png");}
+a.twitter-tall {background-image: url("../images/big/twitter-icon.png");}
+a.digg-tall {background-image: url("../images/big/digg-icon.png");}
+a.facebook-tall {background-image: url("../images/big/facebook-icon.png");}
+a.myspace-tall {background-image: url("../images/big/myspace-icon.png");}
+a.reddit-tall {background-image: url("../images/big/reddit-icon.png");}
+a.stumble-tall {background-image: url("../images/big/stumbleupon-icon.png");}
+a.technorati-tall {background-image: url("../images/big/technorati-icon.png");}
+
+/* since 2.2.1 */
+#comyoorecipe-items-per-page {float:right;}
+
+/* since 2.3.0 */
+.alpha-index-container {overflow:hidden;margin-bottom:20px;}
+.alpha-index  a, .alpha-index  span {display: inline-block;height: 26px;line-height: 26px;margin: 2px 0;text-align: center;text-transform: uppercase;width: 21px;}
+.alpha-index {text-align:center;}
+.width25 {float: left;width:auto;clear:none;list-style-type: none !important;}
+#main div.yoorecipe-sub-categories ul , #main div.comyoorecipe-cat-browse ul { padding: 0 ;text-align:center; display:table;}
+#main div.yoorecipe-sub-categories li, #main div.comyoorecipe-cat-browse li { padding: 10px; list-style-type: none;}
+.yoorecipe-hr  {border-bottom: 1px solid #ddd;}
+.yoorecipe-h1 {text-align:center;}
+.formelm {float: none;padding: 5px 0;}
+.formelm label {float: left;padding: 3px 0;width: 12em;}
+.formelm fieldset input { float:left; margin-right:5px}
+
+.ajax-loading { background: url("../images/ajax-loading.gif") no-repeat; width:16px; height:16px;}
+.ajax-centered {margin: 0 auto; border: none;}
+.dropcap {font-style:bold;font-size:16pt}
+.greyedout {opacity:0.5;}

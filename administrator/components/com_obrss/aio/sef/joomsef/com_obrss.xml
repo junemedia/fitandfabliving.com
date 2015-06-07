@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="sef_ext">
+	<name>obRSS</name>
+	<author>Thong Tran - foobla.com</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>Copyright (C) 2007-2012 foobla.com. All rights reserved.</copyright>
+	<authorEmail>info@foobla.com</authorEmail>
+	<authorUrl>www.foobla.com</authorUrl>
+	<version>2.0.0</version>
+	<description>Adds SEO support for obRSS extension.</description>
+	<files>
+		<filename sef_ext="obrss">com_obrss.php</filename>
+		<filename sef_ext="obrss">com_obrss.xml</filename>
+	</files>
+	<params>
+ 		<param name="ignoreSource" type="radio" default="2" label="Ignore multiple sources:" description="You can choose to override the default behaviour of this option.">
+ 			<option value="2">Use global config</option>
+ 			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+ 		<param name="itemid" type="radio" default="0" label="Itemid handling:" description="You can choose to override the default behaviour with your own Itemid.">
+ 			<option value="0">Use global config</option>
+ 			<option value="1">Override</option>
+ 		</param>
+ 		<param name="overrideId" type="text" default="" label="Override Itemid:" description="Itemid to always use with this component. Leave blank to use the default one."></param>
+ 	</params>
+</install>

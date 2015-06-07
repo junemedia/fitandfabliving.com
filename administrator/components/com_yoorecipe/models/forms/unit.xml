@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+		/>
+		
+		<field
+			name="lang"
+			type="language"
+			client="site" 
+			label="COM_YOORECIPE_LANG_LABEL"
+			description="COM_YOORECIPE_LANG_DESC"
+			default="fr-FR"
+		/>
+
+		<field
+			name="code"
+			type="text"
+			label="COM_YOORECIPE_CODE_LABEL"
+			description="COM_YOORECIPE_CODE_DESC"
+			size="60"
+			required="true"
+		/>
+		
+		<field
+			name="label"
+			type="text"
+			label="COM_YOORECIPE_LABEL_LABEL"
+			description="COM_YOORECIPE_LABEL_DESC"
+			size="60"
+			required="true"
+		/>
+		
+		<!--field
+			name="ordering"
+			type="text"
+			label="COM_YOORECIPE_ORDERING_LABEL"
+			description="COM_YOORECIPE_ORDERING_DESC"
+			filter="integer"
+			default=""
+		/-->
+		
+		<field
+			name="published"
+			type="radio"
+			label="COM_YOORECIPE_YOORECIPE_PUBLISHED_LABEL"
+			description="COM_YOORECIPE_YOORECIPE_PUBLISHEDPUBLISHED_DESC"
+			default="1"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="creation_date" type="calendar"
+			label="COM_YOORECIPE_FIELD_CREATION_DATE_LABEL"
+			readonly="true"
+		/>
+		
+	</fieldset>
+</form>

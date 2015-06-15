@@ -71,7 +71,7 @@ class JDocumentRendererMessage extends JDocumentRenderer
 		{
 			foreach ($messages as $msg)
 			{
-				if (isset($msg['type']) && isset($msg['message']))
+				if (isset($msg['type']) && isset($msg['message']) && $msg['type']!='warning')
 				{
 					$lists[$msg['type']][] = $msg['message'];
 				}

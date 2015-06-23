@@ -145,7 +145,7 @@ $menu = $app->getMenu();
     <?php
         $document = JFactory::getDocument();
         $document->addScript('/media/jui/js/jquery.min.js');
-        $document->addScript('http://www.jmtkg.com/js/tracker.js');
+        //$document->addScript('http://www.jmtkg.com/js/tracker.js');
         $document->addScriptDeclaration("
             var site_name = 'fitandfabliving';
             var site_path = window.location.href;

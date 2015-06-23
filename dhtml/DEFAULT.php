@@ -52,7 +52,7 @@ if ($submit == 'Submit') {
 		$posting_url = "http://fitfab.popularliving.com/ff_flow.php?email=$email&ipaddr=".trim($_SERVER['REMOTE_ADDR'])."&keycode=gjhk5487gdfhkjg9438&sublists=$listid&subcampid=$subcampid&subsource=$linkid";
 		$response = file_get_contents($posting_url);
 		
-		$message = "Thank you for signing up!"."<img src='http://jmtkg.com/plant.php?email=$email' width=0 height=0'></img>";
+		$message = "Thank you for signing up!"."";
 		
 		//Only for a brand new email address that we have never seen do we fire the call to google analytics
 		if (strstr($response, 'is_newemail:true')) {

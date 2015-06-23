@@ -25,7 +25,7 @@ if ($_POST['submit'] == 'Y') {
 
 	$message = 'success';
 	setcookie("EMAIL_ID", $email, time()+642816000, "/", ".savvyfork.com");
-	$plant_cookie = "<img src='http://jmtkg.com/plant.php?email=$email' width='0' height='0'></img>";
+	$plant_cookie = "";
 	$email = '';
 	$pixel = "<img src='http://fitfab.popularliving.com/subctr/forms/stats.php?a=s&f=FFSqueeze$subcampid' width='0' height='0' border='0' />";
 } else {

@@ -80,7 +80,7 @@ if (isset($_POST['submit']) && $_POST['submit'] == 'Enter to Win!') {
 				dataLayer.push({'event': 'giveawayfitandfabliving'});</script>
 				<!-- End Google Tag Manager -->";
 		
-		$message = 'Success! Check your email to confirm sign up.'.'<iframe frameborder="0" width="1" height="1" src="http://'.$site_domain.'/signup/giveaway-thankyou.html"></iframe>'."<img src='http://jmtkg.com/plant.php?email=$EMAIL' width=0 height=0></img>".$fire_cake_pixel.$gtm_pixel;
+		$message = 'Success! Check your email to confirm sign up.'.'<iframe frameborder="0" width="1" height="1" src="http://'.$site_domain.'/signup/giveaway-thankyou.html"></iframe>'."".$fire_cake_pixel.$gtm_pixel;
 		
 		$pixel = "<img src='http://fitfab.popularliving.com/subctr/forms/stats.php?a=s&f=FFGiveaway$guid' width='0' height='0' border='0' />";
 		$style = "color:green;font-weight:bold;";

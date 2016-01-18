@@ -32,6 +32,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^index.php/(.*)$ /$1 [R=301]
 
 
+# Redirect the emails and the nl_signups to the homepage
+RewriteCond %{QUERY_STRING} ^(.*)(e=.*@.*)(.*)$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)(.*nl_signup=.*)(.*)$
+RewriteRule .* http://www.fitandfabliving.com/? [L,R=301]
+
 ## Begin - Rewrite rules to block out some common exploits.
 # If you experience problems on your site block out the operations listed below
 # This attempts to block the most common type of exploit `attempts` to Joomla!
@@ -57,6 +62,8 @@ RewriteRule .* index.php [F]
 # www redirect (or vice versa), place that code here. Ensure those
 # redirects use the correct RewriteRule syntax and the [R=301,L] flags.
 #
+RewriteCond %{HTTP_HOST} !^(www\.fitandfabliving\.com)?$
+RewriteRule (.*) http://www.fitandfabliving.com/$1 [R=301,L]
 ## End - Custom redirects
 
 ##
@@ -89,8 +96,6 @@ RewriteRule .* index.php [L]
 
 Options -Indexes
 
-Redirect 301 /privacy-policy/153-helptopics http://stg.fitandfabliving.com/privacy-policy
-Redirect 301 /aboutus/61-helptopics/helptopics http://stg.fitandfabliving.com/aboutus
-Redirect 301 /terms-of-use/153-helptopics http://stg.fitandfabliving.com/terms-of-use
-
-allow from 24.1.185.32
+Redirect 301 /privacy-policy/153-helptopics http://www.fitandfabliving.com/privacy-policy
+Redirect 301 /aboutus/61-helptopics/helptopics http://www.fitandfabliving.com/aboutus
+Redirect 301 /terms-of-use/153-helptopics http://www.fitandfabliving.com/terms-of-use

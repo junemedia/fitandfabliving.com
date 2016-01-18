@@ -48,7 +48,7 @@ if (isset($_POST['submit']) && $_POST['submit'] == 'Enter to Win!') {
 				$subcampid = '3628';	// Quick Rewards
 				break;
 			default:
-				$subcampid = '4342';	// FF Default Giveaway 0615
+			     $subcampid = '4372';	// FF Default Giveaway 0815
 		}
 		
 		$ipaddr = trim($_SERVER['REMOTE_ADDR']);

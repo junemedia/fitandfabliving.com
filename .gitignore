@@ -1,2 +1,16 @@
 cache/
 tmp/
+logs/
+
+
+
+# until I figure out what's what...
+images/
+generator/
+configuration.php
+configuration.leon.php
+configuration.memcache.php
+custom/
+ror.xml
+sitemap.xml
+sitemap.xml.gz

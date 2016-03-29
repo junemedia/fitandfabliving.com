@@ -9,9 +9,9 @@
 
 <div id="537216141_300x250ATF" style="width:300px;height:250px;margin:0;padding:0">
   <noscript>
-    <iframe id="e2a474db6a" name="e2a474db6a" src="http://ox-d.junemedia.com/w/1.0/afr?auid=537216141&cb=INSERT_RANDOM_NUMBER_HERE" frameborder="0" scrolling="no" width="300" height="250">
-      <a href="http://ox-d.junemedia.com/w/1.0/rc?cs=e2a474db6a&cb=INSERT_RANDOM_NUMBER_HERE" >
-        <img src="http://ox-d.junemedia.com/w/1.0/ai?auid=537216141&cs=e2a474db6a&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt="">
+    <iframe id="d0cab450d3" name="d0cab450d3" src="//junemedia-d.openx.net/w/1.0/afr?auid=537216141&cb=INSERT_RANDOM_NUMBER_HERE" frameborder="0" scrolling="no" width="300" height="250">
+      <a href="//junemedia-d.openx.net/w/1.0/rc?cs=d0cab450d3&cb=INSERT_RANDOM_NUMBER_HERE" >
+        <img src="//junemedia-d.openx.net/w/1.0/ai?auid=537216141&cs=d0cab450d3&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt="">
       </a>
     </iframe>
   </noscript>
@@ -25,4 +25,4 @@
   });
 </script>
 
-<script type="text/javascript" src="http://ox-d.junemedia.com/w/1.0/jstag"></script>
+<script type="text/javascript" src="//junemedia-d.openx.net/w/1.0/jstag"></script>

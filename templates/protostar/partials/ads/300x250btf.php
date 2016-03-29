@@ -7,11 +7,11 @@
   }catch(e){/*ignore*/}
 </script>
 
-<div id="537216142_300x250BTF" style="width:970px;height:250px;margin:0;padding:0">
+<div id="537216142_300x250BTF" style="width:300px;height:250px;margin:0;padding:0">
   <noscript>
-    <iframe id="58d3b864d6" name="58d3b864d6" src="http://ox-d.junemedia.com/w/1.0/afr?auid=537216142&cb=INSERT_RANDOM_NUMBER_HERE" frameborder="0" scrolling="no" width="970" height="250">
-      <a href="http://ox-d.junemedia.com/w/1.0/rc?cs=58d3b864d6&cb=INSERT_RANDOM_NUMBER_HERE" >
-        <img src="http://ox-d.junemedia.com/w/1.0/ai?auid=537216142&cs=58d3b864d6&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt="">
+    <iframe id="b0027e8ad2" name="b0027e8ad2" src="//junemedia-d.openx.net/w/1.0/afr?auid=537216142&cb=INSERT_RANDOM_NUMBER_HERE" frameborder="0" scrolling="no" width="300" height="250">
+      <a href="//junemedia-d.openx.net/w/1.0/rc?cs=b0027e8ad2&cb=INSERT_RANDOM_NUMBER_HERE" >
+        <img src="//junemedia-d.openx.net/w/1.0/ai?auid=537216142&cs=b0027e8ad2&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt="">
       </a>
     </iframe>
   </noscript>
@@ -25,4 +25,4 @@
   });
 </script>
 
-<script type="text/javascript" src="http://ox-d.junemedia.com/w/1.0/jstag"></script>
+<script type="text/javascript" src="//junemedia-d.openx.net/w/1.0/jstag"></script>

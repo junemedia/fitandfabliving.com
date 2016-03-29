@@ -676,5 +676,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	
 	<!-- infolinks --><script type="text/javascript">var infolinks_pid = 1863387;var infolinks_wsid = 1;</script><script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script><!-- infolinks -->
 	<?php } ?>
+
+<!-- +SWOOP -->
+<script type="text/javascript">
+(function addSwoopOnce(domain) {
+  var win = window;
+  try {
+    while (!(win.parent == win || !win.parent.document)) {
+      win = win.parent;
+    }
+  } catch (e) {
+    /* noop */
+  }
+  var doc = win.document;
+  if (!doc.getElementById('swoop_sdk')) {
+    var serverbase = doc.location.protocol + '//ardrone.swoop.com/';
+    var s = doc.createElement('script');
+    s.type = "text/javascript";
+    s.src = serverbase + 'js/spxw.js';
+    s.id = 'swoop_sdk';
+    s.setAttribute('data-domain', domain);
+    s.setAttribute('data-serverbase', serverbase);
+    doc.head.appendChild(s);
+  }
+})('SW-10152718-3');
+</script>
+<!-- -SWOOP -->
+
 </body>
 </html>

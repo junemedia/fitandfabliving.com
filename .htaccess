@@ -64,6 +64,11 @@ RewriteRule .* index.php [F]
 #
 RewriteCond %{HTTP_HOST} !^((www|stage)\.fitandfabliving\.com)?$
 RewriteRule (.*) http://www.fitandfabliving.com/$1 [R=301,L]
+
+# Non-www subdomains get restrictive robots.txt
+RewriteCond %{HTTP_HOST} !^(www\.)?fitandfabliving.com$
+RewriteRule ^robots.txt$ robots.disallow.txt [L]
+
 ## End - Custom redirects
 
 ##

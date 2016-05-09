@@ -465,5 +465,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <!-- -SWOOP -->
 
+<?php include 'partials/ads/underdog.php'; ?>
+
 </body>
 </html>

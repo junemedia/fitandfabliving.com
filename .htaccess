@@ -62,7 +62,7 @@ RewriteRule .* index.php [F]
 # www redirect (or vice versa), place that code here. Ensure those
 # redirects use the correct RewriteRule syntax and the [R=301,L] flags.
 #
-RewriteCond %{HTTP_HOST} !^(www\.fitandfabliving\.com)?$
+RewriteCond %{HTTP_HOST} !^((www|stage)\.fitandfabliving\.com)?$
 RewriteRule (.*) http://www.fitandfabliving.com/$1 [R=301,L]
 ## End - Custom redirects
 

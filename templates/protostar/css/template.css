@@ -6669,8 +6669,7 @@ div.modal.fade.in {
 	content: "\e024";
 }
 body.site {
-	/*border-top: 3px solid #0088cc;*/
-	padding: 0 20px 20px;
+	padding: 0 20px 90px;
 	margin-top: -18px;
 	background-color: #f4f6f7;
 }

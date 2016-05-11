@@ -433,7 +433,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- Google Ads issue with emails in URLs -->
 	<?php // if (isset($_GET['nl_signup']) && strtoupper(trim($_GET['nl_signup'])) == 'Y') { include_once($_SERVER['DOCUMENT_ROOT']."/dhtml/dhtml2.php"); } ?>
         <!-- Google Ads issue with emails in URLs -->
-	<!-- LiveRamp --><iframe name="_rlcdn" width=0 height=0 frameborder=0 src="http://rc.rlcdn.com/381139.html"></iframe><!-- LiveRamp -->
+
 	<?php if (!in_array($app->input->getCmd('id', ''),array('7427','7425'))) { ?>
 
 	<!-- infolinks --><script type="text/javascript">var infolinks_pid = 1863387;var infolinks_wsid = 1;</script><script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script><!-- infolinks -->
@@ -466,6 +466,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- -SWOOP -->
 
 <?php include 'partials/ads/underdog.php'; ?>
+
+<?php include 'partials/ads/liveramp.php'; ?>
 
 </body>
 </html>

@@ -86,107 +86,72 @@ $menu = $app->getMenu();
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
 	<script type="text/javascript">
-	var mobile_domain ="m.fitandfabliving.com";
-	// Set to false to not redirect on iPad.
-	var ipad = false;
-	// Set to false to not redirect on other tablets (Android , BlackBerry, WebOS tablets).
-	var other_tablets = false;
-	document.write(unescape("%3Cscript src='"+location.protocol+"//s3.amazonaws.com/me.static/js/me.redirect.min.js' type='text/javascript'%3E%3C/script%3E"));
+    var mobile_domain ="m.fitandfabliving.com";
+    // Set to false to not redirect on iPad.
+    var ipad = false;
+    // Set to false to not redirect on other tablets (Android , BlackBerry, WebOS tablets).
+    var other_tablets = false;
+    document.write(unescape("%3Cscript src='"+location.protocol+"//s3.amazonaws.com/me.static/js/me.redirect.min.js' type='text/javascript'%3E%3C/script%3E"));
 	</script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<jdoc:include type="head" />
+
 	<?php
 	// Use of Google Font
-	if ($this->params->get('googleFont'))
-	{
-	?>
+	if ($this->params->get('googleFont')) { ?>
 		<link href='http://fonts.googleapis.com/css?family=<?php echo $this->params->get('googleFontName');?>' rel='stylesheet' type='text/css' />
 		<style type="text/css">
 			h1,h2,h3,h4,h5,h6,.site-title{
 				font-family: '<?php echo str_replace('+', ' ', $this->params->get('googleFontName'));?>', Arial, Helvetica, sans-serif;
 			}
 		</style>
-	<?php
-	}
-	?>
+	<?php } ?>
+
 	<?php
 	// Template color
-	if ($this->params->get('templateColor'))
-	{
-	?>
-	<style type="text/css">
-		a
-		{
-			color: #E4067C<?php //echo $this->params->get('templateColor');?>;
-		}
-		.navbar-inner, .nav-list > .active > a, .nav-list > .active > a:hover, .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover,
-		.btn-primary
-		{
-			background: #E40079<?php //echo $this->params->get('templateColor');?>;
+	if ($this->params->get('templateColor')) { ?>
+    <style type="text/css">
+      a {
+        color: #E4067C<?php //echo $this->params->get('templateColor');?>;
+      }
+      .navbar-inner, .nav-list > .active > a, .nav-list > .active > a:hover, .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .nav-pills > .active > a, .nav-pills > .active > a:hover,
+      .btn-primary {
+        background: #E40079<?php //echo $this->params->get('templateColor');?>;
 
-		}
-		.navbar-inner
-		{
-			-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
-			-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
-			box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
-		}
-	</style>
-	<?php
-	}
-	?>
+      }
+      .navbar-inner {
+        -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .25), inset 0 -1px 0 rgba(0, 0, 0, .1), inset 0 30px 10px rgba(0, 0, 0, .2);
+      }
+    </style>
+	<?php } ?>
+
 	<!--[if lt IE 9]>
 		<script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
 	<![endif]-->
 
+  <!-- Include the Union Tracker, include jquery if necessary -->
+  <?php
+  $document = JFactory::getDocument();
+  $document->addScript('/media/jui/js/jquery.min.js');
+  $document->addScriptDeclaration("
+      var site_name = 'fitandfabliving';
+      var site_path = window.location.href;
+      var site_domain = '.fitandfabliving.com;path=/';
+      jm_checkCookie(site_name, site_domain);
 
-    <!-- Include the Union Tracker, include jquery if necessary -->
-    <?php
-        $document = JFactory::getDocument();
-        $document->addScript('/media/jui/js/jquery.min.js');
-        //$document->addScript('http://www.jmtkg.com/js/tracker.js');
-        $document->addScriptDeclaration("
-            var site_name = 'fitandfabliving';
-            var site_path = window.location.href;
-            var site_domain = '.fitandfabliving.com;path=/';
-            jm_checkCookie(site_name, site_domain);
-
-            var site_guest_id = jm_getCookie('SITE_GUEST_ID');
-            var email = jm_getCookie('EMAIL_ID') ? jm_getCookie('EMAIL_ID'): 'NO_EMAIL' ;
+      var site_guest_id = jm_getCookie('SITE_GUEST_ID');
+      var email = jm_getCookie('EMAIL_ID') ? jm_getCookie('EMAIL_ID'): 'NO_EMAIL' ;
 
 
-            jm_push(site_name, site_path, site_guest_id, email);
-            jQuery.noConflict();
-            ");
-    ?>
+      jm_push(site_name, site_path, site_guest_id, email);
+      jQuery.noConflict(); ");
+  ?>
 
-    <script type="text/javascript">
-        //var R4LSignUpDhtml = jQuery.noConflict();
-        //var R4LDhtml = jQuery.noConflict();
-    </script>
-
-    <!-- BEGIN SiteCTRL Script -->
-    <script type="text/javascript">
-    if(document.location.protocol=='http:'){
-     var Tynt=Tynt||[];Tynt.push('aUQE2w_H8r46GHacwqm_6l');
-     (function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();
-    }
-    </script>
-    <!-- END SiteCTRL Script -->
-
-	<!-- Yieldbot.com Intent Tag LOADING -->
-    <script type="text/javascript" src="https://cdn.yldbt.com/js/yieldbot.intent.js"></script>
-    <!-- Yieldbot.com Intent Tag ACTIVATION -->
-    <script type="text/javascript">
-        yieldbot.pub('0b11');
-        yieldbot.defineSlot('LB_ATF');
-        yieldbot.defineSlot('MR_ATF');
-        yieldbot.defineSlot('MR_Mid');
-        yieldbot.defineSlot('LB_BTF');
-        yieldbot.go();
-    </script>
-    <!-- END Yieldbot.com Intent Tag -->
+  <?php include 'partials/ads/tynt.php'; ?>
+  <?php include 'partials/ads/yieldbot.php'; ?>
 
 </head>
 

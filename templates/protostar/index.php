@@ -85,14 +85,6 @@ $menu = $app->getMenu();
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
-	<script type="text/javascript">
-    var mobile_domain ="m.fitandfabliving.com";
-    // Set to false to not redirect on iPad.
-    var ipad = false;
-    // Set to false to not redirect on other tablets (Android , BlackBerry, WebOS tablets).
-    var other_tablets = false;
-    document.write(unescape("%3Cscript src='"+location.protocol+"//s3.amazonaws.com/me.static/js/me.redirect.min.js' type='text/javascript'%3E%3C/script%3E"));
-	</script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<jdoc:include type="head" />

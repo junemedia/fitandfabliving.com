@@ -278,73 +278,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<jdoc:include type="modules" name="position-7" style="well" />
 					<?php endif; ?>
 
+          <div class="right_ads top_space">
+            <?php include 'partials/ads/300x250atf.php'; ?>
+          </div>
 
-					<?php if(($option == 'com_search' && $view =='search') || ($option == 'com_content' && $view == 'article')){?>
+          <div class="right_ads top_space">
+            <div id="pubexchange_rail_by_partner_1"></div>
+          </div>
 
-            <div class="right_ads top_space">
-              <?php include 'partials/ads/300x250atf.php'; ?>
+          <div class="right_ads top_space">
+            <?php include 'partials/ads/300x250btf.php'; ?>
+          </div>
+
+          <div class="right_ads top_space">
+            <!-- Netseer ads BEGIN -->
+            <div style="padding:10px 0px">
+              <script type="text/javascript">
+                netseer_tag_id = "15417";
+                netseer_ad_width = "175";
+                netseer_ad_height = "100";
+                netseer_task = "ad";
+                netseer_imp_type = "1";
+                netseer_imp_src = "2";
+              </script>
+              <script src="http://cl.netseer.com/dsatserving2/scripts/netseerads.js" type="text/javascript"></script>
             </div>
-
-            <div class="right_ads top_space">
-                <div id="pubexchange_rail_by_partner_1"></div>
-            </div>
-
-            <div class="right_ads top_space">
-              <?php include 'partials/ads/300x250btf.php'; ?>
-            </div>
-
-            <div class="right_ads top_space">
-              <!-- Netseer ads BEGIN -->
-              <div style="padding:10px 0px">
-                <script type="text/javascript">
-                  netseer_tag_id = "15417";
-                  netseer_ad_width = "175";
-                  netseer_ad_height = "100";
-                  netseer_task = "ad";
-                  netseer_imp_type = "1";
-                  netseer_imp_src = "2";
-                </script>
-                <script src="http://cl.netseer.com/dsatserving2/scripts/netseerads.js" type="text/javascript"></script>
-              </div>
-              <!-- Netseer ads END -->
-            </div>
-
-					<?php } else { ?>
-            <div class="right_ads top_space">
-              <?php include 'partials/ads/300x250atf.php'; ?>
-            </div>
-
-            <div class="right_ads top_space">
-              <div id="pubexchange_rail_by_partner_1"></div>
-            </div>
-
-            <div class="right_ads top_space">
-              <?php include 'partials/ads/300x250btf.php'; ?>
-            </div>
-
-            <div class="right_ads top_space">
-              <!-- Netseer ads BEGIN -->
-              <div style="padding:10px 0px">
-                <script type="text/javascript">
-                  netseer_tag_id = "15417";
-                  netseer_ad_width = "175";
-                  netseer_ad_height = "100";
-                  netseer_task = "ad";
-                  netseer_imp_type = "1";
-                  netseer_imp_src = "2";
-                </script>
-                <script src="http://cl.netseer.com/dsatserving2/scripts/netseerads.js" type="text/javascript"></script>
-              </div>
-              <!-- Netseer ads END -->
-            </div>
-					<?php } ?>
+            <!-- Netseer ads END -->
+          </div>
 					<!-- End Right Sidebar -->
 				</div>
 				<?php } ?>
-
 			</div>
-
-
 
 			<!-- Footer -->
 			<div class="footer" role="contentinfo">

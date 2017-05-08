@@ -312,7 +312,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			<!-- Footer -->
 			<div class="footer" role="contentinfo">
-			<!--<jdoc:include type="modules" name="footer" style="none" />-->
 				<div class="sites_container">
 					<div align="center" style="padding-top:10px;padding-bottom:20px;">
             <?php include 'partials/ads/728x90btf.php'; ?>

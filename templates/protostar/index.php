@@ -257,7 +257,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<jdoc:include type="message" />
 					<jdoc:include type="component" />
 					<!-- End Content -->
-                                        <div id="pubexchange_below_content"></div>
+          <div id="pubexchange_below_content"></div>
 
 				</div>
 
@@ -309,18 +309,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<a href="/site-map" class="footer_link">Site Map</a>
 				</div>
 				<p class="copyright">&copy; <?php echo date('Y');?> June Media Inc. All rights reserved</p>
-
-                                <!-- Start of pubexchange ads tags-->
-                                <script>(function(d, s, id) {
-                                    var js, pjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) return;
-                                    js = d.createElement(s); js.id = id; js.async = true;
-                                    js.src = "//cdn.pubexchange.com/modules/partner/fit__fab_living";
-                                    pjs.parentNode.insertBefore(js, pjs);
-                                  }(document, "script", "pubexchange-jssdk"));
-                                </script>
-                                <!-- End of pubexchange ads tags-->
-
 			</div><!--End of footer-->
 		</div>
 	</div>
@@ -328,36 +316,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<jdoc:include type="modules" name="debug" style="none" />
 	<?php if (isset($_GET['cid'])) { include_once($_SERVER['DOCUMENT_ROOT']."/dhtml/dhtml.php"); } ?>
 
-<!-- +SWOOP -->
-<script type="text/javascript">
-(function addSwoopOnce(domain) {
-  var win = window;
-  try {
-    while (!(win.parent == win || !win.parent.document)) {
-      win = win.parent;
-    }
-  } catch (e) {
-    /* noop */
-  }
-  var doc = win.document;
-  if (!doc.getElementById('swoop_sdk')) {
-    var serverbase = doc.location.protocol + '//ardrone.swoop.com/';
-    var s = doc.createElement('script');
-    s.type = "text/javascript";
-    s.src = serverbase + 'js/spxw.js';
-    s.id = 'swoop_sdk';
-    s.setAttribute('data-domain', domain);
-    s.setAttribute('data-serverbase', serverbase);
-    doc.head.appendChild(s);
-  }
-})('SW-10152718-3');
-</script>
-<!-- -SWOOP -->
-
+<?php include 'partials/ads/pubexchange.php'; ?>
 <?php include 'partials/ads/underdog.php'; ?>
 <?php include 'partials/ads/liveramp.php'; ?>
 <?php include 'partials/ads/liveconnect.php'; ?>
-
+<?php include 'partials/ads/swoop.php'; ?>
 
 </body>
 </html>

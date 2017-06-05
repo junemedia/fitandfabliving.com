@@ -77,7 +77,6 @@ if (isset ($this->item->toc)){
             </div>
          <?php endif; ?>
 <div class="article">
-<!--INFOLINKS_ON-->
 <div id="article_details" class="<?php echo $isSlide?'article_slideshow':'';?>"> 
 	<?php if ($this->params->get('show_page_heading') && $params->get('show_title')) : ?>
 	<!--<div class="page-header">
@@ -389,24 +388,9 @@ if (!empty($this->item->pagination) &&!$isPrivacy && $this->item->pagination && 
 	echo $this->item->pagination;
 ?>
 	<?php endif; ?>
-   <!--INFOLINKS_OFF--> 
 </div>
 
 <?php if(!$isPrivacy){?>
-<!-- disqus starts -->
-<!--<div id="disqus_thread"></div>
-<script type="text/javascript">
-     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-     var disqus_shortname = 'fitandfabliving'; // required: replace example with your forum shortname
-     var disqus_url = window.location.href;
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-     (function() {
-         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-     })();
-</script>-->
-<!-- disqus ends -->
 <div id="more_articles">
 <h2 class="content_h2">MORE FROM <?php echo $title;?></h2>
 <div class="s_line"></div>

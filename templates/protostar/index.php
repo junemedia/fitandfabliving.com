@@ -155,8 +155,6 @@ $menu = $app->getMenu();
 	. ($params->get('fluidContainer') ? ' fluid' : '');
 ?>" >
 
-<!--INFOLINKS_OFF-->
-
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WRKVZZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -219,12 +217,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 			<?php if ($this->countModules('position-1')) : ?>
 			<div class="navigation" role="navigation">
-				<!--<a href="<?php echo JRoute::_('index.php?option=com_content&view=category&id=8');?>">STAY FIT</a> <font class="v_line" >|</font>
-				<a href="<?php echo JRoute::_('index.php?option=com_content&view=category&id=9');?>">EAT HEALTHY</a> <font class="v_line" >|</font>
-				<a href="<?php echo JRoute::_('index.php?option=com_content&view=category&id=10');?>">LOSE WEIGHT</a> <font class="v_line" >|</font>
-				<a href="<?php echo JRoute::_('index.php?option=com_content&view=category&id=11');?>">FEEL GOOD</a> <font class="v_line" >|</font>
-				<a href="<?php echo JRoute::_('index.php?option=com_content&view=category&id=12');?>">LOOK FAB</a> <font class="v_line" >|</font>
-				<a href="http://www.chewonthatblog.com/" class="menu_last" target="_blank">THE BLOG</a>-->
 				<jdoc:include type="modules" name="position-1" style="none" />
 			</div>
 			<?php endif; ?>
@@ -366,11 +358,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <?php include 'partials/ads/liveramp.php'; ?>
 <?php include 'partials/ads/liveconnect.php'; ?>
 
-<?php
-// no idea what this check is about...
-if (!in_array($app->input->getCmd('id', ''), array('7427','7425'))) {
-  include 'partials/ads/infolinks.php';
-} ?>
 
 </body>
 </html>

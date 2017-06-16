@@ -498,6 +498,10 @@ if (isset($this->item->toc)) {
     ?>
     </div><!-- /.article_details -->
 
+    <div style="margin:30px auto">
+      <?php include 'templates/protostar/partials/ads/lockerdome.html'; ?>
+    </div>
+
     <?php if (!$isPrivacy) { ?>
     <div id="more_articles">
       <h2 class="content_h2">MORE FROM <?php echo $title;?></h2>

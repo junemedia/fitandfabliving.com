@@ -61,6 +61,14 @@ if (isset($this->item->toc)) {
 ?>
 
 <div class="item-page<?php echo $this->pageclass_sfx?>">
+
+<?php
+  // connatix on non-slideshow pages only
+  if (!$isSlide) {
+    include 'templates/protostar/partials/ads/connatix_infeed.html';
+  }
+?>
+
 <?php if ($params->get('show_category')) { ?>
   <div class="breadcrumb">
 

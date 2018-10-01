@@ -142,7 +142,6 @@ $menu = $app->getMenu();
       jQuery.noConflict(); ");
   ?>
 
-  <?php include 'partials/ads/tynt.php'; ?>
   <?php include 'partials/ads/yieldbot.php'; ?>
 
 </head>

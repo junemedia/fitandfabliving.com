@@ -319,7 +319,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <?php include 'partials/ads/pubexchange.php'; ?>
 <?php include 'partials/ads/underdog.php'; ?>
 <?php include 'partials/ads/liveconnect.php'; ?>
-<?php include 'partials/ads/swoop.php'; ?>
 
 </body>
 </html>

@@ -142,8 +142,6 @@ $menu = $app->getMenu();
       jQuery.noConflict(); ");
   ?>
 
-  <?php include 'partials/ads/yieldbot.php'; ?>
-
 </head>
 
 <body class="site <?php echo $option
@@ -179,9 +177,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<table width="965px" border="0" align="center" style=" float: right; width: 734px;">
 						<tbody><tr><td valign="top" height="100px" align="center" style="height:100px;">
 							<div class="moduletableCustom">
-                <center>
-                  <?php include 'partials/ads/728x90atf.php'; ?>
-								</center>
+                <center> </center>
 							</div>
 						</td></tr>
 						</tbody>
@@ -270,15 +266,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<?php endif; ?>
 
           <div class="right_ads top_space">
-            <?php include 'partials/ads/300x250atf.php'; ?>
-          </div>
-
-          <div class="right_ads top_space">
             <div id="pubexchange_rail_by_partner_1"></div>
-          </div>
-
-          <div class="right_ads top_space">
-            <?php include 'partials/ads/300x250btf.php'; ?>
           </div>
 
 					<!-- End Right Sidebar -->
@@ -289,9 +277,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<!-- Footer -->
 			<div class="footer" role="contentinfo">
 				<div class="sites_container">
-					<div align="center" style="padding-top:10px;padding-bottom:20px;">
-            <?php include 'partials/ads/728x90btf.php'; ?>
-					</div>
 
 					<a href="http://www.recipe4living.com" class="footer_site_link" target="_blank"><img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/r4l.png"/></a>
 					<a href="http://www.workitmom.com" class="footer_site_link" target="_blank"><img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/wim.png"/></a>

@@ -100,6 +100,8 @@ $menu = $app->getMenu();
 		</style>
 	<?php } ?>
 
+  <?php include 'partials/ads/adthrive_js.php'; ?>
+
 	<?php
 	// Template color
 	if ($this->params->get('templateColor')) { ?>

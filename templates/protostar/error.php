@@ -125,13 +125,6 @@ else
 <table width="965px" border="0" align="center">
  			<tbody><tr><td valign="top" height="100px" align="center" style="height:100px;">
 						<div class="moduletableCustom">
-						<center><!-- Javascript tag  -->
-			<!-- begin ZEDO for channel:  New Fit&Fab 728x90 top , publisher: AmpereMedia , Ad Dimension: Super Banner - 728 x 90 -->
-			<script language="JavaScript">
-			var zflag_nid="608"; var zflag_cid="60/54/4"; var zflag_sid="1"; var zflag_width="728"; var zflag_height="90"; var zflag_sz="14"; var zflag_click="[INSERT_CLICK_TRACKER_MACRO]"; 
-			</script>
-			<script language="JavaScript" src="http://c5.zedo.com/jsc/c5/fo.js"></script>
-			<!-- end ZEDO for channel:  New Fit&Fab 728x90 top , publisher: AmpereMedia , Ad Dimension: Super Banner - 728 x 90 --></center>
 						</div>	
 			</td></tr>
 			</tbody>

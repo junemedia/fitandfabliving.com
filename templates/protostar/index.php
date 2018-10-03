@@ -303,7 +303,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<?php if (isset($_GET['cid'])) { include_once($_SERVER['DOCUMENT_ROOT']."/dhtml/dhtml.php"); } ?>
 
 <?php include 'partials/ads/pubexchange.php'; ?>
-<?php include 'partials/ads/underdog.php'; ?>
 <?php include 'partials/ads/liveconnect.php'; ?>
 
 </body>

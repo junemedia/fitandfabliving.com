@@ -254,7 +254,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<jdoc:include type="message" />
 					<jdoc:include type="component" />
 					<!-- End Content -->
-          <div id="pubexchange_below_content"></div>
+          <?php include 'partials/ads/zergnet_68929.php'; ?>
 
 				</div>
 
@@ -268,7 +268,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<?php endif; ?>
 
           <div class="right_ads top_space">
-            <div id="pubexchange_rail_by_partner_1"></div>
+            <?php include 'partials/ads/zergnet_29021.php'; ?>
           </div>
 
 					<!-- End Right Sidebar -->
@@ -302,7 +302,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<jdoc:include type="modules" name="debug" style="none" />
 	<?php if (isset($_GET['cid'])) { include_once($_SERVER['DOCUMENT_ROOT']."/dhtml/dhtml.php"); } ?>
 
-<?php include 'partials/ads/pubexchange.php'; ?>
 <?php include 'partials/ads/liveconnect.php'; ?>
 
 </body>

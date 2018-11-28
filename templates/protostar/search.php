@@ -288,7 +288,6 @@ else
 					<a href="http://www.recipe4living.com" class="footer_site_link" target="_blank"><img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/r4l.png"/></a>
 					<a href="http://www.workitmom.com" class="footer_site_link" target="_blank"><img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/wim.png"/></a>
 					<a href="http://www.chewonthatblog.com" class="footer_site_link" target="_blank"><img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/cot.png"/></a>
-					<a href="http://www.runningwithmascara.com" class="footer_site_link" target="_blank"><img src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/rwm.png"/></a>
 				</div>
 				<div class="footer_nav">               
 					<a href="#" class="footer_link">Write for FitandFabLiving!</a> <font class="menu_sp">|</font> 

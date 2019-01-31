@@ -177,17 +177,7 @@ var pageTracker = _gat._getTracker("UA-10900002-1");
 pageTracker._trackPageview();
 } catch(err) {}
 </script>
-<!-- Start Quantcast tag -->
-<script type="text/javascript">
-_qoptions={
-qacct:"p-ed7ji9FtIlPSo"
-};
-</script>
-<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
-<noscript>
-<img src="http://pixel.quantserve.com/pixel/p-ed7ji9FtIlPSo.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
-</noscript>
-<!-- End Quantcast tag -->
+
 <?php
 if ($signup_success == true && strtolower($source) == 'google'&& $new_email==true) {
 	// FIRE GOOGLE PIXEL HERE UPON SUCCESS SIGNUP

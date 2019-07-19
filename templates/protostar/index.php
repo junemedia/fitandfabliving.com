@@ -87,6 +87,7 @@ $menu = $app->getMenu();
 <head>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests;block-all-mixed-content">
 	<jdoc:include type="head" />
 
 	<?php
